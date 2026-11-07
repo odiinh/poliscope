@@ -1188,6 +1188,100 @@
   }
  },
  {
+  "id": "al-2027",
+  "kind": "candidate",
+  "name": "Tommy Tuberville",
+  "state": "AL",
+  "party": "R",
+  "term_start": 2027,
+  "source": {
+   "type": "platform",
+   "year": 2026,
+   "url": "https://www.coachforgovernor.com/issues",
+   "sha1": "60f1b7861be8dcc6bf277bf0dea13e69441e6ff5"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 0.7,
+    "confidence": 0.9,
+    "evidence": [
+     "As your Governor, I will work to further reduce taxes, get rid of waste, and make life in Alabama more affordable."
+    ]
+   },
+   "spending": {
+    "stance": 0.3,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "Lower taxes, reduce waste, and bring back manufacturing"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.3,
+    "salience": 0.3,
+    "confidence": 0.2,
+    "evidence": [
+     "President Trump is working hard to dig us out of a hole"
+    ]
+   },
+   "regulation": {
+    "stance": 0.8,
+    "salience": 0.5,
+    "confidence": 1.0,
+    "evidence": [
+     "cut red tape and bring more manufacturing jobs back to Alabama"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.3,
+    "salience": 0.3,
+    "confidence": 0.3,
+    "evidence": [
+     "making sure they have access to the standard of care and benefits they deserve"
+    ]
+   },
+   "education": {
+    "stance": 0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "I will expand school choice and make sure that parents, not the government, are in charge"
+    ]
+   },
+   "justice": {
+    "stance": 0.8,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "I will back the blue, enforce the law, and work with President Trump to deport illegal alien criminals"
+    ]
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
   "id": "ar-2019",
   "kind": "historical",
   "name": "Asa Hutchinson",
@@ -6647,6 +6741,107 @@
     "confidence": 0.8,
     "evidence": [
      "I am requesting $20 million, split over two years, for broadband infrastructure."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ia-2027",
+  "kind": "candidate",
+  "name": "Rob Sand",
+  "state": "IA",
+  "party": "D",
+  "term_start": 2027,
+  "source": {
+   "type": "platform",
+   "year": 2026,
+   "url": "https://robsand.com/priorities",
+   "sha1": "20aa444a32b25538e85fd0753d400d9a1209e969"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "I would tax out-of-state landowners at a higher rate and ban hedge funds and LLCs from buying up too much Iowa land.",
+     "We shouldn’t be handing out more tax breaks"
+    ]
+   },
+   "spending": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "New investments and initiatives, like universal all day pre-K, are needed to give our students the edge they need to compete for good paying jobs."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": -0.4,
+    "salience": 0.8,
+    "confidence": 0.6,
+    "evidence": [
+     "Require open public hearings and town halls on the creation of new data centers",
+     "We need to simplify the permitting, fees, and inspections processes as well as the requirements set by the Iowa Finance Authority to support housing development."
+    ]
+   },
+   "labour": {
+    "stance": -0.9,
+    "salience": 0.7,
+    "confidence": 1.0,
+    "evidence": [
+     "I support raising the minimum wage to $12/hour."
+    ]
+   },
+   "health": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "Reverse the privatization of Medicaid: Privatizing Medicaid has been one of the most disastrous decisions in Iowa over the last decade."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "Every Iowa child should have access to high-quality Pre-K no matter where they live.",
+     "We need to reform this policy to ensure tax dollars are being spent appropriately."
+    ]
+   },
+   "justice": {
+    "stance": 0.6,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "I support mandatory prison time for anyone found guilty of stealing over $10,000 in taxpayer dollars"
+    ]
+   },
+   "energy": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "We need to maintain and grow incentives for clean energy that directly saves consumers money and improves our health."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.5,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "Access to high-speed internet is not a luxury, but a necessity, and we must ensure Iowans in every corner of the state can get connected."
     ]
    }
   },
@@ -12385,6 +12580,104 @@
     "evidence": [
      "My budget will offer a real solution to fixing our roads and rebuilding our infrastructure."
     ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "mi-2027",
+  "kind": "candidate",
+  "name": "Jocelyn Benson",
+  "state": "MI",
+  "party": "D",
+  "term_start": 2027,
+  "source": {
+   "type": "platform",
+   "year": 2026,
+   "url": "https://www.jocelynbenson.com/issues",
+   "sha1": "a2202fd17b835bac48a33ac54d7c75bbfe4197a3"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.4,
+    "salience": 0.4,
+    "confidence": 0.6,
+    "evidence": [
+     "passing a $5,000 caregiver tax credit"
+    ]
+   },
+   "spending": {
+    "stance": -0.4,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "bringing Rx Kids statewide"
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": -0.2,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "streamlining regulations that slow down construction",
+     "No data centers will be built in Michigan unless there are rules in place"
+    ]
+   },
+   "labour": {
+    "stance": -0.5,
+    "salience": 0.4,
+    "confidence": 0.6,
+    "evidence": [
+     "Union contracts that ensure the creation of well-paying jobs."
+    ]
+   },
+   "health": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "Healthcare should be a right, not a privilege.",
+     "ensuring that pharmaceutical companies can't price gouge Michigan families"
+    ]
+   },
+   "education": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "build a truly world-class public education system for every child in Michigan",
+     "Michigan's next governor has a moral responsibility to transform our public schools"
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "Clean, renewable energy is the cheapest form of energy.",
+     "When we invest in clean energy, we lower utility bills."
+    ]
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
    }
   },
   "extractor": {
@@ -18534,6 +18827,105 @@
   }
  },
  {
+  "id": "ok-2027",
+  "kind": "candidate",
+  "name": "Mike Mazzei",
+  "state": "OK",
+  "party": "R",
+  "term_start": 2027,
+  "source": {
+   "type": "platform",
+   "year": 2026,
+   "url": "https://mikeforok.com/the-plan",
+   "sha1": "60742d4a96cb0a441ebcb45a300bd434bc134519"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 1.0,
+    "confidence": 0.95,
+    "evidence": [
+     "Remove the homestead from property taxes for seniors 65 and older",
+     "Make Oklahoma a No-Income-Tax State",
+     "Promote pro growth economy with lower income taxes and less regulations"
+    ]
+   },
+   "spending": {
+    "stance": 0.7,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "Cut unnecessary government programs and restrain spending",
+     "Eliminate poor ROI corporate welfare"
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.8,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "Cut the Red Tape That Strangles Business Growth",
+     "Sunset outdated regulations that hurt entrepreneurs"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "education": {
+    "stance": -0.2,
+    "salience": 0.6,
+    "confidence": 0.4,
+    "evidence": [
+     "Ensure schools and local services remain fully funded during the transition",
+     "Pay teachers tops in the region"
+    ]
+   },
+   "justice": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "Penalties severe enough to deter abuse, not just fines that get ignored",
+     "Clear penalties for violations, including forced divestment"
+    ]
+   },
+   "energy": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.7,
+    "evidence": [
+     "Prevent the Commissioners of the Land Office from selling Oklahoma land for green energy projects",
+     "Eliminate special interest property tax breaks for green energy and data centers"
+    ]
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
   "id": "or-1999",
   "kind": "historical",
   "name": "John Kitzhaber",
@@ -20733,6 +21125,101 @@
     "evidence": [
      "We must also continue to invest in infrastructure.",
      "That means we must keep taxes low, reduce burdensome regulations and invest heavily in infrastructure."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "sc-2027",
+  "kind": "candidate",
+  "name": "Alan Wilson",
+  "state": "SC",
+  "party": "R",
+  "term_start": 2027,
+  "source": {
+   "type": "platform",
+   "year": 2026,
+   "url": "https://wilsonforsc.com/priorities",
+   "sha1": "ebcf9d595ccb9fa78e2f6aa14cb90f55959d6a4c"
+  },
+  "dims": {
+   "tax": {
+    "stance": 1.0,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "He will fight to eliminate the state income tax to reduce the overall tax burden on South Carolina families.",
+     "Wilson supports exploring every avenue to reduce and eliminate the burden of personal property taxes for seniors and veterans"
+    ]
+   },
+   "spending": {
+    "stance": 0.2,
+    "salience": 0.6,
+    "confidence": 0.5,
+    "evidence": [
+     "ensuring that every dollar in the state budget delivers value to hardworking South Carolinians."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.6,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "Alan Wilson will lead the charge to cut taxes and slash government red tape."
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": 0.2,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "Wilson will support rural clinics, expand telemedicine, and incentive medical professionals to serve under-served areas."
+    ]
+   },
+   "education": {
+    "stance": 0.3,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "he will fully fund public schools and expand school choice"
+    ]
+   },
+   "justice": {
+    "stance": 0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "strengthen penalties for fentanyl and violent offenders"
+    ]
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Alan Wilson will make infrastructure a priority"
     ]
    }
   },
