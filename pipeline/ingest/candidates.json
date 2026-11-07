@@ -1,0 +1,12 @@
+[
+  {"candidate_id": "al-2027", "name": "Tommy Tuberville", "state": "AL", "party": "R",
+   "seeds": ["https://www.coachforgovernor.com/issues"]},
+  {"candidate_id": "ia-2027", "name": "Rob Sand", "state": "IA", "party": "D",
+   "seeds": ["https://robsand.com/priorities"]},
+  {"candidate_id": "mi-2027", "name": "Jocelyn Benson", "state": "MI", "party": "D",
+   "seeds": ["https://www.jocelynbenson.com/issues"]},
+  {"candidate_id": "ok-2027", "name": "Mike Mazzei", "state": "OK", "party": "R",
+   "seeds": ["https://mikeforok.com/the-plan"]},
+  {"candidate_id": "sc-2027", "name": "Alan Wilson", "state": "SC", "party": "R",
+   "seeds": ["https://wilsonforsc.com/priorities"]}
+]

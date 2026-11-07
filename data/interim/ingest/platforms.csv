@@ -1,0 +1,6 @@
+candidate_id,name,state,party,url,retrieved_at,text_path,n_chars
+al-2027,Tommy Tuberville,AL,R,https://www.coachforgovernor.com/issues,2026-11-07,data/interim/ingest/platforms/al-2027.txt,6029
+ia-2027,Rob Sand,IA,D,https://robsand.com/priorities,2026-11-07,data/interim/ingest/platforms/ia-2027.txt,64104
+mi-2027,Jocelyn Benson,MI,D,https://www.jocelynbenson.com/issues,2026-11-07,data/interim/ingest/platforms/mi-2027.txt,13728
+ok-2027,Mike Mazzei,OK,R,https://mikeforok.com/the-plan,2026-11-07,data/interim/ingest/platforms/ok-2027.txt,22063
+sc-2027,Alan Wilson,SC,R,https://wilsonforsc.com/priorities,2026-11-07,data/interim/ingest/platforms/sc-2027.txt,6607

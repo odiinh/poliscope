@@ -1,3 +1,4 @@
 # Member A status
 - 22:17 step 1 download: partial (sots + debt ok; FRED requests hang, blocked); step 2 terms: done, 259 rows, 45 states, 30 at t0=2007, R145 D110 I4
 - 22:29 step 1 download: done via FRED API (fredgraph.csv drops scripts; needs FRED_API_KEY in .env.local), 102/102 series; step 3 panel: done, 1734 rows (51 x 1992-2025), GDP 1997-2025, debt 1992-2018 (no DC); joinable terms gdp 218, debt 204
+- 22:33 step 4 platforms: done, 5 called open-seat winners (fetch_platforms.py, campaign sites, retrieved 2026-11-07): al-2027 Tuberville R 984w, ia-2027 Sand D 10519w, mi-2027 Benson D 2231w, ok-2027 Mazzei R 3304w, sc-2027 Wilson R 1011w. AL/SC under the 1500-word aim (their sites publish no more). Skipped FL/TN (close, possibly uncalled), OH Acton + CO Weiser (sites return 403 to scripts), WY Barlow (310w)
