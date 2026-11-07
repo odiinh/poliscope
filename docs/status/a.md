@@ -50,3 +50,4 @@ All five are open seats whose results Ballotpedia reported as decided on 6 Nov 2
 | State population (`<ST>POP`), Census via FRED | https://fred.stlouisfed.org | Census data is public domain; FRED API terms of use |
 | 2026 results | https://ballotpedia.org/Gubernatorial_elections,_2026 | Cited, not redistributed |
 | Platform texts | Campaign sites above | Copyright of each campaign; used for analysis, app shows only short quotes |
+- 23:24 panel budget columns (D approved B's proposal): added tax_kusd/tax_pc (revenue_total_taxes), spend_kusd/spend_pc (total_general_expenditure, excludes insurance-trust payouts), educ_kusd/educ_pc (expenditure_education); nominal thousands, 1992-2018, 50 states, no DC; 204 terms each, same as debt; original 7 columns unchanged

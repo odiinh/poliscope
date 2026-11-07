@@ -8,6 +8,14 @@ from pipeline.ingest.download import RAW, ROOT, STATES
 
 OUT = ROOT / "data" / "interim" / "ingest" / "panel.csv"
 YEARS = range(1992, 2026)
+# Finance-file column -> panel prefix; all in thousands of nominal dollars, 1992-2018.
+# General expenditure leaves out insurance-trust payouts (pensions, unemployment).
+FINANCE = {
+    "debt_at_end_of_fiscal_year": "debt",
+    "revenue_total_taxes": "tax",
+    "total_general_expenditure": "spend",
+    "expenditure_education": "educ",
+}
 
 
 def fred(key):
@@ -31,16 +39,18 @@ def build():
     abb = debt.dropna(subset=["state_abb"]).groupby("state").state_abb.first()
     debt = debt.assign(state=debt.state.map(abb).str.upper())
     debt = debt[debt.state.notna()]
-    debt = debt[debt.state != "US"][["state", "year", "debt_at_end_of_fiscal_year"]]
+    debt = debt[debt.state != "US"][["state", "year", *FINANCE]]
     assert not debt.duplicated(["state", "year"]).any()
     panel = panel.merge(
-        debt.rename(columns={"debt_at_end_of_fiscal_year": "debt_kusd"}),
+        debt.rename(columns={src: f"{name}_kusd" for src, name in FINANCE.items()}),
         on=["state", "year"],
         how="left",
     )
     panel["gdp_pc"] = panel.rgdp_musd2017 * 1e6 / panel["pop"]
-    panel["debt_pc"] = panel.debt_kusd * 1000 / panel["pop"]
-    cols = ["state", "year", "rgdp_musd2017", "pop", "gdp_pc", "debt_kusd", "debt_pc"]
+    cols = ["state", "year", "rgdp_musd2017", "pop", "gdp_pc"]
+    for name in FINANCE.values():
+        panel[f"{name}_pc"] = panel[f"{name}_kusd"] * 1000 / panel["pop"]
+        cols += [f"{name}_kusd", f"{name}_pc"]
     return panel[cols].sort_values(["state", "year"]).reset_index(drop=True)
 
 
@@ -52,6 +62,7 @@ def main():
     assert len(panel) == 51 * len(YEARS) and panel.state.nunique() == 51
     al = panel.query("state == 'AL' and year == 2018").debt_kusd.item()
     assert al == 9_856_082, al
+    assert panel.query("state == 'AL' and year == 2018").tax_kusd.item() == 11_055_577
     OUT.parent.mkdir(parents=True, exist_ok=True)
     panel.to_csv(OUT, index=False)
     print(f"wrote {len(panel)} rows to {OUT.relative_to(ROOT)}")
