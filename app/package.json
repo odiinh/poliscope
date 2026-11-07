@@ -1,12 +1,12 @@
 {
   "name": "poliscope-app",
   "private": true,
-  "packageManager": "pnpm@12.16.1",
+  "packageManager": "pnpm@10.34.9",
   "scripts": {
     "gen:types": "json2ts -i ../contracts/schemas/contracts.schema.json -o src/types/contracts.ts --cwd ../contracts/schemas",
-    "dev": "make -C .. sync && next dev",
+    "dev": "make -C .. sync && node --env-file-if-exists=../.env.local node_modules/next/dist/bin/next dev",
     "build": "make -C .. sync && next build",
-    "start": "next start",
+    "start": "node --env-file-if-exists=../.env.local node_modules/next/dist/bin/next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"

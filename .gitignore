@@ -3,6 +3,7 @@ data/raw/
 data/interim/extract/cache/
 .env.local
 node_modules/
+.pnpm-store/
 .venv/
 __pycache__/
 .pytest_cache/

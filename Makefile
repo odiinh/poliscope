@@ -14,6 +14,7 @@ extract:
 
 model:
 	$(PYTHON) -m pipeline.model.outcomes $(ARGS)
+	$(PYTHON) -m pipeline.model.forecasts $(ARGS)
 	$(PYTHON) -m pipeline.model.backtest $(ARGS)
 	$(PYTHON) -m pipeline.model.pca_map $(ARGS)
 

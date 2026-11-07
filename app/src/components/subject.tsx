@@ -4,8 +4,8 @@ import { theme } from "../styles/theme";
 import type { Profile, Reliability } from "../types/contracts";
 import { Comparison } from "./comparison";
 
-function Fingerprint({ profile }: { profile: Profile }) {
-  const source = sourceUrl(profile.source.url);
+function Fingerprint({ profile, pasted }: { profile: Profile; pasted: boolean }) {
+  const source = sourceUrl(profile.source.url) ?? (pasted ? "#paste" : undefined);
   return (
     <section className="panel" aria-labelledby="fingerprint">
       <h2 id="fingerprint">Policy fingerprint</h2>
@@ -39,7 +39,7 @@ function Fingerprint({ profile }: { profile: Profile }) {
                   <blockquote key={index}>“{quote}”</blockquote>
                 )) : <p>No verified quote for this dimension.</p>}
                 {stance !== null && <p>Confidence {percent(confidence)}</p>}
-                {source && <a href={source}>Read the source text</a>}
+                {source && <a href={source}>{pasted ? "Return to the pasted text" : "Read the source text"}</a>}
               </div>
             </details>
           );
@@ -64,7 +64,7 @@ export function Subject({ profile, comparison, fixtureMode, reliability, pasted 
         <p className="text-muted-foreground">{profile.state} · {profile.term_start}</p>
         {fixtureMode && <p role="note" className="rounded-lg bg-muted p-3 text-sm">Historical comparisons and model scores use synthetic data.</p>}
       </header>
-      <Fingerprint profile={profile} />
+      <Fingerprint profile={profile} pasted={pasted} />
       <Comparison data={comparison} />
       <section className="panel" aria-labelledby="methodology">
         <h2 id="methodology">Methodology</h2>

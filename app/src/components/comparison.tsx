@@ -3,8 +3,14 @@
 import { useId, useState } from "react";
 import { metricIds, metrics, percent, pp } from "../lib/policy";
 import type { ComparisonData } from "../lib/subject-view";
-import type { Metric } from "../types/contracts";
+import type { Metric, Signal } from "../types/contracts";
 import { Calibration, ForecastPlot, PrecedentMap } from "./charts";
+
+function skillSummary([low, high]: Signal["skill_ci95"]) {
+  if (high < 0) return "Precedents increased forecast error versus the prior-trend baseline in this backtest.";
+  if (low > 0) return "Precedents reduced forecast error versus the prior-trend baseline in this backtest.";
+  return "The interval includes zero, so the difference in forecast error remains uncertain.";
+}
 
 export function Comparison({ data }: { data: ComparisonData }) {
   const metricName = useId();
@@ -17,7 +23,7 @@ export function Comparison({ data }: { data: ComparisonData }) {
     years: outcomes[metric]?.window.join("–") ?? String(term_start),
     actual: outcomes[metric]?.actual ?? null,
   }));
-  const { label, benchmark, source } = metrics[metric];
+  const { outcome, benchmark, source } = metrics[metric];
 
   return (
     <>
@@ -34,7 +40,7 @@ export function Comparison({ data }: { data: ComparisonData }) {
       </fieldset>
       <section className="panel" aria-labelledby="precedents">
         <h2 id="precedents">Historical precedents</h2>
-        <p>Each point shows a term placed by its policy fingerprint. Colour shows annual {label.toLowerCase()} growth relative to {benchmark}. <a href={source}>Outcome source</a></p>
+        <p>Each point shows a term placed by its policy fingerprint. Colour shows annual {outcome} relative to {benchmark}. <a href={source}>Outcome source</a></p>
         {data.map && points.length ? <PrecedentMap points={points} explained={data.map.explained} /> : <p>The precedent map is unavailable for this dataset.</p>}
       </section>
       <section className="panel" aria-labelledby="forecast">
@@ -49,7 +55,7 @@ export function Comparison({ data }: { data: ComparisonData }) {
               <div><dt>Forecast</dt><dd>{pp(forecast.forecast)}</dd></div>
               <div><dt>80% precedent band</dt><dd>{pp(forecast.p10)} to {pp(forecast.p90)}</dd></div>
             </dl>
-            <p>The estimated probability that {label.toLowerCase()} growth exceeds {benchmark} is <strong>{percent(forecast.p_above)}</strong>. <a href={source}>Outcome source</a></p>
+            <p>The estimated probability that {outcome} exceeds {benchmark} is <strong>{percent(forecast.p_above)}</strong>. <a href={source}>Outcome source</a></p>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <caption className="pb-2 text-left font-semibold">Seven nearest precedents</caption>
@@ -81,6 +87,8 @@ export function Comparison({ data }: { data: ComparisonData }) {
                 <div><dt>Brier score · model / baseline</dt><dd>{signal.brier.knn.toFixed(3)} / {signal.brier.baseline.toFixed(3)}</dd></div>
                 <div><dt>Test terms</dt><dd>{signal.n_test}</dd></div>
               </dl>
+              <p>{skillSummary(signal.skill_ci95)}</p>
+              <p><a href="https://github.com/odiinh/poliscope/blob/main/docs/PLAN.md#model-spec">Backtest specification</a></p>
               {signal.calibration.length > 0 && <Calibration bins={signal.calibration} />}
             </>
           ) : <p>Backtest results are unavailable for this metric.</p>}
