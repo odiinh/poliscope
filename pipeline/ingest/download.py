@@ -9,6 +9,8 @@ from pathlib import Path
 
 import requests
 
+from pipeline.ingest.env import env
+
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
 SOTS_ZIP = "https://codeload.github.com/leops95/sots/zip/refs/heads/master"
@@ -16,7 +18,8 @@ DEBT_URL = (
     "https://raw.githubusercontent.com/jacobkap/government_finances/master/"
     "data/government_finances_1992_2018.csv"
 )
-FRED_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id={}"
+# fredgraph.csv drops non-browser clients, so use the official API (free key).
+FRED_API = "https://api.stlouisfed.org/fred/series/observations"
 STATES = [
     "AL",
     "AK",
@@ -90,13 +93,15 @@ def fetch_fred(item):
     path = RAW / "fred" / f"{key}.csv"
     if path.exists():
         return None
+    params = {"series_id": series, "api_key": env("FRED_API_KEY"), "file_type": "json"}
     try:
-        body = get(FRED_URL.format(series))
-    except requests.RequestException as e:
-        return f"{key} ({series}): {e}"
-    if not body.lower().startswith(b"observation_date") and b"DATE" not in body[:20]:
-        return f"{key} ({series}): unexpected body {body[:60]!r}"
-    path.write_bytes(body)
+        r = requests.get(FRED_API, params=params, timeout=60)
+        r.raise_for_status()
+        obs = r.json()["observations"]
+    except (requests.RequestException, KeyError, ValueError) as e:
+        return f"{key} ({series}): {str(e).split('api_key=')[0]}"
+    rows = [f"{o['date']},{'' if o['value'] == '.' else o['value']}" for o in obs]
+    path.write_text("\n".join([f"observation_date,{series}", *rows]) + "\n")
     return None
 
 
@@ -111,7 +116,12 @@ def main():
     debt = RAW / "government_finances_1992_2018.csv"
     if not debt.exists():
         debt.write_bytes(get(DEBT_URL))
-    with ThreadPoolExecutor(8) as pool:
+    if not env("FRED_API_KEY"):
+        print(
+            "FRED_API_KEY missing: add it to .env.local (free at fredaccount.stlouisfed.org)"
+        )
+        return 1
+    with ThreadPoolExecutor(2) as pool:  # API limit is 120 requests a minute
         failures = [f for f in pool.map(fetch_fred, fred_ids().items()) if f]
     for f in failures:
         print("FRED failed:", f)
