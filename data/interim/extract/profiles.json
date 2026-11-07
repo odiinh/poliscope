@@ -1,0 +1,3033 @@
+[
+ {
+  "id": "ak-2007",
+  "kind": "historical",
+  "name": "Sarah Palin",
+  "state": "AK",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=AK&date=01/17/2007",
+   "sha1": "5b9c9ea5dbd136b29c886293c87e824bdd67647f"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.7,
+    "salience": 0.6,
+    "confidence": 1.0,
+    "evidence": [
+     "I propose to repeal",
+     "we shouldn't make Alaskans pay a premium to keep families safe driving Alaska's roads.",
+     "And we'll significantly reduce business license fees."
+    ]
+   },
+   "spending": {
+    "stance": 0.5,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "I have established an aggressive goal of reducing general fund spending by $150 million dollars"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.9,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "by depositing our one-time surplus of $1.8 billion dollars into the Constitutional Budget Reserve, we'll build our savings account to nearly $4.3 billion dollars."
+    ]
+   },
+   "regulation": {
+    "stance": -0.2,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "we'll beef up oversight on the North Slope because we've seen some legal obligations ignored.",
+     "one thing we can do in our volatile market is provide stability in regulations for our developers."
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.2,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "We'll also propose legislation to continue SeniorCare for those who meet current eligibility criteria.",
+     "We must deal with our looming health care crisis from the young to our elderly."
+    ]
+   },
+   "education": {
+    "stance": -0.5,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "My budget includes fully funding the",
+     "I've included more than $200 million in new dollars to cover the increased retirement costs for local school districts"
+    ]
+   },
+   "justice": {
+    "stance": 0.4,
+    "salience": 0.6,
+    "confidence": 0.5,
+    "evidence": [
+     "aggressively tackle substance abuse and violence throughout Alaska",
+     "Alaskans deserve to be able to trust those sworn to protect."
+    ]
+   },
+   "energy": {
+    "stance": 0.8,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "I promise to vigorously defend Alaska's rights, as resource owners, to develop and receive appropriate value for our resources.",
+     "Our oil must, and will, flow and continue to help fund essential services."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.5,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "I've identified more than $180 million dollars that can be used to fund our critical capital needs, including reliable ferry service and solutions to traffic congestion."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "al-2007",
+  "kind": "historical",
+  "name": "Bob Riley",
+  "state": "AL",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://www.stateofthestate.com/content.aspx?state=AL&date=03/06/2007",
+   "sha1": "25cfd6ac0c3e88f820e5ca6ef97836263797f710"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "So I'm proposing we give more than 90 percent of Alabama families a tax cut.",
+     "I ask you to join me in eliminating the sales tax on all over-the-counter medications."
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "So tonight, I am proposing a budget that increases education funding by more than $390 million",
+     "My budget increases AMSTI funding from $22 million to $33 million."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.7,
+    "salience": 0.5,
+    "confidence": 0.8,
+    "evidence": [
+     "we have fully repaid every penny that was owed to our Constitutional rainy day fund, and we have more than ever before in our proration prevention account.",
+     "I propose we fairly and objectively distribute the funds to every system based on school enrollment."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": -0.2,
+    "salience": 0.4,
+    "confidence": 0.4,
+    "evidence": [
+     "we can afford a pay raise of seven percent."
+    ]
+   },
+   "health": {
+    "stance": 0.5,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "I will be proposing legislation allowing small businesses to deduct twice the amount they pay for health insurance premiums."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "This budget I'm sending to you invests more money into education than ever before in Alabama's history."
+    ]
+   },
+   "justice": {
+    "stance": 0.4,
+    "salience": 0.4,
+    "confidence": 0.4,
+    "evidence": [
+     "proposals that will become the strongest illegal immigration laws in the United States."
+    ]
+   },
+   "energy": {
+    "stance": -0.2,
+    "salience": 0.5,
+    "confidence": 0.4,
+    "evidence": [
+     "Developing new sources of energy should be the equivalent of this generation's Apollo moon shot."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "So, in this session, I will propose a bold and aggressive school construction initiative of $850 million."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "az-2007",
+  "kind": "historical",
+  "name": "Janet Napolitano",
+  "state": "AZ",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=AZ&date=01/08/2007",
+   "sha1": "095bad69f7b47ed22d21b5040615ae4c98be320e"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "it also continues the permanent tax cuts we passed last year and keeps our rainy day fund intact",
+     "can be accomplished without raising taxes one thin dime"
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "I will propose the highest-ever general fund contribution to state financial aid",
+     "install a statewide minimum starting teacher pay of $33,000"
+    ]
+   },
+   "borrowing": {
+    "stance": -0.2,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "to provide longer-term, 30-year financing through a partnership",
+     "keeps our rainy day fund intact"
+    ]
+   },
+   "regulation": {
+    "stance": -0.5,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "to crack down on long-term care abuse and neglect",
+     "so we can fund this office with the increased fines on health insurance companies that don't pay claims on time"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "we will make sure that every Arizona child under the age of 19",
+     "Let teachers talk to parents, so that our children get the health care they deserve."
+    ]
+   },
+   "education": {
+    "stance": -0.8,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "we will continue to invest in K-12 education",
+     "install a statewide minimum starting teacher pay of $33,000"
+    ]
+   },
+   "justice": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.7,
+    "evidence": [
+     "I propose that we expand the license plate reader program so it becomes a tool for crime fighting in every part of the state",
+     "it's time to expand their numbers and their reach"
+    ]
+   },
+   "energy": {
+    "stance": -0.8,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "I signed the Climate Change Executive Order to fast-track Arizona toward reducing greenhouse gas emissions",
+     "incentives will go to those contractors that use newer clean fuel technologies"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 0.85,
+    "evidence": [
+     "By simply extending the terms from 20 to 30 years, we will free up more than $400 million above our current budget to relieve traffic congestion",
+     "Last year, we agreed to direct an additional $300 million toward accelerating highway construction"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ca-2007",
+  "kind": "historical",
+  "name": "Arnold Schwarzenegger",
+  "state": "CA",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=CA&date=01/09/2007",
+   "sha1": "aae003e163a9a1b2f28ba804f6fd7234b9bee1d8"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.3,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "We have made this great progress without raising taxes."
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "So this year we must invest in five infrastructure areas in particular",
+     "This year I ask you to invest in 15,000more classrooms and renovate 40,000 more."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.3,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "Tomorrow, I will propose a budget that will dramatically reduce this deficit even further."
+    ]
+   },
+   "regulation": {
+    "stance": -0.3,
+    "salience": 0.3,
+    "confidence": 0.4,
+    "evidence": [
+     "I propose that California be the first in the world to develop a low carbon fuel standard that leads us away from fossil fuels."
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.5,
+    "salience": 0.8,
+    "confidence": 0.6,
+    "evidence": [
+     "I do believe, however, that the ultimate answer will come from the principle of shared responsibility",
+     "California is going to lead the nation in breaking new ground to meet the health care needs of its people."
+    ]
+   },
+   "education": {
+    "stance": -0.4,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "This year I ask you to invest in 15,000more classrooms and renovate 40,000 more.",
+     "As a step towards the day when parents will have real choice in our public education system"
+    ]
+   },
+   "justice": {
+    "stance": 0.0,
+    "salience": 0.9,
+    "confidence": 0.7,
+    "evidence": [
+     "We need a justice system that is fair, that is tough and that offers hope for those who can still turn their lives around."
+    ]
+   },
+   "energy": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "I propose that California be the first in the world to develop a low carbon fuel standard that leads us away from fossil fuels.",
+     "So, I ask you to appropriate the funds to implement this global warming legislation"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "We must also be good stewards, because we must go back to the people for permission to build more and to finish the job.",
+     "We build more prisons or we release criminals."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "co-2007",
+  "kind": "historical",
+  "name": "Bill Ritter",
+  "state": "CO",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=CO&date=01/11/2007",
+   "sha1": "e6b82a1a66cf1fef97402a15090cd159ccf78237"
+  },
+  "dims": {
+   "tax": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "spending": {
+    "stance": -0.2,
+    "salience": 0.7,
+    "confidence": 0.5,
+    "evidence": [
+     "We can make better investments today in everything from health care to education to criminal justice in order to recoup even more savings in the long run."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.2,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "I want a government that is open for business, a government that serves the people and not itself"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.7,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "My long-term vision is to establish a Colorado Health Plan that provides every Coloradan with access to some basic form of health insurance and health care by 2010.",
+     "I intend to restore the eligibility requirements for state funding for pregnancy-prevention and family planning programs."
+    ]
+   },
+   "education": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "Coloradans want to see more slots opened up for pre-school programs. And so do I.",
+     "We're going to listen to our teachers. We're going to give them the tools they need to succeed."
+    ]
+   },
+   "justice": {
+    "stance": -0.7,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "Developing programs that allow inmates to successfully re-enter society.",
+     "Making recidivism-reduction a top priority of these two departments."
+    ]
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "Our calling card to the 21st century must be the New Energy Economy.",
+     "Getting wind energy on the wires will be one of my highest priorities."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.5,
+    "salience": 0.8,
+    "confidence": 0.6,
+    "evidence": [
+     "It is vital to the people of this state, the economy of Colorado, that we create a 21st Century transportation system.",
+     "In the long term, I am committed to solving congestion problems on I-70."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ct-2007",
+  "kind": "historical",
+  "name": "M. Jodi Rell",
+  "state": "CT",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=CT&date=02/07/2007",
+   "sha1": "a9426c21d0adc75b985bfc55574427f0d573bf25"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.0,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "Tax increases on one side of the ledger and tax cuts on the other.",
+     "I am proposing a fractional increase across the board in the income tax rate"
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 1.0,
+    "confidence": 0.8,
+    "evidence": [
+     "Today I am proposing the single largest investment in education in Connecticut history",
+     "I am exceeding the cap this year to provide for increased state spending for education programming and education-related property tax relief."
+    ]
+   },
+   "borrowing": {
+    "stance": -0.2,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "Proposes 245 million dollars in bonds per year for clean water projects",
+     "my budget includes payments equal to 100% of those actuarially required"
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "The Charter Oak Plan will provide good, basic health care to uninsured adults for a premium of about 250 dollars a month.",
+     "Therefore, I am proposing funding of 55 million dollars for premium assistance to help lower income individuals enroll in the Charter Oak Plan."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "Under my budget the foundation will increase from $5,891 to $9,687 over five years.",
+     "For years we have talked about lifting the cap on Education Cost Sharing grants to restore fairness to the formula - this budget gets it done."
+    ]
+   },
+   "justice": {
+    "stance": 0.5,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "We need more troopers on the road. And we will provide them.",
+     "I am proposing the funding of three trooper classes in the next two years."
+    ]
+   },
+   "energy": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "It is a framework of aggressive initiatives designed to drive the state toward more efficient energy usage and to foster renewable resources.",
+     "My budget also fully restores the funding for the Energy Conservation and Load Management Fund and the Renewable Energy Investment Fund."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.8,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "My budget provides 40 million dollars to address high priority bridge repair and replacement projects.",
+     "I am also proposing 35 million dollars to construct a new parking garage in Stamford."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "fl-2007",
+  "kind": "historical",
+  "name": "Charlie Crist",
+  "state": "FL",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=FL&date=03/06/2007",
+   "sha1": "b75b640a922a83179efac61576121922d59a75a8"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "I have set forth a plan to reduce property taxes by doubling your homestead exemption, making the save our homes protection portable and extending that protection to business and rental properties as well.",
+     "Can we ensure that Florida remains affordable by cutting taxes and returning to the people more of their hard earned money?"
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "I have proposed in my budget 3.8 billion dollars to meet the constitutional mandate of the class size amendment."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Smaller classes provide a better environment for learning and we must fulfill our obligation to provide that funding to reduce class sizes.",
+     "Because we are losing fine teachers like Stephen, this session I have proposed that we spend almost 300 million dollars to increase the pay for our teachers."
+    ]
+   },
+   "justice": {
+    "stance": 0.8,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Let us send a clear message to violent criminals if they violate probation, they are going back to jail where they can do no further harm to our people and our children."
+    ]
+   },
+   "energy": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "I have proposed almost 70 million dollars in my budget to foster the development and use of alternative energy sources and fuels in our state",
+     "But during this session, we can take the first bold steps in moving toward alternative fuels and other alternative sources of energy."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.4,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "appropriating 100 million dollars for that purpose, as well as 40 million to clean up the St. Lucie and Caloosahatchee rivers"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ga-2007",
+  "kind": "historical",
+  "name": "Sonny Perdue",
+  "state": "GA",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://dlg.galileo.usg.edu/ggpd/docs/2007/ga/g600/_ps1/m42/2007/elec_p_btext.con/1.pdf",
+   "sha1": "0352c903ddd270ee173ec235fa090bc8f4547d15"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.8,
+    "evidence": [
+     "I would ask this General Assembly to cut taxes on retirement income for Georgia’s seniors.",
+     "I am proposing that we pass legislation to exempt material and equipment used to build biofuel facilities from state taxes."
+    ]
+   },
+   "spending": {
+    "stance": -0.5,
+    "salience": 0.7,
+    "confidence": 0.6,
+    "evidence": [
+     "and this year I am recommending we commit $50 million more to preserve our lands for the enjoyment of generations to come.",
+     "I am recommending that we invest $5 million to develop Resaca Battlefield"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.8,
+    "salience": 0.5,
+    "confidence": 0.8,
+    "evidence": [
+     "Just like putting money in our rainy day fund, we have to stick to smart, sound fiscal policies.",
+     "It’s by sticking to these conservative fiscal standards that earned us the best credit rating in the nation."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": 0.4,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "Let’s give our citizens the power to make health care decisions based on market principles",
+     "And at the same time we will continue to support Medicaid and PeachCare for uninsured children and people who need it."
+    ]
+   },
+   "education": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "Education is the single most important factor in the future prosperity of our state.",
+     "I am recommending funding for a statewide online tutoring program to reach all students."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.6,
+    "salience": 0.5,
+    "confidence": 0.7,
+    "evidence": [
+     "We are aggressively pursuing options for alternative energy."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.4,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "I am proposing a $19 million investment for an initiative we call Go Fish Georgia."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "hi-2007",
+  "kind": "historical",
+  "name": "Linda Lingle",
+  "state": "HI",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=HI&date=01/22/2007",
+   "sha1": "dc81be4e32f04117a8a16da3a369390e5b065459"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "I am proposing a substantial but prudent $346 million tax relief package.",
+     "I am proposing the Taxpayer Protection Act of 2007 that will require the Director of Taxation annually to adjust these three factors.",
+     "I am proposing that we exempt 11 different foods from the general excise tax, including milk, eggs, cereals and baby formula"
+    ]
+   },
+   "spending": {
+    "stance": -0.5,
+    "salience": 0.7,
+    "confidence": 0.7,
+    "evidence": [
+     "I am calling for an immediate deposit of $50 million in cash into the Rental Housing Trust Fund",
+     "We are proposing to meet this need by partnering with Kamehameha Schools"
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.2,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "We must revise this process so that local communities have the final say in determining which new medical facilities and services to support.",
+     "I also ask you to reinstate the Insurance Commissioner's authority to disapprove rates that are excessive, inadequate or unfairly discriminatory."
+    ]
+   },
+   "labour": {
+    "stance": -0.2,
+    "salience": 0.2,
+    "confidence": 0.4,
+    "evidence": [
+     "my budget recognizes your performance, and anticipates fair wage increases."
+    ]
+   },
+   "health": {
+    "stance": 0.6,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "by eliminating tax barriers that have kept competition out of the marketplace",
+     "I am renewing the call for sensible, medical malpractice reform based on the California model.",
+     "I am also proposing that we pass a \"Good Samaritan\" law that exempts from lawsuits those doctors who provide medical treatment without compensation, except in cases of gross negligence."
+    ]
+   },
+   "education": {
+    "stance": -0.6,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "Establishing high school STEM academies taught with the help of University of Hawai'i community college instructors",
+     "We want Hawai'i's young people to have first-rate educational opportunities",
+     "I am proposing that we expand the current state-sponsored college savings account plan"
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.7,
+    "salience": 0.5,
+    "confidence": 0.8,
+    "evidence": [
+     "increasing renewable energy",
+     "including renewable energy research and development"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.6,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "upgrading our harbors, airports and highways",
+     "One such opportunity exists in Kona, where for an expenditure of $14.4 million to develop a water system",
+     "for the state to purchase the 500-acre land holding that the Navy is on the verge of selling at Kalaeloa"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ia-2007",
+  "kind": "historical",
+  "name": "Tom Vilsack",
+  "state": "IA",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=IA&date=01/09/2007",
+   "sha1": "3ef312103eadefe3a43ffaaa8f619fdfb78ff602"
+  },
+  "dims": {
+   "tax": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "spending": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "We'll be able to expand Strong Start to a point where every child has access to preschool.",
+     "Additional investments in the Iowa Jobs for America's Graduate program that we started several years ago, a high school dropout prevention program, will guarantee continued success."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.5,
+    "salience": 0.4,
+    "confidence": 0.6,
+    "evidence": [
+     "Our reserve accounts are full and we're well on our way to repaying the entire debt we owe to the Senior Living Trust."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": -0.9,
+    "salience": 0.6,
+    "confidence": 1.0,
+    "evidence": [
+     "Let's raise the minimum wage and let's do it this year."
+    ]
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "not just to promise universal access to healthcare but to deliver on that promise to every single child and every single adult and every single citizen of this state",
+     "let's finish the job in healthcare."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Great learning requires great teaching and teachers deserve our respect and they deserve to be well paid.",
+     "Let universal preschool in this state be the change that allows and enables every child in our state a chance"
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.8,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "to sever our relationship with foreign oil and foreign oil supplies",
+     "It's time for us to make a clear statement about our concern for the environment."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "It's time for us to have a multiyear Vision Iowa-like program to clean up our water, to take full advantage of the potential of our water resources.",
+     "I hope that this General Assembly will continue to fund and expand great places. It's the next generation of Vision Iowa"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "id-2007",
+  "kind": "historical",
+  "name": "C. L. 'Butch' Otter",
+  "state": "ID",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=ID&date=01/08/2007",
+   "sha1": "3ba00bbebc5fd9b9b193c0e7f2617f64a55ca9c2"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.7,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "Idahoans have made it abundantly clear that raising taxes is not an option.",
+     "I encourage you to continue looking for other opportunities to ease the burden on Idaho taxpayers, including the issue of personal property tax."
+    ]
+   },
+   "spending": {
+    "stance": 0.2,
+    "salience": 0.7,
+    "confidence": 0.5,
+    "evidence": [
+     "I am recommending that we neither significantly expand existing programs nor add any major new initiatives",
+     "reining in our spending on travel"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.5,
+    "salience": 0.5,
+    "confidence": 0.7,
+    "evidence": [
+     "Friends, Idaho families work hard to avoid running up credit card debt. We must do the same.",
+     "I recommend continuing the GARVEE program by issuing bonds totaling $264 million."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": 0.3,
+    "salience": 0.4,
+    "confidence": 0.4,
+    "evidence": [
+     "We need a more market-driven compensation package for our state employees"
+    ]
+   },
+   "health": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "education": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "The highest priority of our state budget always has been and continues to be education."
+    ]
+   },
+   "justice": {
+    "stance": 0.5,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "The need to get violent offenders off our streets is particularly important."
+    ]
+   },
+   "energy": {
+    "stance": -0.4,
+    "salience": 0.3,
+    "confidence": 0.4,
+    "evidence": [
+     "Preserving our natural resources is imperative."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.3,
+    "salience": 0.6,
+    "confidence": 0.5,
+    "evidence": [
+     "I recommend continuing the GARVEE program by issuing bonds totaling $264 million."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "il-2007",
+  "kind": "historical",
+  "name": "Rod R. Blagojevich",
+  "state": "IL",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=IL&date=03/07/2007",
+   "sha1": "689adba10049ebaddd4c390114c33e1dd30f44d7"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.8,
+    "salience": 1.0,
+    "confidence": 0.95,
+    "evidence": [
+     "So I am proposing that we adopt a Gross Receipts Tax on corporations that will replace the loophole ridden corporate income tax.",
+     "I will not raise the income tax or the sales tax. I will not raise taxes on people."
+    ]
+   },
+   "spending": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "My Tax Fairness Plan will allow us to invest a record $10 billion more into our schools over the next 4 years."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.3,
+    "salience": 0.7,
+    "confidence": 0.5,
+    "evidence": [
+     "And most important of all, it will make a big dent in the principal and finally put an end to the many headed monster of out of control interest payments."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": -0.5,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "when we closed corporate loopholes and raised the minimum wage"
+    ]
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 0.95,
+    "evidence": [
+     "First, we will cover the 1.4 million uninsured adults here in Illinois."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "The money our schools need to help build new classrooms, for more teachers, more training, more technology and better results."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": -0.6,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "My Tax Fairness Plan will also free up revenue from other parts of the budget so we can finally pass and fund a capital bill."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ks-2007",
+  "kind": "historical",
+  "name": "Kathleen Sebelius",
+  "state": "KS",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=KS&date=01/09/2007",
+   "sha1": "30b9aa3bf64d0e2c55b1690203903630dd9f8618"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.7,
+    "salience": 0.5,
+    "confidence": 0.9,
+    "evidence": [
+     "That’s why I propose eliminating the property tax on new business machinery and equipment."
+    ]
+   },
+   "spending": {
+    "stance": 0.5,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "I call upon the Legislature to sustain this victory by keeping spending in check."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.5,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "I will continue to fight any attempt to put government where private industry should be."
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "We can cover every Kansas child from birth to age five, and we can do it this year."
+    ]
+   },
+   "education": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "I’m proud to say that changed last year when we made an historic investment in the future of our state."
+    ]
+   },
+   "justice": {
+    "stance": 0.9,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "to double prison sentences for sex offenders who prey on children.",
+     "I want to require all repeat sex offenders wear electronic tracking devices – for the rest of their lives."
+    ]
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ma-2007",
+  "kind": "historical",
+  "name": "Deval L. Patrick",
+  "state": "MA",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=MA&date=01/04/2007",
+   "sha1": "a4843c3ee208fbfabb7770233a58d661a890ac4c"
+  },
+  "dims": {
+   "tax": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "spending": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.5,
+    "evidence": [
+     "We know that investment in education today beats investment in prisons tomorrow."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.5,
+    "salience": 0.4,
+    "confidence": 0.6,
+    "evidence": [
+     "simpler and faster regulatory processes"
+    ]
+   },
+   "labour": {
+    "stance": 0.0,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "a more cooperative relationship between labor and business"
+    ]
+   },
+   "health": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "more accessible and more affordable health care for ourselves and our families"
+    ]
+   },
+   "education": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "public colleges and universities every bit as well-supported and honored as their private counterparts",
+     "early education and after-school programs"
+    ]
+   },
+   "justice": {
+    "stance": -0.7,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "training and pre-release preparation for inmates, and sensible reform of both CORI and sentencing."
+    ]
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": -0.3,
+    "salience": 0.4,
+    "confidence": 0.4,
+    "evidence": [
+     "to rebuild city and town centers into stronger economic cores"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "md-2007",
+  "kind": "historical",
+  "name": "Martin O'Malley",
+  "state": "MD",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=MD&date=01/31/2007",
+   "sha1": "114ee43cc7e864379445cec87ce9284dc4a2dec1"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.3,
+    "salience": 0.2,
+    "confidence": 0.2,
+    "evidence": [
+     "we will never be able to multiply \"bread and fishes\" to cover the multitude of needs without new dollars"
+    ]
+   },
+   "spending": {
+    "stance": 0.4,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "I ask you to approve a rate of growth in this year's budget that is just 2.5 percent",
+     "I will do everything in my power to bring spending under control with professional management"
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "we must also restore the regulatory framework of our state government",
+     "we now have an opportunity to put professional regulators back on the job at the Public Service Commission"
+    ]
+   },
+   "labour": {
+    "stance": -0.7,
+    "salience": 0.4,
+    "confidence": 0.8,
+    "evidence": [
+     "the agency fee legislation that allows state workers the right to organize and have their collective voice heard"
+    ]
+   },
+   "health": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "The restoration of Medicaid health-care benefits to legal immigrant families, including 3,000 children",
+     "And it will also provide health-care coverage to more children in our state."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "the largest single-year increase in Maryland history for education, with an additional $580 million in funding for local school systems",
+     "get our children out of the temporary learning shacks that have been popping up behind every school in our state"
+    ]
+   },
+   "justice": {
+    "stance": 0.4,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "to fund 155 additional correctional officers",
+     "with advanced Global Positioning Systems that track offenders"
+    ]
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "As we accept our responsibility in the fight against global warming, I ask you to support the Clean Cars Act",
+     "adopting stricter pollution emission standards for cars sold in Maryland"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.6,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "I ask for your support for the over $1 billion dollars in highway and roads projects across our state"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "me-2007",
+  "kind": "historical",
+  "name": "John Baldacci",
+  "state": "ME",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=ME&date=01/05/2007",
+   "sha1": "76e2baa3d735913803b398a7a4209e630decd34b"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.0,
+    "salience": 1.0,
+    "confidence": 0.8,
+    "evidence": [
+     "I am recommending a $1 increase in the tobacco tax.",
+     "First and foremost, we need real property tax relief and we need to grow incomes for all of Maine’s people."
+    ]
+   },
+   "spending": {
+    "stance": 0.2,
+    "salience": 0.8,
+    "confidence": 0.6,
+    "evidence": [
+     "We have already eliminated 600 state positions and saved 11 million dollars in the last budget cycle.",
+     "We must improve our administration, oversight and controls of this program."
+    ]
+   },
+   "borrowing": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "regulation": {
+    "stance": 0.3,
+    "salience": 0.3,
+    "confidence": 0.2,
+    "evidence": [
+     "I will propose the consolidations of two state departments: Economic and Community Development and Professional and Financial Regulation to form one Department of Commerce with a focus on business activity."
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.2,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "We must get our health care costs under control, but I am determined that the safety net will not be pulled out from under our most vulnerable citizens."
+    ]
+   },
+   "education": {
+    "stance": -0.7,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "We need to ensure that money being spent on education is used to support students and teachers in the classroom.",
+     "We should be about excellence in education; not excess in administration."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "mi-2007",
+  "kind": "historical",
+  "name": "Jennifer Granholm",
+  "state": "MI",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "https://www.michigan.gov/documents/gov/2007_SOS_186092_7.pdf",
+   "sha1": "f52219b238112a8d7782db2dc908576af9eba401"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.5,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "The tax changes I will propose are simple, fair and progressive.",
+     "We’ll ask some businesses to begin to pay their fair share, while some paying too much will pay less."
+    ]
+   },
+   "spending": {
+    "stance": 0.0,
+    "salience": 0.7,
+    "confidence": 0.6,
+    "evidence": [
+     "My proposal will include a mix of solutions – cuts, reform and revenues.",
+     "Again this year, my budget will call for hundreds of millions of dollars in spending cuts, many of them painful."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.3,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "And we will finally put our fiscal house in order.",
+     "We need to solve the problem once and for all."
+    ]
+   },
+   "regulation": {
+    "stance": -0.4,
+    "salience": 0.3,
+    "confidence": 0.6,
+    "evidence": [
+     "The time has come for us to ban smoking in the workplace."
+    ]
+   },
+   "labour": {
+    "stance": -0.5,
+    "salience": 0.4,
+    "confidence": 0.7,
+    "evidence": [
+     "Together, we raised the minimum wage for the first time in eight years."
+    ]
+   },
+   "health": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "We expect to have federal approval of our program this spring, insuring over half a million uninsured Michigan citizens and reducing insurance premiums for everyone else."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "And for next year, I will propose an increase in our investment in education.",
+     "I refuse to slash school funding in the middle of this year."
+    ]
+   },
+   "justice": {
+    "stance": -0.4,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "But we can and will find ways to reduce our prison population without compromising public safety."
+    ]
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "so that within eight years, a minimum of 10 percent of our energy will come from renewable sources."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.6,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "We accelerated $1.2 billion in building and infrastructure projects across the state to put thousands of people to work making Michigan work better."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "mn-2007",
+  "kind": "historical",
+  "name": "Tim Pawlenty",
+  "state": "MN",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=MN&date=01/17/2007",
+   "sha1": "3bccbb264328c5f1c36a220e7931de7f11b61679"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 0.7,
+    "confidence": 1.0,
+    "evidence": [
+     "We should lessen their burden by cutting taxes.",
+     "I urge you to pass additional tax-cutting legislation this session that provides property tax relief, tax relief for veterans, and other tax cuts that will strategically help our economy."
+    ]
+   },
+   "spending": {
+    "stance": 0.2,
+    "salience": 0.8,
+    "confidence": 0.6,
+    "evidence": [
+     "And just like Minnesota families, state government needs to live within its means.",
+     "Ten percent growth is more than most Minnesotans will see in their paychecks and it should be enough growth for their government, too."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.3,
+    "salience": 0.2,
+    "confidence": 0.2,
+    "evidence": [
+     "We just climbed out of an epic budget hole, and we're not going to spend our way back into one!"
+    ]
+   },
+   "regulation": {
+    "stance": 0.3,
+    "salience": 0.2,
+    "confidence": 0.2,
+    "evidence": [
+     "maintaining a pro-job business climate and stimulating rural economic development"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.2,
+    "salience": 0.9,
+    "confidence": 0.6,
+    "evidence": [
+     "Expanding access to health insurance is a priority.",
+     "But market forces can help reduce cost and improve quality."
+    ]
+   },
+   "education": {
+    "stance": -0.3,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "My budget next week will propose an increase of up to 4 percent per year for our schools for general purposes, plus increases in many special aspects of education funding as well.",
+     "I'm proposing an early childhood scholarship program to provide up to $4,000 per child for at-risk students to attend a certified kindergarten readiness program of their choice."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "That plan will help us move away from fossil fuels, and it will also help us clean up the environment and improve the environment.",
+     "Our energy plan will significantly reduce the amount of carbon we put into the atmosphere."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.4,
+    "salience": 0.3,
+    "confidence": 0.4,
+    "evidence": [
+     "improving our transportation system"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ne-2007",
+  "kind": "historical",
+  "name": "Dave Heineman",
+  "state": "NE",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=NE&date=01/11/2007",
+   "sha1": "9198a0b9a7aee737b4684ab7626d50ea34f50f47"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "The tax relief package I’m proposing would provide more than $475 million dollars in reductions over the next two years aimed at hard-working, middle-class families.",
+     "Making a fundamental change in the way we structure our income tax system is the first step in ensuring that our state continues on our journey toward becoming a more vibrant place for every Nebraskan."
+    ]
+   },
+   "spending": {
+    "stance": 0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "The two-year budget being introduced today is a conservative and responsible plan that restricts state spending growth to an average of 3.8 percent over the next two years."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.5,
+    "salience": 0.4,
+    "confidence": 0.6,
+    "evidence": [
+     "My budget proposal provides significant tax relief, and yet it maintains the cash reserve at a robust level of nearly $400 million dollars."
+    ]
+   },
+   "regulation": {
+    "stance": 0.3,
+    "salience": 0.2,
+    "confidence": 0.3,
+    "evidence": [
+     "We need to provide a climate that encourages businesses to grow."
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": 0.5,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "However, the good news is that Nebraska’s Medicaid Reform efforts are having some success in slowing the growth of that program."
+    ]
+   },
+   "education": {
+    "stance": -0.5,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "My budget makes the education of our children a priority by providing an additional $171 million dollars to fully fund the state aid to education formula."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.4,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "Rural Nebraska has not seen an era of such sustained job growth in decades, and we can be very proud of the role our state has in helping provide cleaner, better fuels for our nation."
+    ]
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "nm-2007",
+  "kind": "historical",
+  "name": "Bill Richardson",
+  "state": "NM",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=NM&date=01/16/2007",
+   "sha1": "ddda150af705ba93abdf8d57531dbaa392f8fd3e"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Finally, I’m proposing more than $123-million dollars in tax cuts.",
+     "Let’s eliminate the state’s income tax for active duty members of the military. Period."
+    ]
+   },
+   "spending": {
+    "stance": -0.4,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "We must double this effort from 2,200 to 5,000 four year olds statewide.",
+     "a booming economy is not an excuse for excessive spending"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.9,
+    "evidence": [
+     "I am insisting that we put aside at least 10 percent of the budget in reserve.",
+     "protect our high bond rating, and balance the budget"
+    ]
+   },
+   "regulation": {
+    "stance": -0.5,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "We must protect New Mexico consumers against those who target our most vulnerable citizens.",
+     "do away with predatory lenders and protect our people from exploitation."
+    ]
+   },
+   "labour": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "let’s raise the minimum wage to seven-fifty per hour."
+    ]
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "for those who have the least, I want to raise Medicaid eligibility to 100% of the federal poverty level to help low income adults get health care.",
+     "we should expand our State Coverage program to thousands more middle-class working adults."
+    ]
+   },
+   "education": {
+    "stance": -0.8,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "I am asking the Legislature to devote $283 million dollars—to relieve overcrowded schools and catch up with needed repairs.",
+     "We are going to raise teacher salaries again and tie them to the tough accountability standards"
+    ]
+   },
+   "justice": {
+    "stance": 0.2,
+    "salience": 0.7,
+    "confidence": 0.6,
+    "evidence": [
+     "We must go further; we should apply our tough ignition interlock law to out-of-state applicants with prior DWI convictions.",
+     "I propose we triple funding for Substance Abuse Treatment."
+    ]
+   },
+   "energy": {
+    "stance": -0.85,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "We can, and should become the first state in the country to use 100-percent renewable energy in government buildings.",
+     "Rather than wait for Washington, I propose adopting tough carbon emission standards for new cars and trucks sold in New Mexico."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "Let’s pass GRIP II for our city and county roads and finish the job.",
+     "Let’s invest in these projects--because this generation, and the next deserve access to clean, safe drinking water."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ny-2007",
+  "kind": "historical",
+  "name": "Eliot Spitzer",
+  "state": "NY",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=NY&date=01/03/2007",
+   "sha1": "bae53b4bb987093be6d5e044ae584f215c12f6c0"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.8,
+    "salience": 0.7,
+    "confidence": 0.9,
+    "evidence": [
+     "We need a property tax cut plan that provides relief to middle-class New Yorkers who need it most.",
+     "Another way we must reduce our cost structure is to dramatically reduce property taxes."
+    ]
+   },
+   "spending": {
+    "stance": 0.6,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "Instead, it will significantly reduce our rate of spending growth, which has increased at three times the rate of inflation over the last four years.",
+     "We must end this culture of spending money we do not have."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.2,
+    "salience": 0.3,
+    "confidence": 0.3,
+    "evidence": [
+     "we must require that the enacted budget be balanced"
+    ]
+   },
+   "regulation": {
+    "stance": 0.4,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "we must reduce the burdensome cost structures that have driven businesses out of our state.",
+     "We must reform mandates such as the Wicks Law that impose undue costs on municipalities"
+    ]
+   },
+   "labour": {
+    "stance": -0.3,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "That is why our Department of Labor will enforce the minimum wage and other state laws designed to protect workers"
+    ]
+   },
+   "health": {
+    "stance": -0.6,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "We will introduce a budget that, in the very first year, guarantees access to health insurance for all of New York’s 500,000 uninsured children.",
+     "Using a new streamlined enrollment process that guards against fraud, we will enroll the 900,000 uninsured Medicaid-eligible adults."
+    ]
+   },
+   "education": {
+    "stance": -0.3,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "My upcoming budget will include a new, transparent school funding formula that dramatically increases investment over the next four years throughout the state",
+     "Second, we must raise the charter school cap."
+    ]
+   },
+   "justice": {
+    "stance": 0.5,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "we must continue the successful efforts the Organized Crime Task Force brought to bear on the dangerous combination of guns, gangs and drugs in our Upstate cities.",
+     "we must finally enact civil commitment legislation."
+    ]
+   },
+   "energy": {
+    "stance": -0.6,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "Lieutenant Governor Paterson will lead efforts to increase renewable energy production so the state can meet its goal of obtaining 25 percent of its energy needs from renewable sources.",
+     "New York should also build on its existing regional compact to address climate change."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "In order to revitalize our economy, we must get back to our roots and stake out a bold vision for infrastructure investment.",
+     "Downstate, we must construct the first segment of the Second Avenue subway and plan for the full extension to Lower Manhattan."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "oh-2007",
+  "kind": "historical",
+  "name": "Ted Strickland",
+  "state": "OH",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=OH&date=03/14/2007",
+   "sha1": "ceac3181482f707cc1abf1aa77b9cb7b33c60152"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.3,
+    "salience": 0.8,
+    "confidence": 0.7,
+    "evidence": [
+     "We will dedicate that yearly savings to the largest targeted property tax cut in the history of Ohio by expanding the Homestead Property Tax Exemption.",
+     "It ensures that the Commercial Activity Tax applies broadly and equally across all sectors of the economy including the petroleum industry."
+    ]
+   },
+   "spending": {
+    "stance": 0.1,
+    "salience": 0.9,
+    "confidence": 0.6,
+    "evidence": [
+     "We live within our means. And we invest in what matters.",
+     "over the two year span of the budget total spending will increase a modest 2.2 percent annually."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.3,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "will allow us to forego issuing bonds that are currently scheduled for the next three years.",
+     "Over the next four years we will target 250 million dollars per year in tax exempt bond cap allocation to leverage billions of additional investment dollars in energy projects."
+    ]
+   },
+   "regulation": {
+    "stance": 0.6,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "a top to bottom review of state regulations to eliminate contradictory and obsolete rules",
+     "we will make it easier for companies to do business in Ohio while protecting the health and safety of our people"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "My budget will make access to affordable health coverage available for every single child in Ohio, and every young person up to the age of 21.",
+     "We will also expand Medicaid eligibility for low income working parents up to 100 percent of poverty and coverage of pregnant women up to 200 percent of poverty."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 0.9,
+    "evidence": [
+     "My budget eliminates the voucher program except for the means-tested voucher initiative in Cleveland.",
+     "My budget imposes a moratorium on new charter schools and prohibits for-profit management companies from running charter schools."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.5,
+    "salience": 0.7,
+    "confidence": 0.7,
+    "evidence": [
+     "Over the next four years we will target 250 million dollars per year in tax exempt bond cap allocation to leverage billions of additional investment dollars in energy projects.",
+     "We will develop energy projects across technologies and across the state, and in doing so attract new investments and new jobs for Ohio."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "With 2.2 billion of that money, we will meet all current commitments of the school facilities commission.",
+     "We will broaden our Third Frontier investment."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ok-2007",
+  "kind": "historical",
+  "name": "Brad Henry",
+  "state": "OK",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=OK&date=02/05/2007",
+   "sha1": "faf164817e948cf8c253aed21f968b662a2e98e7"
+  },
+  "dims": {
+   "tax": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "spending": {
+    "stance": -0.7,
+    "salience": 0.7,
+    "confidence": 1.0,
+    "evidence": [
+     "I ask that you join me in launching efforts to ensure that each school district can ultimately offer the option of early childhood education for every 3 year old in Oklahoma.",
+     "Let's build on that progress this session with significant deposits to EDGE and the Opportunity Fund from surplus revenues."
+    ]
+   },
+   "borrowing": {
+    "stance": -0.8,
+    "salience": 0.5,
+    "confidence": 1.0,
+    "evidence": [
+     "Let's cleanup that backlog this session with a $75 million bond issue that will leverage another $75 million in private donations.",
+     "In addition, let's provide bonding authority of up to $200 million for the Opportunity Fund to help secure the best jobs of the future."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Together, let's make sure that Oklahoma's Medicaid coverage includes every child who can be covered under the federally-imposed guidelines.",
+     "This session, I propose that we increase Insure Oklahoma's eligibility to the maximum limit allowed by the federal government."
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "This year we must reaffirm our commitment to our teachers with a pay raise.",
+     "I ask that you join me in launching efforts to ensure that each school district can ultimately offer the option of early childhood education for every 3 year old in Oklahoma."
+    ]
+   },
+   "justice": {
+    "stance": -0.5,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "That means punishing low-level, non-violent offenders in a more effective way that better protects public safety.",
+     "If we act now to end this vicious cycle, we can create substantial savings over time and make our streets safer for all Oklahomans."
+    ]
+   },
+   "energy": {
+    "stance": -0.3,
+    "salience": 0.5,
+    "confidence": 0.5,
+    "evidence": [
+     "Our state's vibrant oil and gas industry has made Oklahoma a worldwide force in energy, and that proud industry also embraces biofuels as an important energy source of the future.",
+     "Not only will the Bioenergy Center be a tremendous investment in a diversified economy, it will mean a cleaner environment, thousands of high-paying jobs and a significant revitalization of rural Oklahoma."
+    ]
+   },
+   "infrastructure": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "or-2007",
+  "kind": "historical",
+  "name": "Ted Kulongoski",
+  "state": "OR",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "other",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=OR&date=04/06/2007",
+   "sha1": "9359e7436c5db644a5c5738a5d3296e880c3bdf4"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.8,
+    "salience": 0.6,
+    "confidence": 1.0,
+    "evidence": [
+     "I want to raise tobacco taxes up to the level in Washington State",
+     "I was able to do this with my proposal to raise the corporate minimum tax",
+     "Tell your legislators they must increase in the corporate minimum"
+    ]
+   },
+   "spending": {
+    "stance": -0.7,
+    "salience": 0.7,
+    "confidence": 0.9,
+    "evidence": [
+     "I asked for a dramatic expansion of Head Start",
+     "My budget reinvests in higher education",
+     "which will put 15,000 working Oregonians back on the Oregon Health Plan"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.8,
+    "salience": 0.5,
+    "confidence": 0.9,
+    "evidence": [
+     "locked away and available when the next economic storm rolls in",
+     "The Legislature has already achieved one major accomplishment"
+    ]
+   },
+   "regulation": {
+    "stance": -0.6,
+    "salience": 0.4,
+    "confidence": 0.8,
+    "evidence": [
+     "Bills to cap fees at check-cashing stores, extend payday-lending regulations to cover out-of-state and Internet lenders"
+    ]
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "and use the additional dollars to cover 117,000 uninsured children in Oregon",
+     "which will put 15,000 working Oregonians back on the Oregon Health Plan",
+     "Provide affordable health care coverage to Oregon’s uninsured children"
+    ]
+   },
+   "education": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "My budget reinvests in higher education",
+     "make the critical investments we need to give Oregon the best educated, best skilled, best trained workforce in America",
+     "I asked for a dramatic expansion of Head Start"
+    ]
+   },
+   "justice": {
+    "stance": 0.5,
+    "salience": 0.5,
+    "confidence": 0.7,
+    "evidence": [
+     "Rebuilding the capacity of the Oregon State Police is another policy goal",
+     "Restore 24/7 patrols for the Oregon State Police"
+    ]
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Make Oregon the leader in alternative and renewable energy",
+     "reducing greenhouse gases to below what they were in 1990"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.6,
+    "salience": 0.4,
+    "confidence": 0.8,
+    "evidence": [
+     "I proposed funding 325-million in capital construction projects"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "pa-2007",
+  "kind": "historical",
+  "name": "Edward G. Rendell",
+  "state": "PA",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "budg",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=PA&date=02/06/2007",
+   "sha1": "feaeb45b2236ee883abf61f35d68d7d6635b5f31"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.7,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "This budget includes a proposal that excludes oil companies from the CNI, but makes them subject to a new Oil Company Gross Profits Tax.",
+     "I am proposing that Pennsylvania enact accelerated property tax relief through a fundamental tax shift implemented through an increase of one percentage point in the Pennsylvania sales tax."
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "This budget expands the Accountability Block Grant with $75 million to help Pennsylvania move closer to the goal of universal access to pre-kindergarten."
+    ]
+   },
+   "borrowing": {
+    "stance": -0.8,
+    "salience": 0.6,
+    "confidence": 1.0,
+    "evidence": [
+     "The Fund will be financed through the issuance of state bonds",
+     "The Fund would be established without any impact on the operating budget by securitizing only a small portion of the Tobacco Settlement proceeds."
+    ]
+   },
+   "regulation": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.9,
+    "evidence": [
+     "we will require that all fuels sold in the Commonwealth must include bio-diesel (up to 20 percent) or ethanol (up to 10 percent)"
+    ]
+   },
+   "labour": {
+    "stance": -0.3,
+    "salience": 0.2,
+    "confidence": 0.3,
+    "evidence": [
+     "ensuring acceptable maintenance and repair standards, worker protections and other important policy goals"
+    ]
+   },
+   "health": {
+    "stance": -0.6,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "providing health insurance coverage for an additional 800,000 Pennsylvanians"
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "this budget also calls for a Classrooms for the Future investment of $90 million to modernize our high schools"
+    ]
+   },
+   "justice": {
+    "stance": 0.5,
+    "salience": 0.7,
+    "confidence": 0.9,
+    "evidence": [
+     "by upgrading possession of a stolen gun to a felony, so that the penalties can be significantly upgraded."
+    ]
+   },
+   "energy": {
+    "stance": -0.8,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "Our goal is to ensure the use of one billion gallons per year of renewable fuels"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.4,
+    "salience": 1.0,
+    "confidence": 0.8,
+    "evidence": [
+     "the Commonwealth could invest this sum to provide an annual income stream that could meet our funding target for roads and bridges of $965 million per year."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "ri-2007",
+  "kind": "historical",
+  "name": "Don Carcieri",
+  "state": "RI",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=RI&date=01/30/2007",
+   "sha1": "d200e2226e6debde2ce53ccab5e8200fb2226436"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.8,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "We cut the state income tax for the first time in a decade.",
+     "We continued to phase-out the car tax, the inventory tax and the capital gains tax."
+    ]
+   },
+   "spending": {
+    "stance": 0.6,
+    "salience": 0.9,
+    "confidence": 0.9,
+    "evidence": [
+     "In short, we must reduce our spending!",
+     "Reducing our governmental expenditures – both state and local – to a level that is sustainable, and balanced with our revenue growth,"
+    ]
+   },
+   "borrowing": {
+    "stance": -0.5,
+    "salience": 0.5,
+    "confidence": 0.8,
+    "evidence": [
+     "I also propose the largest environmental bond in history, $85M to continue this clean-up of the Bay."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.2,
+    "salience": 0.6,
+    "confidence": 0.5,
+    "evidence": [
+     "A Rhode Island that is a national leader in high-quality, affordable health care, that is available to all our citizens",
+     "The new Well Care insurance product that will be offered by Blue Cross and United will reduce the cost of health insurance by 20%."
+    ]
+   },
+   "education": {
+    "stance": 0.2,
+    "salience": 0.9,
+    "confidence": 0.7,
+    "evidence": [
+     "To help urban students, we must also lift the moratorium on new charter schools.",
+     "This year in my budget, while we are making major reductions in many areas, we are adding an additional $46M to support elementary and secondary education."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.9,
+    "confidence": 1.0,
+    "evidence": [
+     "These efforts will help us significantly reduce our dependence on fossil fuels and cut our production of greenhouse gases",
+     "As the Regional Greenhouse Gas Initiative moves forward among the Northeast states, Rhode Island will be joining the effort!"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "I believe we must build on that achievement by investing additional monies into our roads and bridges."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "sc-2007",
+  "kind": "historical",
+  "name": "Mark Sanford",
+  "state": "SC",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "https://web.archive.org/web/20120412195508/http://www.stateline.org/live/details/speech?contentId=172223",
+   "sha1": "202ae6c08e8afe53ecae9f0554ace609c704f0e3"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.8,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "trading off an increase in cigarette tax for a decrease in income taxes would be incredibly timely.",
+     "This year we propose an economic betterment package of three things: workers’ comp reform, an income tax cut and small business health care reform."
+    ]
+   },
+   "spending": {
+    "stance": 0.8,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "Third, I ask that you help me hold the line on how much government grows this year in South Carolina.",
+     "It does not make common sense to grow government faster than people’s wallets and pocketbooks."
+    ]
+   },
+   "borrowing": {
+    "stance": 0.7,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "One, as I mentioned earlier, adopt what we laid out in our budget in setting aside money for the $9 billion health care liability, and two, limit this year’s growth in government"
+    ]
+   },
+   "regulation": {
+    "stance": 0.6,
+    "salience": 0.5,
+    "confidence": 0.6,
+    "evidence": [
+     "They are also saddled with over 30 well-intentioned mandates that make the health care they can offer less affordable; we believe reform that brings flexibility on both fronts is vital"
+    ]
+   },
+   "labour": {
+    "stance": 0.3,
+    "salience": 0.3,
+    "confidence": 0.2,
+    "evidence": [
+     "Our system is too subjective and penalizes some of the most in need of help."
+    ]
+   },
+   "health": {
+    "stance": 0.5,
+    "salience": 0.5,
+    "confidence": 0.8,
+    "evidence": [
+     "Currently small businesses are not allowed to band together as big businesses can to find the most affordable health care."
+    ]
+   },
+   "education": {
+    "stance": 0.8,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "I continue to believe passionately that a parent ought to be able to decide what school works best for their child"
+    ]
+   },
+   "justice": {
+    "stance": 0.6,
+    "salience": 0.7,
+    "confidence": 0.8,
+    "evidence": [
+     "we have to change the way DUI laws are enforced in this state and I ask we do it this year."
+    ]
+   },
+   "energy": {
+    "stance": -0.3,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "I join others in believing climate change will impact the intensity of upcoming storms."
+    ]
+   },
+   "infrastructure": {
+    "stance": 0.3,
+    "salience": 0.5,
+    "confidence": 0.4,
+    "evidence": [
+     "Money in the private sector can be redirected faster than money in the public sector."
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "sd-2007",
+  "kind": "historical",
+  "name": "Mike Rounds",
+  "state": "SD",
+  "party": "R",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "https://web.archive.org/web/20120412195509/http://www.stateline.org/live/details/speech?contentId=170451",
+   "sha1": "c3d668f4d19973171d494804ad8bd8bd97f2f41d"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.2,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "and we also have the lowest State Taxes Per Capita in the nation"
+    ]
+   },
+   "spending": {
+    "stance": -0.4,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "In funding our public universities and technical schools, the state tax dollars they will get will be increased by 72 percent"
+    ]
+   },
+   "borrowing": {
+    "stance": -0.5,
+    "salience": 0.4,
+    "confidence": 0.7,
+    "evidence": [
+     "Therefore, this bill will authorize the South Dakota Building Authority to issue revenue bonds up to $11 million for improvements to the resort facilities and infrastructure at Custer State Park."
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": -0.8,
+    "salience": 0.8,
+    "confidence": 1.0,
+    "evidence": [
+     "I will also be introducing a bill to increase the minimum wage in South Dakota."
+    ]
+   },
+   "health": {
+    "stance": -0.5,
+    "salience": 0.7,
+    "confidence": 0.7,
+    "evidence": [
+     "This new bill would allow the continuation of coverage for these young adults until they are done with all of their schooling or the age of 30.",
+     "We are going to make it available for every South Dakota girl between the ages of 11 and 18."
+    ]
+   },
+   "education": {
+    "stance": -0.7,
+    "salience": 0.9,
+    "confidence": 0.8,
+    "evidence": [
+     "I am again introducing a bill this year to raise teacher salaries through a compensation assistance program."
+    ]
+   },
+   "justice": {
+    "stance": 0.2,
+    "salience": 0.6,
+    "confidence": 0.6,
+    "evidence": [
+     "Failure to register is a felony, penalties for repeat offenders have been increased and safety zones have been created."
+    ]
+   },
+   "energy": {
+    "stance": -0.5,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "we are working to create more fuels that are clean, diversified and domestic."
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.6,
+    "salience": 0.6,
+    "confidence": 0.7,
+    "evidence": [
+     "The state will help with operating costs of $1.7 million annually"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "tn-2007",
+  "kind": "historical",
+  "name": "Phil Bredesen",
+  "state": "TN",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "http://stateofthestate.com/content.aspx?state=TN&date=02/05/2007",
+   "sha1": "d2b76f1c6c5fbab3f2a2fc0f7c950bda6bb174e1"
+  },
+  "dims": {
+   "tax": {
+    "stance": -0.6,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "I propose to you tonight also a way to pay for these improvements—an increase in the cigarette tax by forty cents.",
+     "Our cigarette tax is among the lowest in the nation, it has room to grow, and even after such an increase, will still be well below the national average."
+    ]
+   },
+   "spending": {
+    "stance": -0.8,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "I will place in this year’s budget full state funding for all student growth, in the year in which it occurs.",
+     "I will ask you to fund those community college scholarships, out of the lottery, which is an appropriate place for it."
+    ]
+   },
+   "borrowing": {
+    "stance": -0.5,
+    "salience": 0.6,
+    "confidence": 0.8,
+    "evidence": [
+     "This session, I will ask the General Assembly to pass legislation to enable us to set up a state-wide bond pool which will give individual school districts access to capital at the lowest possible cost",
+     "I will ask you to transfer $100 million from the lottery reserves"
+    ]
+   },
+   "regulation": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "labour": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "health": {
+    "stance": -0.2,
+    "salience": 0.4,
+    "confidence": 0.4,
+    "evidence": [
+     "TennCare and Cover Tennessee growth is accommodated",
+     "we now spend a quarter of our state budget on TennCare alone"
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "Third, and please listen carefully to this, we need to provide enough money to do the job.",
+     "No school should have to choose between its students."
+    ]
+   },
+   "justice": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "energy": {
+    "stance": null,
+    "salience": 0.0,
+    "confidence": 0.0,
+    "evidence": []
+   },
+   "infrastructure": {
+    "stance": -0.7,
+    "salience": 0.7,
+    "confidence": 0.9,
+    "evidence": [
+     "When you approve this approach, it will facilitate about $1.1 billion of school construction.",
+     "we will use the lottery reserves and the state’s ability to consolidate financings to reduce costs and increase the availability of capital"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ },
+ {
+  "id": "wi-2007",
+  "kind": "historical",
+  "name": "Jim Doyle",
+  "state": "WI",
+  "party": "D",
+  "term_start": 2007,
+  "source": {
+   "type": "sots",
+   "year": 2007,
+   "url": "https://web.archive.org/web/20120412215159/http://www.stateline.org/live/details/speech?contentId=176810",
+   "sha1": "8b3c47ec3e12323925ae59f2b9049ad7f38efdb9"
+  },
+  "dims": {
+   "tax": {
+    "stance": 0.0,
+    "salience": 0.7,
+    "confidence": 0.6,
+    "evidence": [
+     "It will cut waste and yes, cut taxes for hardworking Wisconsin families.",
+     "I am proposing to raise Wisconsin’s tobacco tax by $1.25 a pack"
+    ]
+   },
+   "spending": {
+    "stance": -0.6,
+    "salience": 0.8,
+    "confidence": 0.8,
+    "evidence": [
+     "We’ll triple the state’s support for school breakfast",
+     "I am proposing a major expansion to cover these people as well"
+    ]
+   },
+   "borrowing": {
+    "stance": 0.7,
+    "salience": 0.5,
+    "confidence": 0.7,
+    "evidence": [
+     "take the next steps to put our state on a permanent path of fiscal responsibility"
+    ]
+   },
+   "regulation": {
+    "stance": -0.5,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "tonight, I am calling for legislation to make all public buildings and workplaces completely smoke-free"
+    ]
+   },
+   "labour": {
+    "stance": -0.5,
+    "salience": 0.3,
+    "confidence": 0.5,
+    "evidence": [
+     "We changed the minimum wage to give working families a raise"
+    ]
+   },
+   "health": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "At the heart of this effort is BadgerCare Plus, which begins with a simple premise: in Wisconsin, no child should go without health care.",
+     "provide access to affordable, comprehensive health insurance for its citizens"
+    ]
+   },
+   "education": {
+    "stance": -0.9,
+    "salience": 1.0,
+    "confidence": 1.0,
+    "evidence": [
+     "As I’ve often said, anyone who knows Jessica and me knows that my first priority is education.",
+     "provide a major investment to reduce class sizes from kindergarten to grade three"
+    ]
+   },
+   "justice": {
+    "stance": 0.5,
+    "salience": 0.4,
+    "confidence": 0.5,
+    "evidence": [
+     "cracking down on violent crime, to creating jobs and investing in infrastructure"
+    ]
+   },
+   "energy": {
+    "stance": -0.9,
+    "salience": 0.8,
+    "confidence": 0.9,
+    "evidence": [
+     "In my budget, I’ll propose the next major step forward in our effort to become America’s leader in energy independence",
+     "when it comes to global warming solutions, Wisconsin will lead the way"
+    ]
+   },
+   "infrastructure": {
+    "stance": -0.4,
+    "salience": 0.3,
+    "confidence": 0.4,
+    "evidence": [
+     "creating jobs and investing in infrastructure"
+    ]
+   }
+  },
+  "extractor": {
+   "model": "haiku",
+   "prompt_version": "v1"
+  }
+ }
+]
