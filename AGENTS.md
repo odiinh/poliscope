@@ -6,6 +6,8 @@
   1 = A Data, 2 = B Extraction, 3 = C Model, 4 = D App and integration.
   Follow that member's brief in the plan's "Agent briefs" section, in order.
 - Resume from docs/status/<letter>.md: skip steps already logged as done.
+- After the logged brief is complete, take your next action from the plan's
+  Current handoff section.
 - If contracts/ does not exist yet, member 4 has not bootstrapped the repo.
   Members 1-3: tell your human and stop.
 

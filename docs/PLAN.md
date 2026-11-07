@@ -2,6 +2,72 @@
 
 Nov 7, 2026 · @Heechan
 
+## Current handoff
+
+Reviewed 7 November 2026, 23:16 GMT. Read this section before resuming a numbered brief. The repository copy of this plan is the shared source for the team.
+
+### Public state
+
+- The public demo is [poliscope.hydroxide.uk](https://poliscope.hydroxide.uk). It runs on Grimnir in Docker, behind the existing Cloudflare Tunnel. All five candidate pages, both metric views, evidence disclosures, the map, calibration, and a phone-sized browser layout have been checked.
+- The shared export has 259 historical profiles, 5 candidates, 218 GDP outcomes, 204 debt outcomes, 10 candidate forecasts, and 5 Python/TypeScript parity cases. The last check passed 13 Python tests and 14 Vitest tests, plus schema validation, ruff, TypeScript, ESLint, and ownership checks.
+- Candidates are Tommy Tuberville (AL, R), Rob Sand (IA, D), Jocelyn Benson (MI, D), Mike Mazzei (OK, R), and Alan Wilson (SC, R).
+- Extraction reliability is 98.7% quote verification, 0.9591 test–retest correlation, and 0.9036 party AUC. Quote verification measures text matching. A person still needs to check whether the evidence supports the stance.
+- Public live extraction is disabled. The home page explains this and `POST /api/extract` returns 503. Local extraction uses an authenticated `claude` CLI. The public container has no authenticated extraction backend.
+- The source and outcome pipeline has run on the 30-term slice and the full historical set. Evidence review and demo preparation are the immediate work before G1 at 01:00 on 8 November.
+
+### Results to present
+
+Skill measures the reduction in mean absolute forecast error relative to the comparator.
+
+| Metric | Test terms | Skill vs prior trend | 95% interval | Skill vs party | Permutation p |
+| --- | --- | --- | --- | --- | --- |
+| GDP per capita relative to US | 129 | −15.7% | −23.6% to −8.7% | −16.1% | 0.995 |
+| Debt per capita relative to median state | 128 | −9.3% | −21.7% to 1.6% | −5.2% | 0.398 |
+
+The GDP model increased error in the walk-forward test. Debt's interval includes zero. The pitch should explain the baseline's stronger forecasting performance and show the fingerprints as a way to explore historical commitments. Use `docs/pitch_numbers.md` and `docs/pitch.md`. Keep the registered dimensions, k, distance floor, and backtest constants fixed.
+
+### Changes since the initial plan
+
+| Area | Current implementation and consequence |
+| --- | --- |
+| Hosting | The user chose Grimnir, Docker, and Cloudflare instead of Vercel. D owns deployment. Pushing to `main` updates the shared code. D then pulls and rebuilds the server image to publish application or data changes. |
+| Development versions | Use Python 3.11, Node.js 24, uv, and pnpm 10.34.9. The pnpm version and lockfile are pinned in `app/`. |
+| Extraction provider | B implemented `claude-cli` with Haiku for batch and Sonnet for live requests. `LLM_PROVIDER=claude-cli` and a local CLI login are required. An API key alone does not enable the current route. |
+| Batch size limit | The current batch approximates 16k tokens with a 64,000-character limit. Live requests accept up to 60,000 characters. B owns any tokenizer change. |
+| FRED ingestion | A uses the FRED observations API because the CSV endpoint failed for scripts. A fresh raw-data download needs `FRED_API_KEY` in the root `.env.local`. The committed interim tables let B and C continue without downloading everything. |
+| Recent debt | A tested the Census extension and rejected it under the plan's 1% overlap rule. Debt ends in 2018. All five candidate debt forecasts are labelled precedent-only and use a zero baseline. |
+| Platform coverage | AL and SC supplied fewer than the target 1,500 words. Their available texts were retained with missing policy dimensions explicit. See A's coverage report. |
+| Evidence UI | Evidence opens in a native disclosure under each fingerprint dimension. Historical subject pages show labelled retrospective estimates. The preloaded candidate pages are the stage demo path. |
+| App data | `make sync` copies each public file, falling back to its fixture when missing. A generated provenance list prevents fixture outcomes or scores being displayed with real profiles. |
+| Live deployment switch | Docker sets `POLISCOPE_LIVE_EXTRACTION_ENABLED=false` during build and runtime. D owns `Dockerfile`, `compose.yaml`, the home-page switch, and `app/src/proxy.ts`. Enabling live analysis requires B's backend, D's image/runtime changes, and a rebuild. |
+| Presentation | The two pitch endings, video script, Devpost draft, and real result numbers are in `docs/pitch.md`. Recording, submission, rehearsal, and the two-laptop backup still need completion. |
+
+### Next actions by member
+
+| Member | Next action | Handoff and acceptance |
+| --- | --- | --- |
+| A · Data | Audit the five demo source pages and historical source links used in neighbour tables. Confirm retrieval metadata and provide a reachable transcript fallback where an original link fails. | Track [issue #3](https://github.com/odiinh/poliscope/issues/3). Record findings in `docs/status/a.md`. Changed text or source metadata goes to B, then through C's export before D deploys it. The recent-debt experiment is complete and rejected. |
+| B · Extraction | Review all 37 evidence quotes shorter than five words, including MI's “bringing Rx Kids statewide”, and the five low-coverage historical profiles. Inspect meaning in the source before changing a score. | Track [issue #2](https://github.com/odiinh/poliscope/issues/2). Record corrections or accepted cases in `docs/status/b.md`. Refresh affected profiles and reliability in B-owned folders. Ask C to export revised inputs. A substring match alone cannot establish semantic accuracy. |
+| B · Extraction | Implement an authenticated HTTP provider for hosted extraction if credentials are available. Preserve the request, Profile response, quote verifier, and input limits. | Track [issue #1](https://github.com/odiinh/poliscope/issues/1). A valid 2,000-word request must return a schema-valid Profile within 60 seconds on Grimnir. D wires the prompt into the image, passes runtime secrets, rebuilds with live enabled, and checks the browser path. |
+| C · Model | Independently check walk-forward cohort boundaries, omitted terms, the baseline/party comparators, and exported numbers. Document the hub-precedent finding without tuning against held-out results. | Keep `docs/pitch_numbers.md` aligned with `signal.json`. After B's evidence changes, run `make export`, regenerate pitch numbers, and push the export plus parity cases. |
+| D · App and integration | Clarify the forecast plot's two dot colours and calibration axes, then check the evidence-to-source path after A/B corrections. | Track [issue #4](https://github.com/odiinh/poliscope/issues/4). Keep the current cached demo available. Application or export changes need a checked rebuild and public smoke test. |
+| D with the team | Capture the four submission screenshots, record and upload the two-minute demo, rehearse both endings, and finish Devpost with all four members. | Confirm sponsor-entry rules with organisers, test on an actual phone, and place the production build and video on two laptops. Feature freeze remains 09:30 and target submission remains 11:15 on 8 November. |
+
+### Shared development and release procedure
+
+1. Pull `main`, read this handoff and your status file, then use your `a/`, `b/`, `c/`, or `d/` task branch. Keep folder ownership.
+2. For local setup, follow `README.md` and copy `.env.example` to root `.env.local`. Local live extraction needs a signed-in Claude CLI. The public site uses the cached candidate path while the hosted backend is pending.
+3. A/B update their owned inputs. C is the sole writer of `data/public/` through `make export`. C also runs `python -m pipeline.model.pitch_numbers` when the backtest changes.
+4. D runs `make sync && make check`, reviews the UI, and integrates checked commits on `main`. Generated app files are copied inputs and are ignored by Git.
+5. D publishes an agreed commit with the following command, then checks the homepage, both metrics, and candidate routes over public HTTPS.
+
+```sh
+ssh grimnir 'cd ~/poliscope && git pull --ff-only && docker compose up -d --build && docker compose ps'
+```
+
+The service is `poliscope-app-1`, bound to `127.0.0.1:3101`. Cloudflare maps `poliscope.hydroxide.uk` to `http://localhost:3101` on tunnel `1ace05f9-f8ec-4fda-9c8a-343296d15058`. Application updates use that existing route. Use `docker compose logs --tail=100 app` for diagnostics.
+
+
 ## Run this plan with a coding agent
 
 **Each member opens a coding agent such as Claude Code at the repo root and types one line: "I am team member N." The agent maps N to a role, reads that role's brief in Agent briefs near the end of this doc, and works through it without further instructions.** Member 4 goes first and pushes the repo skeleton by 21:30; members 1–3 clone it, then start.
@@ -13,7 +79,7 @@ Nov 7, 2026 · @Heechan
 | 3 | C · Model | Member 3 · Model | `c/` |
 | 4 | D · App and integration | Member 4 · App and integration | `d/` |
 
-**Setup, once, by member 4 (2 minutes by hand).** Click this doc's name, choose Export, then Markdown, and save the file in a new repo folder as `docs/PLAN.md`. Copy the `AGENTS.md` block from Git and merge rules to the repo root, and add a `CLAUDE.md` whose only line is `@AGENTS.md`, so Claude Code reads the same rules. Then start your agent as member 4; it builds the rest of the skeleton. Re-export whenever this doc changes. After the 21:30 freeze, only member 4 changes the plan, and always in both places.
+**Setup is complete.** Clone the shared repository and follow the README. D updates this plan through Git after the 21:30 freeze, and every member pulls the updated plan before starting a step.
 
 **Every member, every session.** Paste this line with your own number:
 
@@ -23,7 +89,7 @@ Read AGENTS.md and docs/PLAN.md in full. I am team member N. Work through my bri
 
 The agent logs progress in `docs/status/<letter>.md` and resumes from it, so the same line works after a crash, a new session or a sleep shift.
 
-**What the agent will still ask you for:** API keys and logins (LLM provider, GitHub, Vercel), a browser task its tools can't do, and any change to `contracts/`. Everything else it decides alone, from the briefs, the contracts and the fallbacks in Risks.
+**What the agent will still ask you for:** API keys and logins (LLM provider, GitHub, Cloudflare or Grimnir), a browser task its tools can't do, and any change to `contracts/`. Everything else it decides alone, from the briefs, the contracts and the fallbacks in Risks.
 
 ## Verdict
 
@@ -65,7 +131,7 @@ The hook is timely. On 3 November 2026, 36 states elected governors, and 19 of t
 
 | Screen | What the judge sees | Wins |
 | --- | --- | --- |
-| Fingerprint | Pick a governor-elect (preloaded) or paste any text. Ten stances from −1 to +1, faded by confidence. Click one to see the exact sentence it came from. | G-Research |
+| Fingerprint | Pick a governor-elect (preloaded). Local development also supports pasted text. Ten stances from −1 to +1, faded by confidence. Click one to see the exact sentence it came from. | G-Research |
 | Precedents | A map of 259 governor terms since 1997 (PCA of the ten stances). The candidate is a star, and its 7 nearest precedents light up, coloured by what happened to their states. Click a dot for name, state, years and outcome. | G-Research |
 | Forecast and Signal | For the chosen state and outcome: baseline, precedent-adjusted forecast, 80% band, and the probability the state lands above its benchmark. Beside it, the out-of-sample record: skill vs baseline and vs party, permutation p-value, calibration. | HRT |
 
@@ -292,12 +358,12 @@ d(A,B)=\sqrt{\frac{\sum_i w_i\,(s_{A,i}-s_{B,i})^2}{\sum_i w_i}},\qquad w_i=\min
 
 On stage, D presents and C takes the statistics questions. A and B run the backup laptop with the video.
 
-### Right now, until 22:00
+### Initial setup checklist
 
 - [ ] Everyone, 10 minutes: read Verdict and The product, and edit the dimension table if you disagree. It freezes at 21:30.
-- [ ] Member 4: do the 2-minute setup in Run this plan with a coding agent, start your agent, and share the repo URL by 21:30.
-- [ ] Members 1–3: clone the repo, put your secrets in `.env.local`, and start your agent with your line.
-- [ ] Member 2: have an LLM API key with room for about 2M input tokens. The batch needs it by 23:00.
+- [x] Member 4 completed the repo setup, shared the URL, and deployed the public cached demo. See Current handoff for the next work.
+- [x] Members 1–3 started their briefs and pushed the ingest, extraction, and model outputs.
+- [x] Member 2 completed the batch using a locally authenticated Claude CLI. The public API backend is tracked separately in issue #1.
 - [ ] Anyone: ask the organisers on Discord about entering two sponsor challenges and how sponsor judging is scheduled.
 
 ## Timeline
@@ -320,7 +386,7 @@ Sleep is part of the plan. A and B sleep 02:30–05:30, once the batch runs unat
 
 **Folder ownership plus schema-checked files make merges boring, which is the goal.** Every rule here exists to prevent a merge conflict at 04:00.
 
-1. One repo. `main` is always deployable; Vercel deploys every push to `main` and a preview for every pull request.
+1. One repo. `main` is always deployable. D publishes checked changes to Grimnir using the release procedure in Current handoff. The server image is rebuilt after pulling the agreed commit.
 2. One branch per task, named `<letter>/<task>`, such as `b/batch-extract`. Rebase on `main` before merging, and merge small changes at least every two hours.
 3. Edit only your own folders (see Team roles). If you need a change elsewhere, ask the owner in chat.
 4. `contracts/` changes need one reviewer and a chat message. Add fields; never rename a field or change its meaning. Bump `contract_version`.
@@ -340,6 +406,8 @@ Put this file at the repo root as `AGENTS.md`, plus a `CLAUDE.md` whose only lin
   1 = A Data, 2 = B Extraction, 3 = C Model, 4 = D App and integration.
   Follow that member's brief in the plan's "Agent briefs" section, in order.
 - Resume from docs/status/<letter>.md: skip steps already logged as done.
+- After the logged brief is complete, take your next action from the plan's
+  Current handoff section.
 - If contracts/ does not exist yet, member 4 has not bootstrapped the repo.
   Members 1-3: tell your human and stop.
 
@@ -379,7 +447,7 @@ Put this file at the repo root as `AGENTS.md`, plus a `CLAUDE.md` whose only lin
 2. **Fingerprint, 0:15–0:40.** Pick a governor-elect and show the ten stances. Click one to show the exact sentence behind it: every number traces to a verified quote.
 3. **Precedents, 0:40–1:10.** The star lands on the map of 259 governor terms, and the 7 nearest precedents light up with what happened to their states.
 4. **Forecast, 1:10–1:40.** Baseline vs precedent-adjusted forecast, with its band and probability.
-5. **Ending, 1:40–2:00.** G-Research: "Hidden: what governors actually commit to. Found: 259 speeches, ten dimensions, verified quotes. Useful: anyone's precedents in seconds." HRT: "Walk-forward across four election cohorts: our skill against the baseline and against party, the permutation p-value and the calibration, reported even where the signal is weak."
+5. **Ending, 1:40–2:00.** G-Research: "Hidden: what governors actually commit to. Found: 259 speeches, ten dimensions, verified quotes. Useful: anyone's precedents in seconds." HRT: use the measured results in `docs/pitch.md`. Explain that the GDP model had higher error than the baseline and that debt's confidence interval includes zero.
 
 | Likely judge question | Answer |
 | --- | --- |
@@ -394,8 +462,9 @@ Put this file at the repo root as `AGENTS.md`, plus a `CLAUDE.md` whose only lin
 
 - [ ] Devpost project created by 09:30 with all four members added
 - [ ] Both sponsor challenges selected, once organisers confirm that's allowed
-- [ ] Public repo with a README: one-line pitch, how to run, data sources and licences
-- [ ] Live URL tested in a private window and on a phone
+- [x] Public repo with a README covering the pitch, local setup, deployment, data sources, and source terms
+- [x] Live URL tested in an isolated desktop browser and a phone-sized viewport
+- [ ] Live URL tested on an actual phone
 - [ ] 2-minute video recorded from the deployed app and uploaded unlisted
 - [ ] Four screenshots: fingerprint, map, forecast, signal
 - [ ] Devpost text: inspiration, what it does, how we built it, challenges, what we learned, what's next
@@ -414,7 +483,7 @@ Put this file at the repo root as `AGENTS.md`, plus a `CLAUDE.md` whose only lin
 | Debt data won't join | Not joined by 23:30 | Swap the second outcome for nonfarm payrolls, which FRED publishes for every state |
 | Null backtest | The skill CI spans zero | Present it as the finding; lead the HRT pitch with method rigour and the GDP vs debt contrast |
 | Political sensitivity | Anyone on the team uneasy about a screen | Neutral copy, balanced demo set, methodology panel, no rankings |
-| Late deploy failure | A preview deploy fails after 08:00 | Deploy on every merge from G0; keep the last good URL; local build plus the video |
+| Late deploy failure | A checked Docker rebuild fails after 08:00 | Keep the healthy running image while diagnosing the build, and prepare a local production build and video backup |
 | Fatigue | Anyone past 20 hours awake | Sleep shifts are part of the plan, not optional |
 
 ## Agent briefs
@@ -428,7 +497,7 @@ Goal: turn the raw sources into the three files everyone else builds on. Owns `p
 1. **Download (by 22:00).** `python -m pipeline.ingest.download` fetches into `data/raw/`, skipping files already present:
    - the speech archive `https://codeload.github.com/leops95/sots/zip/refs/heads/master`, unzipped to `data/raw/sots/`;
    - the debt file `https://raw.githubusercontent.com/jacobkap/government_finances/master/data/government_finances_1992_2018.csv`;
-   - FRED CSVs from `https://fred.stlouisfed.org/graph/fredgraph.csv?id=<ID>` for real GDP (`<ST>RGSP`, such as `CARGSP`) and population (`<ST>POP`, such as `CAPOP`) for the 50 states and DC. If an ID fails, look up the right one on FRED, record it in `pipeline/ingest/fred_ids.json`, and carry on.
+   - FRED observations from `https://api.stlouisfed.org/fred/series/observations` for real GDP (`<ST>RGSP`) and population (`<ST>POP`) for the 50 states and DC. Read `FRED_API_KEY` from the root `.env.local`. The download script writes the per-series files that the panel builder reads. If an ID fails, record the correction in `pipeline/ingest/fred_ids.json`.
 2. **Terms table (by 22:30; B and C are waiting for it).** `python -m pipeline.ingest.build_terms` writes `data/interim/ingest/terms.csv`:
    - Read the archive's `metadata.csv`. Drop rows whose `type` is `sotu`, and drop NH and VT.
    - Sort by state, then year. A row starts a term when the previous row for the same state has `elec_year` = 1 and is exactly one year earlier. (`elec_year` = 1 means the speech year is an election year; the README's `elec_lastyear` is wrong.)
@@ -449,7 +518,7 @@ Done when `terms.csv` (259 rows), `panel.csv` and the 5 platform texts are on `m
 
 Goal: turn every speech and platform into a Profile with verified quotes, and serve the same extraction live. Owns `pipeline/extract/`, `contracts/prompt/`, `data/interim/extract/`, `app/src/app/api/extract/` and `docs/status/b.md`.
 
-1. **LLM access (by 22:00).** Read `LLM_PROVIDER`, `LLM_API_KEY`, `LLM_MODEL_BATCH` (fast and cheap) and `LLM_MODEL_LIVE` from `.env.local`. If any is missing, ask your human; that should be your only question. Use temperature 0 and the provider's JSON-schema or tool-calling mode, so every response parses.
+1. **LLM access.** The completed batch uses `LLM_PROVIDER=claude-cli`, `LLM_MODEL_BATCH=haiku`, and `LLM_MODEL_LIVE=sonnet` from the root `.env.local`, with an installed and authenticated Claude CLI. Structured output is constrained by JSON Schema. The hosted HTTP adapter will use a runtime provider secret. Ask your human for a missing login or API key when that backend is being configured.
 2. **Prompt (by 22:30).** Write `contracts/prompt/extract_v1.md`, with a `{{DIMENSIONS}}` placeholder filled from `contracts/dimensions.json` at run time. It must tell the model to:
    - score the speaker's own positions and proposals, not policies they attack or merely describe;
    - give each stance from −1 to +1 using the dimension's anchors, or null when the text doesn't address it, and never 0 for "not mentioned";
@@ -457,10 +526,10 @@ Goal: turn every speech and platform into a Profile with verified quotes, and se
    - copy 1–3 evidence quotes per non-null dimension character for character, at most 40 words each;
    - return only JSON matching `Record<DimId, DimScore>`.
 3. **Quote verifier.** `pipeline/extract/verify.py` normalises whitespace, curly quotes and dashes in both quote and source, and keeps a quote only if it is an exact substring. A dimension left without quotes becomes stance null, salience 0, confidence 0, no evidence. Record each profile's verify rate.
-4. **Batch (slice by 23:30, everything by 02:30).** `python -m pipeline.extract.run_batch` takes `--slice30`, `--all` or `--candidates`. It reads `terms.csv` and `platforms.csv`, sends at most the first 16k tokens of each text, and runs `LLM_CONCURRENCY` requests at once (default 8) with retry and backoff. It caches by SHA-1 of prompt version, model and text in `data/interim/extract/cache/` (git-ignored), verifies quotes, and writes `data/interim/extract/profiles.json` sorted by id, plus `extract_log.csv` (id, status, tokens in, tokens out, seconds, verify rate). Push the slice as soon as it's done, start `--all` right after G1, and check the first 20 results before the 02:30 sleep.
+4. **Batch (slice by 23:30, everything by 02:30).** `python -m pipeline.extract.run_batch` takes `--slice30`, `--all` or `--candidates`. It reads `terms.csv` and `platforms.csv`, sends at most the first 64,000 characters of each text (the current approximation of 16k tokens), and runs `LLM_CONCURRENCY` requests at once (default 8) with retry and backoff. It caches by SHA-1 of prompt version, model and text in `data/interim/extract/cache/` (git-ignored), verifies quotes, and writes `data/interim/extract/profiles.json` sorted by id, plus `extract_log.csv` (id, status, tokens in, tokens out, seconds, verify rate). Push the slice as soon as it's done, start `--all` right after G1, and check the first 20 results before the 02:30 sleep.
 5. **Reliability (by G2).** `python -m pipeline.extract.reliability` writes `data/interim/extract/reliability.json`: the overall verify rate; test–retest Pearson r on 30 speeches (seed 7, cache bypassed); and party AUC from 5-fold cross-validated logistic regression on the ten stances, with nulls as 0 for this check only.
 6. **Candidates (by G2).** Run `--candidates` once A's platform texts land.
-7. **Live route (by G3).** `app/src/app/api/extract/route.ts` takes POST `{text, state, name?}` and returns a Profile with kind `candidate`, using the prompt and dimensions from `app/src/generated/` (never read files outside `app/`). Port the verifier to TypeScript, reject texts over 60,000 characters, cache by text hash in memory, and set `export const maxDuration = 60`. Ask your human to add the API key to Vercel's environment variables.
+7. **Live route (by G3).** `app/src/app/api/extract/route.ts` takes POST `{text, state, name?}` and returns a Profile with kind `candidate`, using the prompt and dimensions from `app/src/generated/` (never read files outside `app/`). Port the verifier to TypeScript, reject texts over 60,000 characters, cache by text hash in memory, and set `export const maxDuration = 60`. Coordinate with D to pass the provider secret to the Grimnir container at runtime. The production prompt must be present inside the image. See Current handoff and issue #1 for the public deployment switch.
 
 Done when 259 historical and 5 candidate profiles are on `main` with a verify rate of at least 90%, `reliability.json` exists, and the live route returns a valid Profile for a 2,000-word text in under 60 seconds.
 
@@ -497,9 +566,9 @@ Goal: create the repo, keep `main` deployable, and build the three screens. Owns
    - `contracts/dimensions.json` from the dimension table (id, label, minus, plus, in table order), `contracts/schemas/` generated from the Contract types, and `contracts/fixtures/` with valid fake data for every type, including 12 historical profiles and 1 candidate;
    - `app/` with Next.js App Router, TypeScript strict, Tailwind, shadcn/ui, Recharts, Vitest, `src/styles/theme.ts`, and `src/types/contracts.ts` generated from the schemas;
    - a `Makefile` with `data`, `extract`, `model` and `export` (each calling `python -m pipeline.<stage>.<script>` for the scripts named in the briefs), `sync` (copies the dimensions, the prompt and `data/public/` into `app/src/generated/`, falling back to fixtures for any missing file), `check` (schema validation, ruff, pytest, tsc, eslint, vitest and the ownership check) and `dev`;
-   - `scripts/check_ownership.py`, which fails when branch `<letter>/…` changes files outside that letter's folders in Team roles. Push to GitHub (ask your human to create the empty repo if you can't), ask your human to connect Vercel with root directory `app/`, and post the repo URL for the team.
+   - `scripts/check_ownership.py`, which fails when branch `<letter>/…` changes files outside that letter's folders in Team roles. Push to GitHub (ask your human to create the empty repo if you can't), deploy through the Grimnir Docker and Cloudflare procedure in Current handoff, and post the repo URL for the team.
 2. **Screens on fixtures (by G1).** `/` lists the 5 governors-elect and has a "Paste a platform" box. `/s/[id]` shows one subject in three sections, plus methodology:
-   - **Fingerprint:** ten diverging bars from −1 to +1, opacity by confidence, "not mentioned" for null. Clicking a bar opens an evidence drawer with its quotes and source link.
+   - **Fingerprint:** ten diverging bars from −1 to +1, opacity by confidence, "not mentioned" for null. Clicking a bar opens an evidence disclosure with its quotes and source link.
    - **Precedents:** a Recharts scatter of `map.json`, coloured by the selected metric's `actual` on a diverging scale centred on zero. The subject is a star and its 7 neighbours are outlined. Hover shows name, state, years and outcome; axis titles show explained variance.
    - **Forecast and Signal:** a metric toggle; baseline and forecast as dots with the p10–p90 band; one sentence stating p\_above; the neighbour table; and the Signal panel with skill and CI, skill against party, permutation p, Brier score and n. Add the calibration chart when present and the "precedent-only" note when set. Every forecast carries the line "Precedents show association, not cause."
    - **Methodology:** sources, caveats and the reliability numbers.

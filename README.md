@@ -2,7 +2,7 @@
 
 PoliScope turns governors’ words into policy fingerprints and compares them with historical precedents.
 
-[Open PoliScope](https://poliscope.hydroxide.uk)
+[Open PoliScope](https://poliscope.hydroxide.uk) · [Current team handoff](docs/PLAN.md#current-handoff)
 
 ## Team setup
 
@@ -29,7 +29,7 @@ docker compose up -d --build
 docker compose ps
 ```
 
-The app listens on `127.0.0.1:3101`. In Cloudflare Tunnel, publish `poliscope.hydroxide.uk` with service URL `http://localhost:3101`. The deployment uses Grimnir’s existing tunnel.
+The app listens on `127.0.0.1:3101`. In Cloudflare Tunnel, publish `poliscope.hydroxide.uk` with service URL `http://localhost:3101`. The deployment uses Grimnir’s existing tunnel. D publishes a checked change with `ssh grimnir 'cd ~/poliscope && git pull --ff-only && docker compose up -d --build && docker compose ps'`. Pushing to `main` shares code with the team. The public site updates when D rebuilds the server image.
 
 Live extraction is disabled in the container while the hosted provider adapter is pending in [issue #1](https://github.com/odiinh/poliscope/issues/1). Local development keeps the authenticated Claude CLI path.
 
