@@ -6,5 +6,10 @@ export const theme = {
   mutedForeground: "#525252",
   border: "#dedede",
   radius: "0.5rem",
+  accent: "#534079",
+  negative: "#9c442b",
+  midpoint: "#ece5d7",
+  positive: "#126c61",
+  missing: "#a3a3a3",
   space: "1rem",
 } as const;

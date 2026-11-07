@@ -23,3 +23,19 @@
   --color-ring: var(--poliscope-muted-foreground);
   --radius-lg: var(--poliscope-radius);
 }
+
+@layer base {
+  h1 { @apply text-3xl font-semibold tracking-tight sm:text-5xl; }
+  h2 { @apply text-2xl font-semibold tracking-tight; }
+  h3 { @apply text-lg font-semibold; }
+  dt { @apply text-sm text-muted-foreground; }
+  dd { @apply font-medium tabular-nums; }
+  a { @apply underline underline-offset-4; }
+  :focus-visible { outline: 2px solid var(--poliscope-accent); outline-offset: 3px; }
+}
+
+@layer components {
+  .shell { @apply mx-auto max-w-5xl px-4 py-8 sm:py-12; }
+  .panel { @apply min-w-0 space-y-4 rounded-lg border border-border bg-card p-4 sm:p-6; }
+  .eyebrow { @apply text-sm font-semibold uppercase tracking-widest text-muted-foreground; }
+}

@@ -43,6 +43,12 @@ def sync():
         (GENERATED / prompt.name).unlink(missing_ok=True)
     for name, source in sources.items():
         shutil.copyfile(source, GENERATED / name)
+    public_files = sorted(
+        name for name, source in sources.items() if source.parent == PUBLIC
+    )
+    (GENERATED / "public-files.json").write_text(
+        json.dumps(public_files) + "\n", encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

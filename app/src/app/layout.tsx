@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import type { CSSProperties, ReactNode } from "react";
 import { theme } from "../styles/theme";
@@ -17,12 +18,20 @@ const styles = {
   "--poliscope-border": theme.border,
   "--poliscope-radius": theme.radius,
   "--poliscope-space": theme.space,
+  "--poliscope-accent": theme.accent,
 } as CSSProperties;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" style={styles}>
-      <body className="bg-background font-sans text-foreground">{children}</body>
+      <body className="bg-background font-sans text-foreground">
+        <header className="border-b border-border bg-card">
+          <nav aria-label="Main navigation" className="mx-auto max-w-5xl px-4 py-3">
+            <Link className="font-semibold tracking-tight" href="/">PoliScope</Link>
+          </nav>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
