@@ -2,7 +2,8 @@
 - 22:17 step 1 download: partial (sots + debt ok; FRED requests hang, blocked); step 2 terms: done, 259 rows, 45 states, 30 at t0=2007, R145 D110 I4
 - 22:29 step 1 download: done via FRED API (fredgraph.csv drops scripts; needs FRED_API_KEY in .env.local), 102/102 series; step 3 panel: done, 1734 rows (51 x 1992-2025), GDP 1997-2025, debt 1992-2018 (no DC); joinable terms gdp 218, debt 204
 - 22:33 step 4 platforms: done, 5 called open-seat winners (fetch_platforms.py, campaign sites, retrieved 2026-11-07): al-2027 Tuberville R 984w, ia-2027 Sand D 10519w, mi-2027 Benson D 2231w, ok-2027 Mazzei R 3304w, sc-2027 Wilson R 1011w. AL/SC under the 1500-word aim (their sites publish no more). Skipped FL/TN (close, possibly uncalled), OH Acton + CO Weiser (sites return 403 to scripts), WY Barlow (310w)
-- 22:50 step 6 coverage report: done (below). Step 5 (Census debt 2019-2024) not started: optional, after G2.
+- 22:50 step 6 coverage report: done (below). Step 5 below.
+- 23:05 step 5 recent debt: done, rejected. Census API govsstatefin item SF0455 (debt at end of FY, $1,000; must request CATEGORY or the row is dropped; AGG_DESC predicates return nothing; needs CENSUS_API_KEY) gives 50 states x 2012-2024, but only 232/350 state-years in 2012-2018 match the CSV exactly and 54 differ by >1% (max 45%, AR 2017; AZ 2018 13.70M vs 9.44M), i.e. Census revised figures. Per plan, not merged: debt still ends in 2018, candidate debt forecasts stay precedent-only.
 
 ## Coverage report
 
