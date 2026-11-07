@@ -2,6 +2,8 @@
 
 PoliScope turns governors’ words into policy fingerprints and compares them with historical precedents.
 
+[Open PoliScope](https://poliscope.hydroxide.uk)
+
 ## Team setup
 
 Install Python 3.11 (or let uv install it), Node.js 24, uv, and pnpm 10.34.9. Run these commands from the repository root.

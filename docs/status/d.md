@@ -7,3 +7,4 @@
 - 2026-11-07 22:44 GMT, pitch and Devpost draft, done, GDP n=129 and debt n=128 from the real walk-forward export.
 - 2026-11-07 22:50 GMT, Grimnir deployment, implementation done, Docker standalone image with five cached candidates; app bound to 127.0.0.1:3101; live extraction disabled until an authenticated backend is configured.
 - 2026-11-07 22:52 GMT, Grimnir deployment, local origin done, Docker healthy at 127.0.0.1:3101; all five candidate pages HTTP 200; extraction responds 503 as configured. Public Cloudflare hostname pending the account route.
+- 2026-11-07 23:04 GMT, public deployment, done, https://poliscope.hydroxide.uk serves all five candidates via Cloudflare. Public evidence, both metrics, charts, and mobile browser checks passed with zero console errors. Extraction is disabled pending backend authentication.
