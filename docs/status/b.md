@@ -5,3 +5,4 @@
 22:18 step 4 slice done: 30 profiles pushed, verify 391/395 = 0.990, 59/300 dims null, 0 failed
 22:26 step 4 done: --all 259 profiles, 0 failed, verify 3127/3168 = 0.987; az-2011 all-null (Tucson speech, correct); 5 profiles <5 scored dims; 36 quotes <5 words (review finding 1, pending)
 22:39 step 6 done: 5 candidate profiles (al, ia, mi, ok, sc), verify 51/52, each >=6 dims scored; profiles.json now 264
+22:40 step 5 done: reliability.json n=264, verify 0.987, test-retest r 0.959 (231 pairs), party AUC 0.904
