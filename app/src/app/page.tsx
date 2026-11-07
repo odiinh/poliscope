@@ -32,7 +32,12 @@ export default function Home() {
           </ul>
         ) : <p>No profiles are available yet.</p>}
       </section>
-      <PlatformForm />
+      {process.env.POLISCOPE_LIVE_EXTRACTION_ENABLED === "false" ? (
+        <section className="panel" aria-labelledby="paste">
+          <h2 id="paste">Paste a platform</h2>
+          <p>Live platform analysis is currently unavailable. Explore a preloaded candidate to see its fingerprint, precedents, and forecast.</p>
+        </section>
+      ) : <PlatformForm />}
     </main>
   );
 }

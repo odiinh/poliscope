@@ -1,0 +1,17 @@
+*
+!app/
+!app/**
+!contracts/
+!contracts/**
+!scripts/
+!scripts/contracts.py
+!data/
+!data/public/
+!data/public/**
+!Makefile
+app/node_modules/
+app/.next/
+app/src/generated/
+**/.env*
+**/*.tsbuildinfo
+**/__pycache__/

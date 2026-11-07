@@ -18,11 +18,18 @@ Open [localhost:3000](http://localhost:3000). The app uses the model export from
 
 Run `make sync` after a public data export or prompt update. Run `pnpm --dir app gen:types` to regenerate TypeScript types from the shared schemas. See [the build plan](docs/PLAN.md) for the team briefs and ownership rules.
 
-## Vercel
+## Docker deployment
 
-Import the GitHub repository as a Next.js project. Set the root directory to `app`, enable source files outside the root for the build, and use `pnpm build`. The build reads the shared contracts and data export from the repository root. [Vercel root directory settings](https://vercel.com/docs/monorepos/monorepo-faq)
+The production image includes the five cached candidate profiles and the schema-checked public export.
 
-The cached candidate demo can run independently of live extraction. The provider adapter for Vercel is tracked in [issue #1](https://github.com/odiinh/poliscope/issues/1).
+```sh
+docker compose up -d --build
+docker compose ps
+```
+
+The app listens on `127.0.0.1:3101`. In Cloudflare Tunnel, publish `poliscope.hydroxide.uk` with service URL `http://localhost:3101`. The deployment uses Grimnir’s existing tunnel.
+
+Live extraction is disabled in the container while the hosted provider adapter is pending in [issue #1](https://github.com/odiinh/poliscope/issues/1). Local development keeps the authenticated Claude CLI path.
 
 ## Data sources
 
