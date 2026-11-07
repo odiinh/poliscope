@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import { Subject } from "../../../components/subject";
-import { forecasts, profiles } from "../../../lib/data";
+import { profiles } from "../../../lib/data";
+import { subjectView } from "../../../lib/subject-view";
 
 export function generateStaticParams() {
-  return profiles.map(({ id }) => ({ id }));
+  return profiles.filter(({ kind }) => kind === "candidate").map(({ id }) => ({ id }));
 }
 
 export default async function SubjectPage({ params }: { params: Promise<{ id: string }> }) {
@@ -13,7 +14,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ id: st
 
   return (
     <main className="shell">
-      <Subject profile={profile} forecasts={forecasts.filter((forecast) => forecast.subject_id === id)} />
+      <Subject {...subjectView(profile)} />
     </main>
   );
 }

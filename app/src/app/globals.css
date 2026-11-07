@@ -4,6 +4,7 @@
 
 @theme inline {
   --font-sans: var(--poliscope-font);
+  --spacing: var(--poliscope-spacing);
   --color-background: var(--poliscope-background);
   --color-foreground: var(--poliscope-foreground);
   --color-card: var(--poliscope-background);

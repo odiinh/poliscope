@@ -17,7 +17,7 @@ const styles = {
   "--poliscope-muted-foreground": theme.mutedForeground,
   "--poliscope-border": theme.border,
   "--poliscope-radius": theme.radius,
-  "--poliscope-space": theme.space,
+  "--poliscope-spacing": theme.spacing,
   "--poliscope-accent": theme.accent,
 } as CSSProperties;
 

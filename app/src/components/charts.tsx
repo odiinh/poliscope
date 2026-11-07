@@ -1,10 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import {
   CartesianGrid, ReferenceArea, ReferenceLine, ResponsiveContainer, Scatter,
   ScatterChart, Tooltip, XAxis, YAxis,
 } from "recharts";
-import { percent, pp } from "../lib/data";
+import { percent, pp } from "../lib/policy";
 import { theme } from "../styles/theme";
 import type { Forecast, MapData, Signal } from "../types/contracts";
 
@@ -17,23 +18,39 @@ export type MapPoint = MapData["points"][number] & {
   neighbour: boolean;
 };
 
+function PointDetails({ point }: { point: MapPoint }) {
+  return (
+    <>
+      <strong>{point.name}</strong>
+      <div>{point.state} · {point.years}</div>
+      <div>{point.actual === null ? "Outcome unavailable" : pp(point.actual)}</div>
+    </>
+  );
+}
+
 export function PrecedentMap({ points, explained }: {
   points: MapPoint[];
   explained: MapData["explained"];
 }) {
+  const [selectedId, setSelectedId] = useState<string>();
+  const selected = points.find(({ id }) => id === selectedId);
   const extent = Math.max(0, ...points.map((point) => Math.abs(point.actual ?? 0)));
   const ordered = [...points].sort((a, b) => Number(a.subject) - Number(b.subject));
 
   function pointShape({ cx, cy, payload }: { cx?: number; cy?: number; payload?: MapPoint }) {
     if (cx === undefined || cy === undefined || !payload) return <g />;
     if (payload.subject) {
-      return <text x={cx} y={cy} dominantBaseline="central" textAnchor="middle" fill={theme.accent} fontSize={22}>★</text>;
+      return <text x={cx} y={cy} dominantBaseline="central" textAnchor="middle" fill={theme.accent} fontSize={22} className="cursor-pointer">★</text>;
     }
     const actual = payload.actual;
     const tone = actual === null ? theme.missing
       : `color-mix(in srgb, ${actual < 0 ? theme.negative : theme.positive} ${extent ? Math.abs(actual / extent) * 100 : 0}%, ${theme.midpoint})`;
-    return <circle cx={cx} cy={cy} r={payload.neighbour ? 6 : 4} fill={tone}
-      stroke={payload.neighbour ? theme.foreground : "none"} strokeWidth={2} />;
+    const active = payload.id === selectedId;
+    return (
+      <circle cx={cx} cy={cy} r={active ? 8 : payload.neighbour ? 6 : 4} fill={tone}
+        stroke={active ? theme.accent : payload.neighbour ? theme.foreground : "none"}
+        strokeWidth={2} className="cursor-pointer" />
+    );
   }
 
   return (
@@ -45,21 +62,25 @@ export function PrecedentMap({ points, explained }: {
             <XAxis type="number" dataKey="x" domain={["auto", "auto"]} tick={false}
               label={{ value: `PC1 · ${percent(explained[0])} of variance`, position: "insideBottom", offset: -12 }} />
             <YAxis type="number" dataKey="y" domain={["auto", "auto"]} tick={false}
-              label={{ value: `PC2 · ${percent(explained[1])} of variance`, angle: -90, position: "insideLeft" }} />
+              label={{ value: `PC2 · ${percent(explained[1])} of variance`, angle: -90, position: "insideLeft", textAnchor: "middle" }} />
             <Tooltip cursor={false} content={({ active, payload }) => {
               const point = payload?.[0]?.payload as MapPoint | undefined;
               return active && point ? (
                 <div className="rounded-lg border border-border bg-card p-3 text-sm shadow-sm">
-                  <strong>{point.name}</strong>
-                  <div>{point.state} · {point.years}</div>
-                  <div>{point.actual === null ? "Outcome unavailable" : pp(point.actual)}</div>
+                  <PointDetails point={point} />
                 </div>
               ) : null;
             }} />
-            <Scatter data={ordered} shape={pointShape} isAnimationActive={false} />
+            <Scatter data={ordered} shape={pointShape} isAnimationActive={false}
+              onClick={({ payload }) => setSelectedId((payload as MapPoint).id)} />
           </ScatterChart>
         </ResponsiveContainer>
       </div>
+      {selected && (
+        <div role="status" className="rounded-lg bg-muted p-3 text-sm">
+          <PointDetails point={selected} />
+        </div>
+      )}
       <p className="text-sm text-muted-foreground">
         ★ Subject · Outlined points are forecast neighbours ·
         <span style={{ color: theme.negative }}> Below</span> / <span style={{ color: theme.positive }}>above</span> benchmark · Grey points have no outcome

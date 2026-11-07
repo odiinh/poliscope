@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { PlatformForm } from "../components/platform-form";
 import { fixtureMode, profiles } from "../lib/data";
 
 export default function Home() {
-  const candidates = profiles.filter((profile) => profile.kind === "candidate");
+  const candidates = profiles.filter(({ kind }) => kind === "candidate");
+  const historicalPreview = !fixtureMode && candidates.length === 0;
+  const subjects = historicalPreview ? profiles.filter(({ kind }) => kind === "historical") : candidates;
   return (
     <main className="shell space-y-6">
       <header className="space-y-3">
@@ -13,27 +16,23 @@ export default function Home() {
         </p>
       </header>
       <section className="panel" aria-labelledby="candidates">
-        <h2 id="candidates">{fixtureMode ? "Example candidate" : "Governors-elect"}</h2>
+        <h2 id="candidates">{fixtureMode ? "Example candidate" : historicalPreview ? "Historical terms" : "Governors-elect"}</h2>
         {fixtureMode && <p className="text-muted-foreground">This preview uses synthetic profiles and outcomes.</p>}
-        {candidates.length ? (
+        {historicalPreview && <p>Explore available historical profiles while the candidate set is being prepared.</p>}
+        {subjects.length ? (
           <ul className="grid gap-3 sm:grid-cols-2">
-            {candidates.map(({ id, name, state, term_start }) => (
+            {subjects.map(({ id, name, state, term_start }) => (
               <li key={id}>
-                <Link className="block rounded-lg border border-border p-4 hover:bg-muted" href={`/s/${id}`}>
+                <Link className="block rounded-lg border border-border p-4 hover:bg-muted" href={`/s/${id}`} prefetch={historicalPreview ? false : undefined}>
                   <strong>{name}</strong>
                   <span className="block text-sm text-muted-foreground">{state} · {term_start}</span>
                 </Link>
               </li>
             ))}
           </ul>
-        ) : <p>No candidate profiles are available yet.</p>}
+        ) : <p>No profiles are available yet.</p>}
       </section>
-      <section className="panel" aria-labelledby="paste">
-        <h2 id="paste">Paste a platform</h2>
-        <label htmlFor="platform">Platform text</label>
-        <textarea id="platform" rows={5} className="w-full rounded-lg border border-border p-3" disabled />
-        <p className="text-sm text-muted-foreground">Live extraction will be available when the extraction route is connected.</p>
-      </section>
+      <PlatformForm />
     </main>
   );
 }

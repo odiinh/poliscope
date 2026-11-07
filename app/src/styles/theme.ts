@@ -11,5 +11,5 @@ export const theme = {
   midpoint: "#ece5d7",
   positive: "#126c61",
   missing: "#a3a3a3",
-  space: "1rem",
+  spacing: "0.25rem",
 } as const;
