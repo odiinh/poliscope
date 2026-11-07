@@ -1,0 +1,230 @@
+{
+ "coefs": {
+  "gdp_pc_rel": {
+   "a": -0.0018110768542605163,
+   "b": 0.1270140328990836,
+   "n": 218
+  },
+  "debt_pc_rel": {
+   "a": 0.003209305270867625,
+   "b": 0.04454125519457757,
+   "n": 204
+  }
+ },
+ "latest_prior": {
+  "AK": {
+   "gdp_pc_rel": 0.0020428646763392955,
+   "debt_pc_rel": null
+  },
+  "AL": {
+   "gdp_pc_rel": -0.00041578348272608423,
+   "debt_pc_rel": null
+  },
+  "AR": {
+   "gdp_pc_rel": -0.006113336522119539,
+   "debt_pc_rel": null
+  },
+  "AZ": {
+   "gdp_pc_rel": 0.0008212263614826298,
+   "debt_pc_rel": null
+  },
+  "CA": {
+   "gdp_pc_rel": -0.0005042334663616366,
+   "debt_pc_rel": null
+  },
+  "CO": {
+   "gdp_pc_rel": 0.0004030934303842493,
+   "debt_pc_rel": null
+  },
+  "CT": {
+   "gdp_pc_rel": -0.0021052330487210114,
+   "debt_pc_rel": null
+  },
+  "DC": {
+   "gdp_pc_rel": -0.023012611262088978,
+   "debt_pc_rel": null
+  },
+  "DE": {
+   "gdp_pc_rel": 0.0016225815820898326,
+   "debt_pc_rel": null
+  },
+  "FL": {
+   "gdp_pc_rel": 0.0033160985510272134,
+   "debt_pc_rel": null
+  },
+  "GA": {
+   "gdp_pc_rel": -0.0036040934154781823,
+   "debt_pc_rel": null
+  },
+  "HI": {
+   "gdp_pc_rel": 0.007812557627282946,
+   "debt_pc_rel": null
+  },
+  "IA": {
+   "gdp_pc_rel": -0.014731901159112493,
+   "debt_pc_rel": null
+  },
+  "ID": {
+   "gdp_pc_rel": -0.0012473534524293228,
+   "debt_pc_rel": null
+  },
+  "IL": {
+   "gdp_pc_rel": 0.002198322150663845,
+   "debt_pc_rel": null
+  },
+  "IN": {
+   "gdp_pc_rel": -0.004686399373675876,
+   "debt_pc_rel": null
+  },
+  "KS": {
+   "gdp_pc_rel": -0.009610282835156525,
+   "debt_pc_rel": null
+  },
+  "KY": {
+   "gdp_pc_rel": 0.0019113049587389241,
+   "debt_pc_rel": null
+  },
+  "LA": {
+   "gdp_pc_rel": 0.0029210514713864377,
+   "debt_pc_rel": null
+  },
+  "MA": {
+   "gdp_pc_rel": -0.0068218423393129335,
+   "debt_pc_rel": null
+  },
+  "MD": {
+   "gdp_pc_rel": -0.005341877037964959,
+   "debt_pc_rel": null
+  },
+  "ME": {
+   "gdp_pc_rel": -0.0027934547302441715,
+   "debt_pc_rel": null
+  },
+  "MI": {
+   "gdp_pc_rel": 0.00040268072736848737,
+   "debt_pc_rel": null
+  },
+  "MN": {
+   "gdp_pc_rel": -0.012556040466854324,
+   "debt_pc_rel": null
+  },
+  "MO": {
+   "gdp_pc_rel": -0.0009826653523452578,
+   "debt_pc_rel": null
+  },
+  "MS": {
+   "gdp_pc_rel": -0.004343431345641413,
+   "debt_pc_rel": null
+  },
+  "MT": {
+   "gdp_pc_rel": 0.0070075231922293035,
+   "debt_pc_rel": null
+  },
+  "NC": {
+   "gdp_pc_rel": -0.0004133605775775706,
+   "debt_pc_rel": null
+  },
+  "ND": {
+   "gdp_pc_rel": 0.00500684149646613,
+   "debt_pc_rel": null
+  },
+  "NE": {
+   "gdp_pc_rel": 0.009278664305099493,
+   "debt_pc_rel": null
+  },
+  "NH": {
+   "gdp_pc_rel": -0.002297727409171113,
+   "debt_pc_rel": null
+  },
+  "NJ": {
+   "gdp_pc_rel": -0.004682999330485771,
+   "debt_pc_rel": null
+  },
+  "NM": {
+   "gdp_pc_rel": 0.028594584603976347,
+   "debt_pc_rel": null
+  },
+  "NV": {
+   "gdp_pc_rel": 0.006787982285403338,
+   "debt_pc_rel": null
+  },
+  "NY": {
+   "gdp_pc_rel": 0.0004637595903886904,
+   "debt_pc_rel": null
+  },
+  "OH": {
+   "gdp_pc_rel": -0.005710891348074121,
+   "debt_pc_rel": null
+  },
+  "OK": {
+   "gdp_pc_rel": -0.001613569299371509,
+   "debt_pc_rel": null
+  },
+  "OR": {
+   "gdp_pc_rel": -0.005836947434990414,
+   "debt_pc_rel": null
+  },
+  "PA": {
+   "gdp_pc_rel": -0.004249222086124771,
+   "debt_pc_rel": null
+  },
+  "RI": {
+   "gdp_pc_rel": -0.00015067556708725505,
+   "debt_pc_rel": null
+  },
+  "SC": {
+   "gdp_pc_rel": 0.004127860594312693,
+   "debt_pc_rel": null
+  },
+  "SD": {
+   "gdp_pc_rel": -0.010336376334840747,
+   "debt_pc_rel": null
+  },
+  "TN": {
+   "gdp_pc_rel": -0.0026876291394599683,
+   "debt_pc_rel": null
+  },
+  "TX": {
+   "gdp_pc_rel": 0.012537325881312178,
+   "debt_pc_rel": null
+  },
+  "UT": {
+   "gdp_pc_rel": 0.0011945698068487332,
+   "debt_pc_rel": null
+  },
+  "VA": {
+   "gdp_pc_rel": 0.0024872594430838113,
+   "debt_pc_rel": null
+  },
+  "VT": {
+   "gdp_pc_rel": 0.009517794745578456,
+   "debt_pc_rel": null
+  },
+  "WA": {
+   "gdp_pc_rel": 0.006065772913060652,
+   "debt_pc_rel": null
+  },
+  "WI": {
+   "gdp_pc_rel": -0.0025749205443452716,
+   "debt_pc_rel": null
+  },
+  "WV": {
+   "gdp_pc_rel": 0.011277921657564693,
+   "debt_pc_rel": null
+  },
+  "WY": {
+   "gdp_pc_rel": -0.00357549858255668,
+   "debt_pc_rel": null
+  }
+ },
+ "latest_window": {
+  "gdp_pc_rel": [
+   2021,
+   2025
+  ],
+  "debt_pc_rel": [
+   2014,
+   2018
+  ]
+ }
+}

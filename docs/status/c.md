@@ -1,2 +1,3 @@
 # Member C status
 - 2026-11-07 21:59 GMT, steps 1-8 code (outcomes, baseline, kNN, backtest, map, forecasts, parity, export), done on fixtures; kNN matches fixture forecasts to 1e-9; 10 tests; waiting on real terms/panel/profiles
+- 2026-11-07 22:44 GMT, steps 1-9 done on real data: outcomes gdp 218 / debt 204; slice30 ran first (30/30); signal gdp n=129 skill -0.157 CI [-0.236,-0.087] vs party -0.161 p=0.995; debt n=128 skill -0.093 CI [-0.217,0.016] vs party -0.052 p=0.398; 10 candidate forecasts (5 x 2); parity 5 cases (3 cand, 2 hist) passes D's vitest; map 264 pts, PC1+PC2 explain 47%. Negative GDP skill traced to hub precedents (2003 centrist speeches, e.g. ia-2003 nearest for 31/129 test terms with resid +1.8pp); k not tuned (pre-registered)

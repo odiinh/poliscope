@@ -10,11 +10,14 @@ LABELS = {
 
 def sentences(s):
     lo, hi = s["skill_ci95"]
-    spans = (
-        "spans zero, so the precedent signal is not distinguishable from the baseline"
-        if lo <= 0 <= hi
-        else "excludes zero"
-    )
+    if lo <= 0 <= hi:
+        spans = "spans zero, so the precedent signal is not distinguishable from the baseline"
+    elif hi < 0:
+        spans = (
+            "lies below zero, so precedents did worse than the baseline out of sample"
+        )
+    else:
+        spans = "lies above zero, so precedents beat the baseline out of sample"
     return [
         f"Walk-forward over cohorts {', '.join(map(str, s['cohorts']))}, n = {s['n_test']} out-of-sample terms.",
         f"Skill against the prior-trend baseline is {s['skill']:.1%} (95% CI {lo:.1%} to {hi:.1%}); the interval {spans}.",

@@ -1,0 +1,772 @@
+{
+ "cases": [
+  {
+   "query": {
+    "id": "al-2027",
+    "kind": "candidate",
+    "name": "Tommy Tuberville",
+    "state": "AL",
+    "party": "R",
+    "term_start": 2027,
+    "source": {
+     "type": "platform",
+     "year": 2026,
+     "url": "https://www.coachforgovernor.com/issues",
+     "sha1": "60f1b7861be8dcc6bf277bf0dea13e69441e6ff5"
+    },
+    "dims": {
+     "tax": {
+      "stance": 0.9,
+      "salience": 0.7,
+      "confidence": 0.9,
+      "evidence": [
+       "As your Governor, I will work to further reduce taxes, get rid of waste, and make life in Alabama more affordable."
+      ]
+     },
+     "spending": {
+      "stance": 0.3,
+      "salience": 0.5,
+      "confidence": 0.5,
+      "evidence": [
+       "Lower taxes, reduce waste, and bring back manufacturing"
+      ]
+     },
+     "borrowing": {
+      "stance": 0.3,
+      "salience": 0.3,
+      "confidence": 0.2,
+      "evidence": [
+       "President Trump is working hard to dig us out of a hole"
+      ]
+     },
+     "regulation": {
+      "stance": 0.8,
+      "salience": 0.5,
+      "confidence": 1.0,
+      "evidence": [
+       "cut red tape and bring more manufacturing jobs back to Alabama"
+      ]
+     },
+     "labour": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "health": {
+      "stance": -0.3,
+      "salience": 0.3,
+      "confidence": 0.3,
+      "evidence": [
+       "making sure they have access to the standard of care and benefits they deserve"
+      ]
+     },
+     "education": {
+      "stance": 0.9,
+      "salience": 0.9,
+      "confidence": 1.0,
+      "evidence": [
+       "I will expand school choice and make sure that parents, not the government, are in charge"
+      ]
+     },
+     "justice": {
+      "stance": 0.8,
+      "salience": 0.8,
+      "confidence": 0.9,
+      "evidence": [
+       "I will back the blue, enforce the law, and work with President Trump to deport illegal alien criminals"
+      ]
+     },
+     "energy": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "infrastructure": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     }
+    },
+    "extractor": {
+     "model": "haiku",
+     "prompt_version": "v1"
+    }
+   },
+   "metric": "gdp_pc_rel",
+   "baseline": -0.0018638871912143827,
+   "expected": {
+    "subject_id": "al-2027",
+    "metric": "gdp_pc_rel",
+    "baseline": -0.0018638871912143827,
+    "forecast": 0.0006512179499590662,
+    "p10": -0.010944569672153714,
+    "p90": 0.012256952832635254,
+    "p_above": 0.5625853710090032,
+    "neighbours": [
+     {
+      "id": "wi-2013",
+      "distance": 0.16701717529076246,
+      "weight": 0.1866594528274307,
+      "residual": -0.0006295746175135385
+     },
+     {
+      "id": "mi-2011",
+      "distance": 0.19287301521985914,
+      "weight": 0.16678801124636458,
+      "residual": 0.009632029424403825
+     },
+     {
+      "id": "wi-2015",
+      "distance": 0.25062422069704277,
+      "weight": 0.1347473170990804,
+      "residual": -0.004049524817287574
+     },
+     {
+      "id": "fl-2019",
+      "distance": 0.25135993750360897,
+      "weight": 0.13441835543731898,
+      "residual": 0.014120840023849637
+     },
+     {
+      "id": "az-2015",
+      "distance": 0.2566755791678992,
+      "weight": 0.13208846724554743,
+      "residual": 0.003617784484649533
+     },
+     {
+      "id": "md-2015",
+      "distance": 0.26331223544175336,
+      "weight": 0.12929053707977226,
+      "residual": 0.0019277482000742492
+     },
+     {
+      "id": "ms-2012",
+      "distance": 0.29918588723726797,
+      "weight": 0.1160078590644856,
+      "residual": -0.009080682480939331
+     }
+    ],
+    "note": null
+   }
+  },
+  {
+   "query": {
+    "id": "ia-2027",
+    "kind": "candidate",
+    "name": "Rob Sand",
+    "state": "IA",
+    "party": "D",
+    "term_start": 2027,
+    "source": {
+     "type": "platform",
+     "year": 2026,
+     "url": "https://robsand.com/priorities",
+     "sha1": "20aa444a32b25538e85fd0753d400d9a1209e969"
+    },
+    "dims": {
+     "tax": {
+      "stance": -0.5,
+      "salience": 0.6,
+      "confidence": 0.7,
+      "evidence": [
+       "I would tax out-of-state landowners at a higher rate and ban hedge funds and LLCs from buying up too much Iowa land.",
+       "We shouldn\u2019t be handing out more tax breaks"
+      ]
+     },
+     "spending": {
+      "stance": -0.8,
+      "salience": 0.9,
+      "confidence": 0.8,
+      "evidence": [
+       "New investments and initiatives, like universal all day pre-K, are needed to give our students the edge they need to compete for good paying jobs."
+      ]
+     },
+     "borrowing": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "regulation": {
+      "stance": -0.4,
+      "salience": 0.8,
+      "confidence": 0.6,
+      "evidence": [
+       "Require open public hearings and town halls on the creation of new data centers",
+       "We need to simplify the permitting, fees, and inspections processes as well as the requirements set by the Iowa Finance Authority to support housing development."
+      ]
+     },
+     "labour": {
+      "stance": -0.9,
+      "salience": 0.7,
+      "confidence": 1.0,
+      "evidence": [
+       "I support raising the minimum wage to $12/hour."
+      ]
+     },
+     "health": {
+      "stance": -0.8,
+      "salience": 0.9,
+      "confidence": 0.9,
+      "evidence": [
+       "Reverse the privatization of Medicaid: Privatizing Medicaid has been one of the most disastrous decisions in Iowa over the last decade."
+      ]
+     },
+     "education": {
+      "stance": -0.9,
+      "salience": 0.9,
+      "confidence": 0.9,
+      "evidence": [
+       "Every Iowa child should have access to high-quality Pre-K no matter where they live.",
+       "We need to reform this policy to ensure tax dollars are being spent appropriately."
+      ]
+     },
+     "justice": {
+      "stance": 0.6,
+      "salience": 0.6,
+      "confidence": 0.8,
+      "evidence": [
+       "I support mandatory prison time for anyone found guilty of stealing over $10,000 in taxpayer dollars"
+      ]
+     },
+     "energy": {
+      "stance": -0.7,
+      "salience": 0.8,
+      "confidence": 0.7,
+      "evidence": [
+       "We need to maintain and grow incentives for clean energy that directly saves consumers money and improves our health."
+      ]
+     },
+     "infrastructure": {
+      "stance": -0.5,
+      "salience": 0.5,
+      "confidence": 0.5,
+      "evidence": [
+       "Access to high-speed internet is not a luxury, but a necessity, and we must ensure Iowans in every corner of the state can get connected."
+      ]
+     }
+    },
+    "extractor": {
+     "model": "haiku",
+     "prompt_version": "v1"
+    }
+   },
+   "metric": "debt_pc_rel",
+   "baseline": 0.0,
+   "expected": {
+    "subject_id": "ia-2027",
+    "metric": "debt_pc_rel",
+    "baseline": 0.0,
+    "forecast": -0.009962339878104638,
+    "p10": -0.03334398492267338,
+    "p90": 0.026057182638359176,
+    "p_above": 0.3752624452500254,
+    "neighbours": [
+     {
+      "id": "ia-2007",
+      "distance": 0.09574271077563383,
+      "weight": 0.22135269258737444,
+      "residual": -0.03148282167425129
+     },
+     {
+      "id": "or-2007",
+      "distance": 0.16241708760111295,
+      "weight": 0.15187357015152145,
+      "residual": -0.011619468447276203
+     },
+     {
+      "id": "pa-2007",
+      "distance": 0.1926052288842346,
+      "weight": 0.13297545812816533,
+      "residual": 0.026057182638359176
+     },
+     {
+      "id": "il-2007",
+      "distance": 0.1958879603836229,
+      "weight": 0.13120016695749603,
+      "residual": -0.023214460250132598
+     },
+     {
+      "id": "ca-1999",
+      "distance": 0.20976176963403034,
+      "weight": 0.12419279981276805,
+      "residual": 0.014800645425399512
+     },
+     {
+      "id": "md-1999",
+      "distance": 0.21814262970944429,
+      "weight": 0.12031112505358281,
+      "residual": -0.03334398492267338
+     },
+     {
+      "id": "ct-2007",
+      "distance": 0.22317637040621552,
+      "weight": 0.11809418730909198,
+      "residual": 0.004449428420174025
+     }
+    ],
+    "note": "precedent-only: no recent debt data"
+   }
+  },
+  {
+   "query": {
+    "id": "mi-2027",
+    "kind": "candidate",
+    "name": "Jocelyn Benson",
+    "state": "MI",
+    "party": "D",
+    "term_start": 2027,
+    "source": {
+     "type": "platform",
+     "year": 2026,
+     "url": "https://www.jocelynbenson.com/issues",
+     "sha1": "a2202fd17b835bac48a33ac54d7c75bbfe4197a3"
+    },
+    "dims": {
+     "tax": {
+      "stance": 0.4,
+      "salience": 0.4,
+      "confidence": 0.6,
+      "evidence": [
+       "passing a $5,000 caregiver tax credit"
+      ]
+     },
+     "spending": {
+      "stance": -0.4,
+      "salience": 0.4,
+      "confidence": 0.5,
+      "evidence": [
+       "bringing Rx Kids statewide"
+      ]
+     },
+     "borrowing": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "regulation": {
+      "stance": -0.2,
+      "salience": 0.6,
+      "confidence": 0.6,
+      "evidence": [
+       "streamlining regulations that slow down construction",
+       "No data centers will be built in Michigan unless there are rules in place"
+      ]
+     },
+     "labour": {
+      "stance": -0.5,
+      "salience": 0.4,
+      "confidence": 0.6,
+      "evidence": [
+       "Union contracts that ensure the creation of well-paying jobs."
+      ]
+     },
+     "health": {
+      "stance": -0.7,
+      "salience": 0.9,
+      "confidence": 0.8,
+      "evidence": [
+       "Healthcare should be a right, not a privilege.",
+       "ensuring that pharmaceutical companies can't price gouge Michigan families"
+      ]
+     },
+     "education": {
+      "stance": -0.8,
+      "salience": 0.8,
+      "confidence": 0.8,
+      "evidence": [
+       "build a truly world-class public education system for every child in Michigan",
+       "Michigan's next governor has a moral responsibility to transform our public schools"
+      ]
+     },
+     "justice": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "energy": {
+      "stance": -0.9,
+      "salience": 0.8,
+      "confidence": 0.9,
+      "evidence": [
+       "Clean, renewable energy is the cheapest form of energy.",
+       "When we invest in clean energy, we lower utility bills."
+      ]
+     },
+     "infrastructure": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     }
+    },
+    "extractor": {
+     "model": "haiku",
+     "prompt_version": "v1"
+    }
+   },
+   "metric": "gdp_pc_rel",
+   "baseline": -0.0017599307511067083,
+   "expected": {
+    "subject_id": "mi-2027",
+    "metric": "gdp_pc_rel",
+    "baseline": -0.0017599307511067083,
+    "forecast": -0.0016715158903415329,
+    "p10": -0.024098396769746334,
+    "p90": 0.012232425526375337,
+    "p_above": 0.41354789274420967,
+    "neighbours": [
+     {
+      "id": "or-2019",
+      "distance": 0.10281745265969477,
+      "weight": 0.1932789484321893,
+      "residual": -0.002576860407133054
+     },
+     {
+      "id": "co-2019",
+      "distance": 0.14586499149789453,
+      "weight": 0.1507997745093164,
+      "residual": 0.013992356277482045
+     },
+     {
+      "id": "me-2019",
+      "distance": 0.1710263137648707,
+      "weight": 0.1336329419291347,
+      "residual": 0.0017471889878411758
+     },
+     {
+      "id": "wa-2021",
+      "distance": 0.17475852065218606,
+      "weight": 0.13141391243564582,
+      "residual": 0.005452494786066398
+     },
+     {
+      "id": "va-2018",
+      "distance": 0.17489492643904125,
+      "weight": 0.1313342057992475,
+      "residual": 0.002497229638023361
+     },
+     {
+      "id": "co-2007",
+      "distance": 0.175662013130736,
+      "weight": 0.13088776503575691,
+      "residual": 0.0005526462685285188
+     },
+     {
+      "id": "az-2007",
+      "distance": 0.17958284996067972,
+      "weight": 0.1286524518587095,
+      "residual": -0.022338466018639626
+     }
+    ],
+    "note": null
+   }
+  },
+  {
+   "query": {
+    "id": "ak-2019",
+    "kind": "historical",
+    "name": "Mike Dunleavy",
+    "state": "AK",
+    "party": "R",
+    "term_start": 2019,
+    "source": {
+     "type": "sots",
+     "year": 2019,
+     "url": "https://gov.alaska.gov/newsroom/2019/01/22/2019-state-of-the-state-address/",
+     "sha1": "09d167f31b79a1ce606d5d237d2caa925cfd07e3"
+    },
+    "dims": {
+     "tax": {
+      "stance": 0.2,
+      "salience": 0.4,
+      "confidence": 0.4,
+      "evidence": [
+       "The third constitutional amendment will call for no change in taxes without a vote of the People."
+      ]
+     },
+     "spending": {
+      "stance": 0.7,
+      "salience": 1.0,
+      "confidence": 1.0,
+      "evidence": [
+       "We\u2019re going to get our spending in line with our revenue. This has to be done.",
+       "First, a spending limit and savings plan that will keep politicians from spending every penny we have"
+      ]
+     },
+     "borrowing": {
+      "stance": 0.6,
+      "salience": 0.6,
+      "confidence": 0.7,
+      "evidence": [
+       "We can\u2019t go on forever using savings to plug the budget gap."
+      ]
+     },
+     "regulation": {
+      "stance": 0.5,
+      "salience": 0.5,
+      "confidence": 0.5,
+      "evidence": [
+       "I\u2019ve said that we\u2019re going to make Alaska \u201copen for business\u201d \u2013 and that\u2019s exactly what we\u2019re going to do."
+      ]
+     },
+     "labour": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "health": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "education": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "justice": {
+      "stance": 0.9,
+      "salience": 1.0,
+      "confidence": 1.0,
+      "evidence": [
+       "We\u2019re going to declare war on criminals.",
+       "We will do everything in our power to stop you, apprehend you, and put you in prison for a very long time.",
+       "And we will repeal and replace SB 91."
+      ]
+     },
+     "energy": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "infrastructure": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     }
+    },
+    "extractor": {
+     "model": "haiku",
+     "prompt_version": "v1"
+    }
+   },
+   "metric": "gdp_pc_rel",
+   "baseline": -0.0046165439431055805,
+   "expected": {
+    "subject_id": "ak-2019",
+    "metric": "gdp_pc_rel",
+    "baseline": -0.0046165439431055805,
+    "forecast": -0.007128394644256455,
+    "p10": -0.013865831996481039,
+    "p90": 0.00778536586761034,
+    "p_above": 0.2984828916337571,
+    "neighbours": [
+     {
+      "id": "tn-2011",
+      "distance": 0.22557117045663544,
+      "weight": 0.16665700072411424,
+      "residual": 0.007473536636544922
+     },
+     {
+      "id": "va-2014",
+      "distance": 0.26220221204253785,
+      "weight": 0.1471029447673454,
+      "residual": -0.007200338268869703
+     },
+     {
+      "id": "ms-2012",
+      "distance": 0.26273990573286754,
+      "weight": 0.1468500306883283,
+      "residual": -0.009080682480939331
+     },
+     {
+      "id": "sc-2007",
+      "distance": 0.2645751311064591,
+      "weight": 0.14599331038280386,
+      "residual": -0.006794816897343006
+     },
+     {
+      "id": "nm-2011",
+      "distance": 0.28422042502255185,
+      "weight": 0.13741190339051723,
+      "residual": -0.009249288053375458
+     },
+     {
+      "id": "hi-2003",
+      "distance": 0.2983827375444433,
+      "weight": 0.1318258909096428,
+      "residual": 0.01240190981071592
+     },
+     {
+      "id": "al-2011",
+      "distance": 0.3198958163736021,
+      "weight": 0.12415891913724827,
+      "residual": -0.005932809050837283
+     }
+    ],
+    "note": null
+   }
+  },
+  {
+   "query": {
+    "id": "al-2003",
+    "kind": "historical",
+    "name": "Bob Riley",
+    "state": "AL",
+    "party": "R",
+    "term_start": 2003,
+    "source": {
+     "type": "sots",
+     "year": 2003,
+     "url": "http://www.stateofthestate.com/content.aspx?state=AL&date=03/04/2003",
+     "sha1": "be9cb6390b102023a3b8c0b08fcde0f09bc50e8b"
+    },
+    "dims": {
+     "tax": {
+      "stance": 0.4,
+      "salience": 0.9,
+      "confidence": 0.7,
+      "evidence": [
+       "I will not entertain the idea of additional taxes until we reform the policies and practices that have created the problems we face today",
+       "In Alabama we start taxing income at $4,600. This is not just wrong -- it is immoral."
+      ]
+     },
+     "spending": {
+      "stance": 0.7,
+      "salience": 1.0,
+      "confidence": 0.8,
+      "evidence": [
+       "I have also instructed the head of every state agency to, wherever possible, reduce their personnel costs by 5 percent over the next year.",
+       "Our first objective is to cut out waste and create efficiencies in government."
+      ]
+     },
+     "borrowing": {
+      "stance": 0.3,
+      "salience": 0.3,
+      "confidence": 0.2,
+      "evidence": [
+       "Our government has lived like a family paying the power bill on their credit card every month, just postponing the inevitable."
+      ]
+     },
+     "regulation": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "labour": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "health": {
+      "stance": 0.3,
+      "salience": 0.4,
+      "confidence": 0.5,
+      "evidence": [
+       "We are also working on plans to control the growth of medical costs for state employees and Medicaid."
+      ]
+     },
+     "education": {
+      "stance": -0.2,
+      "salience": 0.6,
+      "confidence": 0.4,
+      "evidence": [
+       "We must also return more control of education to the local school systems and the teachers and principals."
+      ]
+     },
+     "justice": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "energy": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     },
+     "infrastructure": {
+      "stance": null,
+      "salience": 0.0,
+      "confidence": 0.0,
+      "evidence": []
+     }
+    },
+    "extractor": {
+     "model": "haiku",
+     "prompt_version": "v1"
+    }
+   },
+   "metric": "debt_pc_rel",
+   "baseline": 0.005233441001301922,
+   "expected": {
+    "subject_id": "al-2003",
+    "metric": "debt_pc_rel",
+    "baseline": 0.005233441001301922,
+    "forecast": 0.02727342629890648,
+    "p10": -0.021543461640488135,
+    "p90": 0.07758645870596795,
+    "p_above": 0.8567036826084832,
+    "neighbours": [
+     {
+      "id": "ky-2004",
+      "distance": 0.14806443503784736,
+      "weight": 0.19857098026058767,
+      "residual": 0.04765709957916571
+     },
+     {
+      "id": "al-2011",
+      "distance": 0.20847431127488697,
+      "weight": 0.15216153909545624,
+      "residual": 0.0021722082858041574
+     },
+     {
+      "id": "id-2011",
+      "distance": 0.22446517632945961,
+      "weight": 0.14329631739151671,
+      "residual": -0.026776902641790057
+     },
+     {
+      "id": "ks-2011",
+      "distance": 0.256124969497314,
+      "weight": 0.1284764489639906,
+      "residual": 0.012834092530148063
+     },
+     {
+      "id": "fl-2003",
+      "distance": 0.2565800719723441,
+      "weight": 0.12828573223041287,
+      "residual": 0.01165765810241461
+     },
+     {
+      "id": "co-2003",
+      "distance": 0.26017745423519634,
+      "weight": 0.12679789740747063,
+      "residual": 0.07235301770466603
+     },
+     {
+      "id": "ms-2012",
+      "distance": 0.2712931993250107,
+      "weight": 0.12241108465056531,
+      "residual": 0.03075352984992695
+     }
+    ],
+    "note": null
+   }
+  }
+ ]
+}
