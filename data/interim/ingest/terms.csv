@@ -1,0 +1,260 @@
+term_id,state,t0,name,party,speech_path,speech_type,quality,source_url,n_chars
+ak-1999,AK,1999,Tony Knowles,D,data/raw/sots/speeches_raw/AK1999.txt,sots,as prepared,https://web.archive.org/web/20000619104357/http://www.gov.state.ak.us/speech/sos99.html,28062
+ak-2003,AK,2003,Frank Murkowski,R,data/raw/sots/speeches_raw/AK2003.txt,sots,as prepared,https://web.archive.org/web/20030201150155/http://www.state.ak.us/local/sos12403.html,31699
+ak-2007,AK,2007,Sarah Palin,R,data/raw/sots/speeches_raw/AK2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=AK&date=01/17/2007,52120
+ak-2011,AK,2011,Sean Parnell,R,data/raw/sots/speeches_raw/AK2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=AK&date=01/19/2011,19025
+ak-2015,AK,2015,Bill Walker,I,data/raw/sots/speeches_raw/AK2015.txt,sots,as prepared,https://web.archive.org/web/20170118151855/https://gov.alaska.gov/newsroom/2015/01/2015-state-of-the-state/,28972
+ak-2019,AK,2019,Mike Dunleavy,R,data/raw/sots/speeches_raw/AK2019.txt,sots,as prepared,https://gov.alaska.gov/newsroom/2019/01/22/2019-state-of-the-state-address/,19988
+al-1999,AL,1999,Donald Siegelman,D,data/raw/sots/speeches_raw/AL1999.txt,sots,as prepared,https://web.archive.org/web/20000831192833/http://www.governor.state.al.us/news/speeches/speeches-state-of-state.html,13302
+al-2003,AL,2003,Bob Riley,R,data/raw/sots/speeches_raw/AL2003.txt,sots,as prepared,http://www.stateofthestate.com/content.aspx?state=AL&date=03/04/2003,14970
+al-2007,AL,2007,Bob Riley,R,data/raw/sots/speeches_raw/AL2007.txt,sots,as prepared,http://www.stateofthestate.com/content.aspx?state=AL&date=03/06/2007,19492
+al-2011,AL,2011,Robert Bentley,R,data/raw/sots/speeches_raw/AL2011.txt,sots,as prepared,http://www.stateofthestate.com/content.aspx?state=AL&date=03/01/2011,20533
+al-2015,AL,2015,Robert Bentley,R,data/raw/sots/speeches_raw/AL2015.txt,sots,as prepared,https://www.al.com/news/2015/03/read_alabama_gov_robert_bentle.html,19880
+al-2019,AL,2019,Kay Ivey,R,data/raw/sots/speeches_raw/AL2019.txt,sots,as prepared,https://governor.alabama.gov/newsroom/2019/03/2019-state-of-the-state-address/,20230
+ar-2019,AR,2019,Asa Hutchinson,R,data/raw/sots/speeches_raw/AR2019.txt,sots,as prepared,https://governor.arkansas.gov/news-media/speeches/2019-state-of-the-state,17714
+az-1999,AZ,1999,Jane Hull,R,data/raw/sots/speeches_raw/AZ1999.txt,sots,as prepared,https://web.archive.org/web/20000817093715fw_/http://www.governor.state.az.us/news/speeches/index.html,29322
+az-2003,AZ,2003,Janet Napolitano,D,data/raw/sots/speeches_raw/AZ2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=AZ&date=01/14/2003,24952
+az-2007,AZ,2007,Janet Napolitano,D,data/raw/sots/speeches_raw/AZ2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=AZ&date=01/08/2007,32607
+az-2011,AZ,2011,Janice Brewer,R,data/raw/sots/speeches_raw/AZ2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=AZ&date=01/10/2011,4669
+az-2015,AZ,2015,Doug Ducey,R,data/raw/sots/speeches_raw/AZ2015.txt,sots,as prepared,https://web.archive.org/web/20150113151020/http://www.azgovernor.gov/governor/news/state-state-address,13066
+az-2019,AZ,2019,Doug Ducey,R,data/raw/sots/speeches_raw/AZ2019.txt,sots,as prepared,https://azgovernor.gov/governor/news/2019/01/governor-ducey-delivers-state-state-address,20370
+ca-1999,CA,1999,Gray Davis,D,data/raw/sots/speeches_raw/CA1999.txt,sots,as prepared,https://governors.library.ca.gov/addresses/s_37-davis1.html,21412
+ca-2003,CA,2003,Gray Davis,D,data/raw/sots/speeches_raw/CA2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CA&date=01/09/2003,12865
+ca-2004,CA,2004,Arnold Schwarzenegger,R,data/raw/sots/speeches_raw/CA2004.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CA&date=01/06/2004,16632
+ca-2007,CA,2007,Arnold Schwarzenegger,R,data/raw/sots/speeches_raw/CA2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CA&date=01/09/2007,17205
+ca-2011,CA,2011,Edmund G. 'Jerry' Brown Jr.,D,data/raw/sots/speeches_raw/CA2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CA&date=01/31/2011,9960
+ca-2015,CA,2015,Edmund G. 'Jerry' Brown Jr.,D,data/raw/sots/speeches_raw/CA2015.txt,inaug,as prepared,https://governors.library.ca.gov/addresses/39-JBrown04.html,17149
+ca-2019,CA,2019,Gavin Newsom,D,data/raw/sots/speeches_raw/CA2019.txt,sots,as prepared,https://www.gov.ca.gov/2019/02/12/state-of-the-state-address/,26360
+co-2003,CO,2003,Bill Owens,R,data/raw/sots/speeches_raw/CO2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CO&date=01/17/2003,27470
+co-2007,CO,2007,Bill Ritter,D,data/raw/sots/speeches_raw/CO2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CO&date=01/11/2007,26066
+co-2011,CO,2011,John Hickenlooper,D,data/raw/sots/speeches_raw/CO2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CO&date=01/13/2011,18582
+co-2015,CO,2015,John Hickenlooper,D,data/raw/sots/speeches_raw/CO2015.txt,sots,as prepared,https://web.archive.org/web/20180802190200/https://www.colorado.gov/governor/2015-state-state-address,29970
+co-2019,CO,2019,Jared Polis,D,data/raw/sots/speeches_raw/CO2019.txt,sots,as prepared,https://www.cpr.org/2019/01/10/transcript-video-gov-jared-polis-first-colorado-state-of-the-state-address/,33072
+ct-1999,CT,1999,John G. Rowland,R,data/raw/sots/speeches_raw/CT1999.txt,sots,as prepared,https://web.archive.org/web/20020619163122/http://www.state.ct.us/governor/news/99stateofstate.htm,7928
+ct-2003,CT,2003,John G. Rowland,R,data/raw/sots/speeches_raw/CT2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CT&date=01/08/2003,10015
+ct-2007,CT,2007,M. Jodi Rell,R,data/raw/sots/speeches_raw/CT2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=CT&date=02/07/2007,24548
+ct-2011,CT,2011,Dannel Malloy,D,data/raw/sots/speeches_raw/CT2011.txt,inaug,as prepared,http://stateofthestate.com/content.aspx?state=CT&date=01/05/2011,15371
+ct-2015,CT,2015,Dannel Malloy,D,data/raw/sots/speeches_raw/CT2015.txt,sots,as prepared,https://web.archive.org/web/20180709155406/https://portal.ct.gov/Office-of-the-Governor/Press-Room/Speeches/Governor-Dannel-P-Malloys-2015-State-of-the-State-Address,11338
+ct-2019,CT,2019,Ned Lamont,D,data/raw/sots/speeches_raw/CT2019.txt,sots,as prepared,https://portal.ct.gov/Office-of-the-Governor/News/Speeches/Governor-Lamont-2019-State-of-the-State-Address,12844
+de-2001,DE,2001,Ruth Ann Minner,D,data/raw/sots/speeches_raw/DE2001.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=DE&date=02/02/2001,15127
+de-2005,DE,2005,Ruth Ann Minner,D,data/raw/sots/speeches_raw/DE2005.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=DE&date=01/25/2005,23003
+de-2009,DE,2009,Jack Markell,D,data/raw/sots/speeches_raw/DE2009.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=DE&date=04/28/2009,25725
+de-2013,DE,2013,Jack Markell,D,data/raw/sots/speeches_raw/DE2013.txt,sots,as prepared,https://www.governing.com/news/state/delaware-markell-2013-speech.html,28401
+de-2017,DE,2017,John Carney,D,data/raw/sots/speeches_raw/DE2017.txt,sots,as prepared,https://news.delaware.gov/2017/03/30/governor-carney-delivers-address-to-joint-session-of-the-general-assembly/,17856
+de-2021,DE,2021,John Carney,D,data/raw/sots/speeches_raw/DE2021.txt,sots,as prepared,https://governor.delaware.gov/wp-content/uploads/sites/24/2021/01/2021-State-of-the-State-Address-2.pdf,18281
+fl-1999,FL,1999,Jeb Bush,R,data/raw/sots/speeches_raw/FL1999.txt,sots,as prepared,https://web.archive.org/web/20010621192832/http://www.myflorida.com/myflorida/government/news/speeches/3-2-99_soaddress.html,19984
+fl-2003,FL,2003,Jeb Bush,R,data/raw/sots/speeches_raw/FL2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=FL&date=03/04/2003,25359
+fl-2007,FL,2007,Charlie Crist,R,data/raw/sots/speeches_raw/FL2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=FL&date=03/06/2007,19054
+fl-2011,FL,2011,Rick Scott,R,data/raw/sots/speeches_raw/FL2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=FL&date=03/08/2011,16825
+fl-2015,FL,2015,Rick Scott,R,data/raw/sots/speeches_raw/FL2015.txt,sots,as prepared,https://web.archive.org/web/20150307141622/http://www.flgov.com/2015/03/03/governor-rick-scotts-state-of-the-state-address-2/,13006
+fl-2019,FL,2019,Ron DeSantis,R,data/raw/sots/speeches_raw/FL2019.txt,sots,as prepared,https://www.flgov.com/2019/03/05/governor-desantis-state-of-the-state-address/,22833
+ga-1999,GA,1999,Roy Barnes,D,data/raw/sots/speeches_raw/GA1999.txt,sots,as prepared,https://web.archive.org/web/20020703220917/http://www.gagovernor.org/governor/speech/press.cgi?prfile=PR.19990127.01,13834
+ga-2003,GA,2003,Sonny Perdue,R,data/raw/sots/speeches_raw/GA2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=GA&date=01/27/2003,18785
+ga-2007,GA,2007,Sonny Perdue,R,data/raw/sots/speeches_raw/GA2007.txt,sots,as prepared,http://dlg.galileo.usg.edu/ggpd/docs/2007/ga/g600/_ps1/m42/2007/elec_p_btext.con/1.pdf,18867
+ga-2011,GA,2011,Nathan Deal,R,data/raw/sots/speeches_raw/GA2011.txt,sots,as prepared,http://dlg.galileo.usg.edu/ggpd/docs/2011/ga/g600/_ps1/m42/2011/elec_p_btext.con/1.pdf,13261
+ga-2015,GA,2015,Nathan Deal,R,data/raw/sots/speeches_raw/GA2015.txt,sots,as prepared,https://www.governing.com/topics/politics/gov-georgia-nathan-deal-speech.html,22594
+ga-2019,GA,2019,Brian Kemp,R,data/raw/sots/speeches_raw/GA2019.txt,sots,as prepared,https://www.11alive.com/article/news/governor-brian-kemp-issues-first-state-of-the-state-address-read-full-transcript/85-7af10d01-6c5b-40cd-b991-2d11ac43d5ea,12226
+hi-1999,HI,1999,Benjamin J. Cayetano,D,data/raw/sots/speeches_raw/HI1999.txt,sots,as prepared,https://web.archive.org/web/20000831231312/http://gov.state.hi.us/stateofstate99.htm,27844
+hi-2003,HI,2003,Linda Lingle,R,data/raw/sots/speeches_raw/HI2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=HI&date=01/22/2003,30014
+hi-2007,HI,2007,Linda Lingle,R,data/raw/sots/speeches_raw/HI2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=HI&date=01/22/2007,30812
+hi-2011,HI,2011,Neil Abercrombie,D,data/raw/sots/speeches_raw/HI2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=HI&date=01/24/2011,22598
+hi-2015,HI,2015,David Ige,D,data/raw/sots/speeches_raw/HI2015.txt,sots,as prepared,https://governor.hawaii.gov/main/2015-state-of-the-state-address/,19332
+hi-2019,HI,2019,David Ige,D,data/raw/sots/speeches_raw/HI2019.txt,sots,as prepared,https://governor.hawaii.gov/wp-content/uploads/2019/01/2019-State-of-the-State-Address-by-Governor-David-Ige.pdf,17247
+ia-1999,IA,1999,Tom Vilsack,D,data/raw/sots/speeches_raw/IA1999.txt,inaug,as prepared,https://web.archive.org/web/19991018181724/http://www.state.ia.us/government/governor/vilsackinaugural.htm,13390
+ia-2003,IA,2003,Tom Vilsack,D,data/raw/sots/speeches_raw/IA2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IA&date=01/14/2003,16231
+ia-2007,IA,2007,Tom Vilsack,D,data/raw/sots/speeches_raw/IA2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IA&date=01/09/2007,28449
+ia-2011,IA,2011,Terry E. Branstad,R,data/raw/sots/speeches_raw/IA2011.txt,budg,as prepared,http://stateofthestate.com/content.aspx?state=IA&date=01/27/2011,15300
+ia-2015,IA,2015,Terry E. Branstad,R,data/raw/sots/speeches_raw/IA2015.txt,sots,as prepared,https://web.archive.org/web/20170325092342/https://governor.iowa.gov/2015/01/gov-branstad-delivers-2015-condition-of-the-state-%E2%80%9Ctogether-we-can%E2%80%9D,22059
+ia-2019,IA,2019,Kim Reynolds,R,data/raw/sots/speeches_raw/IA2019.txt,sots,as prepared,https://governor.iowa.gov/2019/01/gov-reynolds-to-deliver-condition-of-the-state-address,25654
+id-2003,ID,2003,Dirk Kempthorne,R,data/raw/sots/speeches_raw/ID2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=ID&date=01/08/2003,20909
+id-2007,ID,2007,C. L. 'Butch' Otter,R,data/raw/sots/speeches_raw/ID2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=ID&date=01/08/2007,25665
+id-2011,ID,2011,C. L. 'Butch' Otter,R,data/raw/sots/speeches_raw/ID2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=ID&date=01/10/2011,31206
+id-2015,ID,2015,C. L. 'Butch' Otter,R,data/raw/sots/speeches_raw/ID2015.txt,sots,as prepared,https://web.archive.org/web/20181007200831/https://gov.idaho.gov/mediacenter/speeches/sp_2015/SOS%20FY%202016.pdf,33912
+id-2019,ID,2019,Brad Little,R,data/raw/sots/speeches_raw/ID2019.txt,sots,as prepared,https://gov.idaho.gov/wp-content/uploads/sites/74/2019/01/2019-sos.pdf,25284
+il-1999,IL,1999,George Ryan,R,data/raw/sots/speeches_raw/IL1999.txt,sots,as prepared,https://web.archive.org/web/20030901035138/http://www200.state.il.us/PressReleases/ShowPressRelease.cfm?SubjectID=3&RecNum=189,42521
+il-2003,IL,2003,Rod R. Blagojevich,D,data/raw/sots/speeches_raw/IL2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IL&date=03/12/2003,27125
+il-2007,IL,2007,Rod R. Blagojevich,D,data/raw/sots/speeches_raw/IL2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IL&date=03/07/2007,25187
+il-2011,IL,2011,Patrick Quinn,D,data/raw/sots/speeches_raw/IL2011.txt,budg,as prepared,http://stateofthestate.com/content.aspx?state=IL&date=02/16/2011,17406
+il-2015,IL,2015,Bruce Rauner,R,data/raw/sots/speeches_raw/IL2015.txt,sots,as prepared,https://www2.illinois.gov/Pages/news-item.aspx?ReleaseID=13213,19178
+il-2019,IL,2019,J.B. Pritzker,D,data/raw/sots/speeches_raw/IL2019.txt,budg,as prepared,https://www2.illinois.gov/Pages/news-item.aspx?ReleaseID=19722,29708
+in-2001,IN,2001,Frank L. O'Bannon,D,data/raw/sots/speeches_raw/IN2001.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IN&date=01/17/2001,15962
+in-2005,IN,2005,Mitch Daniels,R,data/raw/sots/speeches_raw/IN2005.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IN&date=01/18/2005,19878
+in-2009,IN,2009,Mitch Daniels,R,data/raw/sots/speeches_raw/IN2009.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=IN&date=01/13/2009,17284
+in-2013,IN,2013,Mike Pence,R,data/raw/sots/speeches_raw/IN2013.txt,sots,as prepared,https://www.in.gov/governorhistory/mikepence/2013stateofstate.htm,19536
+in-2017,IN,2017,Eric Holcomb,R,data/raw/sots/speeches_raw/IN2017.txt,sots,as prepared,https://secure.in.gov/gov/files/2017%20State%20of%20the%20State.pdf,17642
+in-2021,IN,2021,Eric Holcomb,R,data/raw/sots/speeches_raw/IN2021.txt,sots,as prepared,https://web.archive.org/web/20210322160642/https://www.in.gov/gov/newsroom/2021-state-of-the-state-address/,20208
+ks-1999,KS,1999,Bill Graves,R,data/raw/sots/speeches_raw/KS1999.txt,sots,as prepared,https://web.archive.org/web/20000815212432/http://www.ink.org/public/governor/state/stotst99.html,13905
+ks-2003,KS,2003,Kathleen Sebelius,D,data/raw/sots/speeches_raw/KS2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=KS&date=01/16/2003,17250
+ks-2007,KS,2007,Kathleen Sebelius,D,data/raw/sots/speeches_raw/KS2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=KS&date=01/09/2007,16607
+ks-2011,KS,2011,Sam Brownback,R,data/raw/sots/speeches_raw/KS2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=KS&date=01/12/2011,15685
+ks-2015,KS,2015,Sam Brownback,R,data/raw/sots/speeches_raw/KS2015.txt,sots,as prepared,https://www.kansas.com/news/politics-government/article6754365.ece/binary/Advance%20copy%20of%20Gov.%20Sam%20Brownback's%20State%20of%20the%20State%20address.pdf,15975
+ks-2019,KS,2019,Laura Kelly,D,data/raw/sots/speeches_raw/KS2019.txt,sots,as prepared,https://governor.kansas.gov/governor-laura-kellys-state-of-the-state-address/,19536
+ky-2004,KY,2004,Ernie Fletcher,R,data/raw/sots/speeches_raw/KY2004.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=KY&date=01/14/2004,12658
+ky-2008,KY,2008,Steven L. Beshear,D,data/raw/sots/speeches_raw/KY2008.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=KY&date=01/14/2008,13015
+ky-2012,KY,2012,Steven L. Beshear,D,data/raw/sots/speeches_raw/KY2012.txt,sots,as prepared,https://www.governing.com/news/state/Kentucky-2012-state-of-the-state-address.html,23461
+ky-2016,KY,2016,Matt Bevin,R,data/raw/sots/speeches_raw/KY2016.txt,sots,ocr,https://web.archive.org/web/20160806111708/https://www.ket.org/content/uploads/2016/01/Gov.-Matt-Bevin-2016-SOTC-Budget-Address-Transcript-01.26.16.pdf,68563
+ky-2020,KY,2020,Andy Beshear,R,data/raw/sots/speeches_raw/KY2020.txt,sots,ocr,https://governor.ky.gov/attachments/20200114_SOTC-Address.pdf,23372
+la-2000,LA,2000,Mike Foster,R,data/raw/sots/speeches_raw/LA2000.txt,sots,as prepared,https://web.archive.org/web/20031021095938/http://www.gov.state.la.us/Press_Release_detail.asp?id=87,8190
+la-2004,LA,2004,Kathleen Babineaux Blanco,D,data/raw/sots/speeches_raw/LA2004.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=LA&date=03/29/2004,25400
+la-2008,LA,2008,Bobby Jindal,R,data/raw/sots/speeches_raw/LA2008.txt,sots,as prepared,https://web.archive.org/web/20081124183906/http://www.gov.state.la.us/index.cfm?md=newsroom&tmp=detail&catID=3&articleID=134,24101
+la-2012,LA,2012,Bobby Jindal,R,data/raw/sots/speeches_raw/LA2012.txt,sots,as prepared,https://web.archive.org/web/20110928145953/http://www.gov.state.la.us/index.cfm?md=newsroom&tmp=detail&catID=3&articleID=1183,19676
+la-2016,LA,2016,John Bel Edwards,D,data/raw/sots/speeches_raw/LA2016.txt,sots,as prepared,https://web.archive.org/web/20160317010744/http://theadvocate.com/news/15186920-123/full-text-of-gov-john-bel-edwards-state-of-the-state-address,16528
+la-2020,LA,2020,John Bel Edwards,D,data/raw/sots/speeches_raw/LA2020.txt,sots,as prepared,https://gov.louisiana.gov/index.cfm/newsroom/detail/2393,20234
+ma-1999,MA,1999,Argeo Paul Cellucci,R,data/raw/sots/speeches_raw/MA1999.txt,inaug,as prepared,https://web.archive.org/web/20000818195946/http://www.state.ma.us/gov/99spch/iagov.htm,10743
+ma-2003,MA,2003,Mitt Romney,R,data/raw/sots/speeches_raw/MA2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MA&date=02/25/2003,11338
+ma-2007,MA,2007,Deval L. Patrick,D,data/raw/sots/speeches_raw/MA2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MA&date=01/04/2007,11281
+ma-2011,MA,2011,Deval L. Patrick,D,data/raw/sots/speeches_raw/MA2011.txt,inaug,as prepared,http://stateofthestate.com/content.aspx?state=MA&date=01/06/2011,14773
+ma-2015,MA,2015,Charlie Baker,R,data/raw/sots/speeches_raw/MA2015.txt,inaug,as prepared,https://www.mass.gov/news/governor-charlie-baker-delivers-inaugural-address,15398
+ma-2019,MA,2019,Charlie Baker,R,data/raw/sots/speeches_raw/MA2019.txt,inaug,as prepared,https://www.mass.gov/news/governor-charlie-baker-delivers-inaugural-address-for-second-term,20853
+md-1999,MD,1999,Parris N. Glendening,D,data/raw/sots/speeches_raw/MD1999.txt,sots,as prepared,https://web.archive.org/web/20010620002138/http://www.gov.state.md.us/gov/speech/1999/html/sos99.html,16673
+md-2003,MD,2003,Robert L. Ehrlich Jr.,R,data/raw/sots/speeches_raw/MD2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MD&date=01/29/2003,21101
+md-2007,MD,2007,Martin O'Malley,D,data/raw/sots/speeches_raw/MD2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MD&date=01/31/2007,18616
+md-2011,MD,2011,Martin O'Malley,D,data/raw/sots/speeches_raw/MD2011.txt,sots,as prepared,https://msa.maryland.gov/megafile/msa/speccol/sc5300/sc5339/000113/014000/014577/unrestricted/20120413e.pdf,17634
+md-2015,MD,2015,Larry Hogan,R,data/raw/sots/speeches_raw/MD2015.txt,sots,as prepared,https://governor.maryland.gov/2015/02/04/state-of-the-state-address/,19001
+md-2019,MD,2019,Larry Hogan,R,data/raw/sots/speeches_raw/MD2019.txt,sots,as prepared,https://governor.maryland.gov/2019/01/30/2019-state-of-the-state-address/,16348
+me-1999,ME,1999,Angus King Jr.,I,data/raw/sots/speeches_raw/ME1999.txt,inaug,as prepared,https://web.archive.org/web/20020824053123fw_/http://www.state.me.us/governor/policy/my_position/innaugural99.html,25703
+me-2003,ME,2003,John Baldacci,D,data/raw/sots/speeches_raw/ME2003.txt,inaug,as prepared,https://web.archive.org/web/20030117181237/http://www.state.me.us/governor/baldacci/news/speeches/inauguraladdress.html,22682
+me-2007,ME,2007,John Baldacci,D,data/raw/sots/speeches_raw/ME2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=ME&date=01/05/2007,8703
+me-2011,ME,2011,Paul LePage,R,data/raw/sots/speeches_raw/ME2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=ME&date=02/10/2011,13453
+me-2015,ME,2015,Paul LePage,R,data/raw/sots/speeches_raw/ME2015.txt,sots,as prepared,https://www.maine.gov/tools/whatsnew/index.php?topic=Gov_Speeches&id=636878&v=article2011,12728
+me-2019,ME,2019,Janet Mills,D,data/raw/sots/speeches_raw/ME2019.txt,sots,as prepared,https://www.maine.gov/governor/mills/news/governor-janet-mills-state-budget-address-2019-02-11,19828
+mi-1999,MI,1999,John Engler,R,data/raw/sots/speeches_raw/MI1999.txt,sots,as prepared,https://web.archive.org/web/20020203052903fw_/http://www.state.mi.us/migov/gov/Speeches/StateoftheState_1999.html,20400
+mi-2003,MI,2003,Jennifer Granholm,D,data/raw/sots/speeches_raw/MI2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MI&date=02/06/2003,30082
+mi-2007,MI,2007,Jennifer Granholm,D,data/raw/sots/speeches_raw/MI2007.txt,sots,as prepared,https://www.michigan.gov/documents/gov/2007_SOS_186092_7.pdf,34634
+mi-2011,MI,2011,Richard Snyder,R,data/raw/sots/speeches_raw/MI2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MI&date=01/19/2011,27345
+mi-2015,MI,2015,Richard Snyder,R,data/raw/sots/speeches_raw/MI2015.txt,sots,as prepared,https://web.archive.org/web/20150210100136/http://www.michigan.gov/documents/snyder/2015_Michigan_SOTS_Transcript_479562_7.pdf,43756
+mi-2019,MI,2019,Gretchen Whitmer,D,data/raw/sots/speeches_raw/MI2019.txt,sots,as prepared,https://www.michigan.gov/documents/whitmer/20190212-Speech-Whitmer-SOTS19_646125_7.pdf,29835
+mn-1999,MN,1999,Jesse Ventura,I,data/raw/sots/speeches_raw/MN1999.txt,sots,as prepared,https://web.archive.org/web/19991105172715/http://www.mainserver.state.mn.us/governor/state_of_the_state.html,27369
+mn-2003,MN,2003,Tim Pawlenty,R,data/raw/sots/speeches_raw/MN2003.txt,sots,as prepared,https://www.leg.state.mn.us/docs/2003/other/030108.pdf,24680
+mn-2007,MN,2007,Tim Pawlenty,R,data/raw/sots/speeches_raw/MN2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MN&date=01/17/2007,27084
+mn-2011,MN,2011,Mark Dayton,D,data/raw/sots/speeches_raw/MN2011.txt,sots,as prepared,https://www.leg.state.mn.us/docs/2011/other/110207.pdf,19934
+mn-2015,MN,2015,Mark Dayton,D,data/raw/sots/speeches_raw/MN2015.txt,sots,as prepared,https://web.archive.org/web/20150413235254/http://theuptake.org/2015/04/09/dayton-state-of-state-address/,21723
+mn-2019,MN,2019,Tim Walz,D,data/raw/sots/speeches_raw/MN2019.txt,sots,as prepared,https://mn.gov/governor/news/#/detail/appId/1/id/378589,26649
+mo-1997,MO,1997,Mel E. Carnahan,D,data/raw/sots/speeches_raw/MO1997.txt,sots,as prepared,https://web.archive.org/web/20001002131908/http://www.gov.state.mo.us/cgi-bin/speech98.cgi?function=display&file=012198z.html&name=State??of??the??State&date=01/21/1998,26580
+mo-2001,MO,2001,Bob Holden,D,data/raw/sots/speeches_raw/MO2001.txt,sots,as prepared,https://web.archive.org/web/20010610234309/http://www.gov.state.mo.us/speeches/sosaddress13001.htm,35466
+mo-2005,MO,2005,Matt Blunt,R,data/raw/sots/speeches_raw/MO2005.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MO&date=01/26/2005,23779
+mo-2009,MO,2009,Jeremiah W. 'Jay' Nixon,D,data/raw/sots/speeches_raw/MO2009.txt,sots,as prepared,https://web.archive.org/web/20160417161939/https://governor.mo.gov/news/speeches/2009-state-state-address,29897
+mo-2013,MO,2013,Jeremiah W. 'Jay' Nixon,D,data/raw/sots/speeches_raw/MO2013.txt,sots,as prepared,https://web.archive.org/web/20160510115439/http://governor.mo.gov/news/speeches/2013-state-state-address,34913
+mo-2017,MO,2017,Eric Greitens,R,data/raw/sots/speeches_raw/MO2017.txt,sots,as prepared,https://web.archive.org/web/20180124005630/https://governor.mo.gov/news/speeches/2017-state-state-address,22049
+mo-2021,MO,2021,Mike Parson,R,data/raw/sots/speeches_raw/MO2021.txt,sots,as prepared,https://content.govdelivery.com/attachments/MOGOV/2021/01/27/file_attachments/1673932/2021%20SOTS%20Address%20-%20EMBARGOED%20UNTIL%20SPEECH%20BEGINS.pdf,26319
+ms-2004,MS,2004,Haley Barbour,R,data/raw/sots/speeches_raw/MS2004.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MS&date=01/27/2004,26807
+ms-2008,MS,2008,Haley Barbour,R,data/raw/sots/speeches_raw/MS2008.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=MS&date=01/21/2008,24991
+ms-2012,MS,2012,Phil Bryant,R,data/raw/sots/speeches_raw/MS2012.txt,sots,as prepared,https://www.governing.com/news/state/Mississippi-2012-state-of-the-state-address.html,23098
+ms-2016,MS,2016,Phil Bryant,R,data/raw/sots/speeches_raw/MS2016.txt,sots,as prepared,https://yallpolitics.com/index.php/yp/post/gov-_phil_bryants_2016_state_of_the_state_address_full/,20882
+ms-2020,MS,2020,Tate Reeves,R,data/raw/sots/speeches_raw/MS2020.txt,sots,as prepared,https://yallpolitics.com/2020/01/27/live-governor-tate-reeves-gives-first-state-of-the-state-address/,23882
+nd-1997,ND,1997,Edward T. Schafer,R,data/raw/sots/speeches_raw/ND1997.txt,sots,as prepared,https://web.archive.org/web/20000901084218/http://www.health.state.nd.us/gov/speeches/sos97/sosfinal.htm,30708
+nd-2001,ND,2001,John Hoeven,R,data/raw/sots/speeches_raw/ND2001.txt,inaug,as prepared,http://stateofthestate.com/content.aspx?state=ND&date=01/09/2001,12401
+nd-2005,ND,2005,John Hoeven,R,data/raw/sots/speeches_raw/ND2005.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=ND&date=01/06/2005,28337
+nd-2013,ND,2013,Jack Dalrymple,R,data/raw/sots/speeches_raw/ND2013.txt,sots,as prepared,https://web.archive.org/web/20160227144743/http://governor.nd.gov/events/2013-state-state-address,27123
+nd-2021,ND,2021,Doug Burgum,R,data/raw/sots/speeches_raw/ND2021.txt,sots,as prepared,https://www.governor.nd.gov/sites/www/files/documents/2021%20State%20of%20the%20State%20Address%20transcript.pdf,47527
+ne-1999,NE,1999,Mike Johanns,R,data/raw/sots/speeches_raw/NE1999.txt,sots,as prepared,https://web.archive.org/web/20000307205643/http://gov.nol.org/Johanns/sos/stateostate.htm,19871
+ne-2003,NE,2003,Mike Johanns,R,data/raw/sots/speeches_raw/NE2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NE&date=01/16/2003,14265
+ne-2007,NE,2007,Dave Heineman,R,data/raw/sots/speeches_raw/NE2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NE&date=01/11/2007,18885
+ne-2011,NE,2011,Dave Heineman,R,data/raw/sots/speeches_raw/NE2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NE&date=01/13/2011,15547
+ne-2015,NE,2015,Pete Ricketts,R,data/raw/sots/speeches_raw/NE2015.txt,sots,as prepared,https://web.archive.org/web/20150130180559/http://www.governor.nebraska.gov/news/2015/01/22_sos.html,19885
+ne-2019,NE,2019,Pete Ricketts,R,data/raw/sots/speeches_raw/NE2019.txt,sots,as prepared,https://governor.nebraska.gov/press/gov-ricketts-state-state-address,13518
+nj-1998,NJ,1998,Christine Todd Whitman,R,data/raw/sots/speeches_raw/NJ1998.txt,sots,as prepared,https://web.archive.org/web/20000817190246/http://www.state.nj.us/governor/sos98.html,24509
+nj-2002,NJ,2002,Jim McGreevey,D,data/raw/sots/speeches_raw/NJ2002.txt,budg,as prepared,https://web.archive.org/web/20021004184305/http://www.state.nj.us/governor/speeches/budget_address_032602.html,20950
+nj-2006,NJ,2006,Richard Codey,D,data/raw/sots/speeches_raw/NJ2006.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NJ&date=01/10/2006,20029
+nj-2010,NJ,2010,Jon Corzine,D,data/raw/sots/speeches_raw/NJ2010.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NJ&date=01/12/2010,26094
+nj-2014,NJ,2014,Chris Christie,R,data/raw/sots/speeches_raw/NJ2014.txt,sots,as prepared,https://philadelphia.cbslocal.com/2014/01/14/governor-christie-state-of-the-state-address-transcript/,24189
+nj-2018,NJ,2018,Chris Christie,R,data/raw/sots/speeches_raw/NJ2018.txt,sots,as prepared,https://www.nj.com/politics/2018/01/read_christies_final_state_of_the_state_address.html,48612
+nj-2022,NJ,2022,Phil Murphy,D,data/raw/sots/speeches_raw/NJ2022.txt,sots,as prepared,https://nj.gov/governor/news/news/562022/approved/20220111e.shtml,32444
+nm-1999,NM,1999,Gary E. Johnson,R,data/raw/sots/speeches_raw/NM1999.txt,sots,as prepared,https://web.archive.org/web/20011120081606/http://www.governor.state.nm.us/1999_state.htm,11653
+nm-2003,NM,2003,Bill Richardson,D,data/raw/sots/speeches_raw/NM2003.txt,sots,as prepared,https://web.archive.org/web/20041009204506/http://governor.state.nm.us/pdf/stateofstate2003.pdf,22420
+nm-2007,NM,2007,Bill Richardson,D,data/raw/sots/speeches_raw/NM2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NM&date=01/16/2007,20962
+nm-2011,NM,2011,Susana Martinez,R,data/raw/sots/speeches_raw/NM2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NM&date=01/18/2011,22255
+nm-2015,NM,2015,Susana Martinez,R,data/raw/sots/speeches_raw/NM2015.txt,sots,as prepared,https://web.archive.org/web/20181204120714/http://www.governing.com/topics/politics/gov-new-mexico-susana-martinez.html,28298
+nm-2019,NM,2019,Michelle Lujan Grisham,D,data/raw/sots/speeches_raw/NM2019.txt,sots,as prepared,https://www.santafenewmexican.com/text-of-gov-lujan-grisham-s-first-state-of-the/article_9a7b5a6a-1926-11e9-8218-3bf11adbcd54.html,27759
+nv-2011,NV,2011,Brian Sandoval,R,data/raw/sots/speeches_raw/NV2011.txt,sots,as prepared,https://web.archive.org/web/20170601151422/http://www.leg.state.nv.us/Session/76th2011/SOS/SOSSandoval2011.pdf,36228
+ny-1999,NY,1999,George E. Pataki,R,data/raw/sots/speeches_raw/NY1999.txt,sots,as prepared,https://web.archive.org/web/19990423104028/http://www.state.ny.us/sos99text.html,40592
+ny-2003,NY,2003,George E. Pataki,R,data/raw/sots/speeches_raw/NY2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NY&date=01/08/2003,30063
+ny-2007,NY,2007,Eliot Spitzer,D,data/raw/sots/speeches_raw/NY2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NY&date=01/03/2007,36336
+ny-2011,NY,2011,Andrew Cuomo,D,data/raw/sots/speeches_raw/NY2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=NY&date=01/05/2011,31122
+ny-2015,NY,2015,Andrew Cuomo,D,data/raw/sots/speeches_raw/NY2015.txt,sots,as prepared,https://www.governor.ny.gov/news/video-transcript-built-lead-governor-cuomos-2016-state-state-and-budget-address,55009
+ny-2019,NY,2019,Andrew Cuomo,D,data/raw/sots/speeches_raw/NY2019.txt,sots,as prepared,https://www.governor.ny.gov/news/video-audio-photos-rush-transcript-governor-cuomo-outlines-2019-justice-agenda-time-now,54490
+oh-1999,OH,1999,Bob Taft,R,data/raw/sots/speeches_raw/OH1999.txt,sots,as prepared,https://web.archive.org/web/20040423123131/http://www.governor.ohio.gov/MajorSpeeches/030999sosaddress.htm,23943
+oh-2003,OH,2003,Bob Taft,R,data/raw/sots/speeches_raw/OH2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OH&date=01/22/2003,22164
+oh-2007,OH,2007,Ted Strickland,D,data/raw/sots/speeches_raw/OH2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OH&date=03/14/2007,28511
+oh-2011,OH,2011,John Kasich,R,data/raw/sots/speeches_raw/OH2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OH&date=03/08/2011,50249
+oh-2015,OH,2015,John Kasich,R,data/raw/sots/speeches_raw/OH2015.txt,sots,as prepared,https://www.governing.com/topics/politics/gov-ohio-john-kasich-annual-address.html,58504
+oh-2019,OH,2019,Mike DeWine,R,data/raw/sots/speeches_raw/OH2019.txt,sots,as prepared,https://governor.ohio.gov/wps/portal/gov/governor/media/news-and-media/030519,23960
+ok-1999,OK,1999,Frank Keating,R,data/raw/sots/speeches_raw/OK1999.txt,sots,as prepared,https://web.archive.org/web/20000311094344/http://www.state.ok.us/~governor/sostext.htm,32423
+ok-2003,OK,2003,Brad Henry,D,data/raw/sots/speeches_raw/OK2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OK&date=02/04/2003,22171
+ok-2007,OK,2007,Brad Henry,D,data/raw/sots/speeches_raw/OK2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OK&date=02/05/2007,18489
+ok-2011,OK,2011,Mary Fallin,R,data/raw/sots/speeches_raw/OK2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OK&date=02/07/2011,22564
+ok-2015,OK,2015,Mary Fallin,R,data/raw/sots/speeches_raw/OK2015.txt,sots,as prepared,https://web.archive.org/web/20170212145203/https://www.ok.gov/governor/State_of_the_State_Address.html,22266
+ok-2019,OK,2019,Kevin Stitt,R,data/raw/sots/speeches_raw/OK2019.txt,sots,as prepared,https://www.governor.ok.gov/articles/press_releases/2019-state-of-the-state-address,20130
+or-1999,OR,1999,John Kitzhaber,D,data/raw/sots/speeches_raw/OR1999.txt,sots,ocr,PDF,12360
+or-2003,OR,2003,Ted Kulongoski,D,data/raw/sots/speeches_raw/OR2003.txt,sots,as prepared,https://web.archive.org/web/20030415003819/http://governor.oregon.gov/speech_022103.htm,22593
+or-2007,OR,2007,Ted Kulongoski,D,data/raw/sots/speeches_raw/OR2007.txt,other,as prepared,http://stateofthestate.com/content.aspx?state=OR&date=04/06/2007,17958
+or-2011,OR,2011,John Kitzhaber,D,data/raw/sots/speeches_raw/OR2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=OR&date=01/10/2011,15486
+or-2017,OR,2017,Katherine 'Kate' Brown,D,data/raw/sots/speeches_raw/OR2017.txt,inaug,as prepared,https://www.oregonlive.com/politics/2017/01/gov_kate_browns_inaugural_spee.html,24727
+or-2019,OR,2019,Katherine 'Kate' Brown,D,data/raw/sots/speeches_raw/OR2019.txt,inaug,as prepared,https://www.oregon.gov/gov/media/Pages/speeches/Governor-Kate-Brown-Inaugural-Address-2019.aspx,14574
+pa-1999,PA,1999,Tom Ridge,R,data/raw/sots/speeches_raw/PA1999.txt,budg,as prepared,https://web.archive.org/web/20000819025921if_/http://www.state.pa.us/PA_Exec/Governor/Speeches/990202-1.html,20976
+pa-2003,PA,2003,Edward G. Rendell,D,data/raw/sots/speeches_raw/PA2003.txt,budg,as prepared,https://web.archive.org/web/20050923101639/http://www.governor.state.pa.us/governor/cwp/view.asp?a=1115&q=433212,34391
+pa-2007,PA,2007,Edward G. Rendell,D,data/raw/sots/speeches_raw/PA2007.txt,budg,as prepared,http://stateofthestate.com/content.aspx?state=PA&date=02/06/2007,44189
+pa-2011,PA,2011,Tom Corbett,R,data/raw/sots/speeches_raw/PA2011.txt,budg,as prepared,http://stateofthestate.com/content.aspx?state=PA&date=03/08/2011,24294
+pa-2015,PA,2015,Tom Wolf,D,data/raw/sots/speeches_raw/PA2015.txt,budg,as prepared,https://web.archive.org/web/20150324204833/http://www.governor.pa.gov/Pages/Pressroom_details.aspx?newsid=1579#.VRHNvsDgqUk,26022
+pa-2019,PA,2019,Tom Wolf,D,data/raw/sots/speeches_raw/PA2019.txt,budg,as prepared,https://www.governor.pa.gov/newsroom/remarks-by-governor-wolf-at-budget-address/,22146
+ri-2003,RI,2003,Don Carcieri,R,data/raw/sots/speeches_raw/RI2003.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=RI&date=02/04/2003,17555
+ri-2007,RI,2007,Don Carcieri,R,data/raw/sots/speeches_raw/RI2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=RI&date=01/30/2007,23332
+ri-2011,RI,2011,Lincoln Chafee,I,data/raw/sots/speeches_raw/RI2011.txt,budg,as prepared,http://stateofthestate.com/content.aspx?state=RI&date=03/08/2011,20184
+ri-2015,RI,2015,Gina Raimondo,D,data/raw/sots/speeches_raw/RI2015.txt,budg,as prepared,https://governor.ri.gov/newsroom/speeches/2015/budget.php,21333
+ri-2019,RI,2019,Gina Raimondo,D,data/raw/sots/speeches_raw/RI2019.txt,sots,as prepared,https://governor.ri.gov/newsroom/speeches/2019/state-of-the-state.php,16470
+sc-1999,SC,1999,Jim Hodges,D,data/raw/sots/speeches_raw/SC1999.txt,sots,as prepared,https://web.archive.org/web/20020209233714/http://www.state.sc.us/governor/sosa1999.html,19245
+sc-2007,SC,2007,Mark Sanford,R,data/raw/sots/speeches_raw/SC2007.txt,sots,as prepared,https://web.archive.org/web/20120412195508/http://www.stateline.org/live/details/speech?contentId=172223,27637
+sc-2011,SC,2011,Nikki Haley,R,data/raw/sots/speeches_raw/SC2011.txt,sots,as prepared,https://web.archive.org/web/20120412214900/http://www.stateline.org/live/details/speech?contentId=540502,29851
+sc-2015,SC,2015,Nikki Haley,R,data/raw/sots/speeches_raw/SC2015.txt,sots,as prepared,https://www.governing.com/topics/politics/gov-south-carolina-nikki-haley.html,29320
+sc-2019,SC,2019,Henry McMaster,R,data/raw/sots/speeches_raw/SC2019.txt,sots,as prepared,https://web.archive.org/web/20190705065603/https://governor.sc.gov/news/2019-01/state-state-address-prepared-delivery,26945
+sd-1999,SD,1999,William J. Janklow,R,data/raw/sots/speeches_raw/SD1999.txt,sots,as prepared,https://web.archive.org/web/20020219195533/http://www.state.sd.us/governor/Press/Speeches/1999/sos99c/transcript.htm,66704
+sd-2003,SD,2003,Mike Rounds,R,data/raw/sots/speeches_raw/SD2003.txt,sots,as prepared,https://web.archive.org/web/20031202225854/http://www.state.sd.us/governor/,60646
+sd-2007,SD,2007,Mike Rounds,R,data/raw/sots/speeches_raw/SD2007.txt,sots,as prepared,https://web.archive.org/web/20120412195509/http://www.stateline.org/live/details/speech?contentId=170451,49168
+sd-2011,SD,2011,Dennis Daugaard,R,data/raw/sots/speeches_raw/SD2011.txt,sots,as prepared,https://web.archive.org/web/20120412214926/http://www.stateline.org/live/details/speech?contentId=540501,33074
+sd-2015,SD,2015,Dennis Daugaard,R,data/raw/sots/speeches_raw/SD2015.txt,sots,as prepared,https://web.archive.org/web/20180519152235/http://sd.gov/governor/docs/2015%20State%20of%20the%20State.pdf,19530
+tn-1999,TN,1999,Don Sundquist,R,data/raw/sots/speeches_raw/TN1999.txt,inaug,as prepared,https://web.archive.org/web/20020809071143/http://www.state.tn.us/governor/jan1999/inad.htm,23784
+tn-2003,TN,2003,Phil Bredesen,D,data/raw/sots/speeches_raw/TN2003.txt,inaug,as prepared,https://web.archive.org/web/20040112024751/http://www.tennessee.gov/governor/newsroom/speeches/011803_inaugural_address.htm,5623
+tn-2007,TN,2007,Phil Bredesen,D,data/raw/sots/speeches_raw/TN2007.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=TN&date=02/05/2007,22048
+tn-2011,TN,2011,Bill Haslam,R,data/raw/sots/speeches_raw/TN2011.txt,sots,as prepared,http://stateofthestate.com/content.aspx?state=TN&date=03/14/2011,29088
+tn-2015,TN,2015,Bill Haslam,R,data/raw/sots/speeches_raw/TN2015.txt,sots,as prepared,https://www.governing.com/topics/politics/gov-tennessee-governor-bill-haslam-2015-state-of-the-state-speech-text-and-video.html,23741
+tn-2019,TN,2019,Bill Lee,R,data/raw/sots/speeches_raw/TN2019.txt,sots,as prepared,https://www.tn.gov/governor/sots/state-of-the-state-2019-address.html,35693
+ut-1997,UT,1997,Mike O. Leavitt,R,data/raw/sots/speeches_raw/UT1997.txt,sots,as prepared,https://web.archive.org/web/20000605093005/http://www.governor.state.ut.us/html/state97.htm,18288
+ut-2001,UT,2001,Mike O. Leavitt,R,data/raw/sots/speeches_raw/UT2001.txt,sots,as prepared,https://web.archive.org/web/20010203140500/http://governor.state.ut.us/html/2001state.html,16818
+ut-2005,UT,2005,Jon M. Huntsman Jr.,R,data/raw/sots/speeches_raw/UT2005.txt,sots,as prepared,https://web.archive.org/web/20120412215022/http://www.stateline.org/live/details/speech?contentId=16598,15243
+ut-2009,UT,2009,Jon M. Huntsman Jr.,R,data/raw/sots/speeches_raw/UT2009.txt,sots,as prepared,https://web.archive.org/web/20120412215017/http://www.stateline.org/live/details/speech?contentId=372383,16424
+ut-2011,UT,2011,Gary Herbert,R,data/raw/sots/speeches_raw/UT2011.txt,sots,as prepared,https://web.archive.org/web/20120412215014/http://www.stateline.org/live/details/speech?contentId=540513,18243
+ut-2013,UT,2013,Gary Herbert,R,data/raw/sots/speeches_raw/UT2013.txt,sots,as prepared,https://web.archive.org/web/20130318142548/http://www.utah.gov/governor/docs/stateofstate/2013StateoftheStateAddress.pdf,17998
+ut-2017,UT,2017,Gary Herbert,R,data/raw/sots/speeches_raw/UT2017.txt,sots,as prepared,https://governor.utah.gov/2017/01/25/2017-state-of-the-state-address/,19088
+ut-2021,UT,2021,Spencer Cox,R,data/raw/sots/speeches_raw/UT2021.txt,sots,as prepared,https://www.kuer.org/news/2021-01-21/2021-state-of-the-state-gov-spencer-cox,12987
+va-1998,VA,1998,James S. Gilmore III,R,data/raw/sots/speeches_raw/VA1998.txt,sots,as prepared,https://web.archive.org/web/20010628005304/http://www.thedigitaldominion.com/press/speech/stateo.htm,24764
+va-2002,VA,2002,Mark Warner,D,data/raw/sots/speeches_raw/VA2002.txt,sots,as prepared,https://web.archive.org/web/20021202203140/http://www.governor.state.va.us/Press_Policy/EventsandSpeeches/Commonwealth_2002/Commonwealth-2002.html,23240
+va-2006,VA,2006,Tim Kaine,D,data/raw/sots/speeches_raw/VA2006.txt,sots,as prepared,https://web.archive.org/web/20120412215101/http://www.stateline.org/live/details/speech?contentId=81132,26352
+va-2010,VA,2010,Bob McDonnell,R,data/raw/sots/speeches_raw/VA2010.txt,sots,as prepared,https://web.archive.org/web/20120412215052/http://www.stateline.org/live/details/speech?contentId=453568,34460
+va-2014,VA,2014,Bob McDonnell,R,data/raw/sots/speeches_raw/VA2014.txt,sots,as prepared,https://web.archive.org/web/20140308013117/http://www.governing.com/topics/politics/gov-virginia-bob-mcdonnell-state-address.html,29869
+va-2018,VA,2018,Ralph Northam,D,data/raw/sots/speeches_raw/VA2018.txt,sots,as prepared,https://wtvr.com/2018/01/10/read-gov-terry-mcauliffe-delivers-final-state-of-the-commonwealth-address/,26029
+va-2022,VA,2022,Glenn Youngkin,R,data/raw/sots/speeches_raw/VA2022.txt,sots,as prepared,https://www.governor.virginia.gov/newsroom/news-releases/2022/january/name-919739-en.html,23410
+wa-2001,WA,2001,Gary Locke,D,data/raw/sots/speeches_raw/WA2001.txt,inaug,as prepared,https://web.archive.org/web/20011122053717/http://governor.wa.gov/speeches/speech-view.asp?SpeechSeq=262,14818
+wa-2005,WA,2005,Christine Gregoire,D,data/raw/sots/speeches_raw/WA2005.txt,sots,as prepared,https://web.archive.org/web/20120412215123/http://www.stateline.org/live/details/speech?contentId=16593,18747
+wa-2009,WA,2009,Christine Gregoire,D,data/raw/sots/speeches_raw/WA2009.txt,sots,as prepared,https://web.archive.org/web/20120412215114/http://www.stateline.org/live/details/speech?contentId=369334,21170
+wa-2013,WA,2013,Jay Inslee,D,data/raw/sots/speeches_raw/WA2013.txt,inaug,as prepared,https://www.governing.com/news/state/washington-inslee-2013-speech.html,21751
+wa-2017,WA,2017,Jay Inslee,D,data/raw/sots/speeches_raw/WA2017.txt,inaug,as prepared,https://www.governor.wa.gov/sites/default/files/speeches/2017Inaugural.pdf,14581
+wa-2021,WA,2021,Jay Inslee,D,data/raw/sots/speeches_raw/WA2021.txt,sots,as prepared,https://medium.com/wagovernor/inslee-delivers-historic-third-inaugural-address-b4434750978e,16398
+wi-1999,WI,1999,Tommy G. Thompson,R,data/raw/sots/speeches_raw/WI1999.txt,sots,as prepared,https://web.archive.org/web/19990427060023/http://www.wisgov.state.wi.us/99sp/sots99.htm,33463
+wi-2003,WI,2003,Jim Doyle,D,data/raw/sots/speeches_raw/WI2003.txt,sots,as prepared,https://web.archive.org/web/20120412215208/http://www.stateline.org/live/details/speech?contentId=16168,10786
+wi-2007,WI,2007,Jim Doyle,D,data/raw/sots/speeches_raw/WI2007.txt,sots,as prepared,https://web.archive.org/web/20120412215159/http://www.stateline.org/live/details/speech?contentId=176810,26215
+wi-2011,WI,2011,Scott Walker,R,data/raw/sots/speeches_raw/WI2011.txt,sots,as prepared,https://web.archive.org/web/20120412215149/http://www.stateline.org/live/details/speech?contentId=540511,20611
+wi-2013,WI,2013,Scott Walker,R,data/raw/sots/speeches_raw/WI2013.txt,sots,as prepared,https://web.archive.org/web/20180514214742/https://walker.wi.gov/speeches/2013-state-state-bold-vision-and-bright-hope-future,20831
+wi-2015,WI,2015,Scott Walker,R,data/raw/sots/speeches_raw/WI2015.txt,sots,as prepared,https://web.archive.org/web/20180514191911/https://walker.wi.gov/speeches/2015-state-state-address-moving-wisconsin-forward,13418
+wi-2019,WI,2019,Tony Evers,D,data/raw/sots/speeches_raw/WI2019.txt,sots,as prepared,https://evers.wi.gov/Pages/Newsroom/Speeches/2019-State-of-the-State-Address.aspx,15435
+wv-2001,WV,2001,Bob Wise,D,data/raw/sots/speeches_raw/WV2001.txt,sots,as prepared,http://www.wvculture.org/history/government/wisebook.pdf,39032
+wv-2005,WV,2005,Joe Manchin III,D,data/raw/sots/speeches_raw/WV2005.txt,sots,as prepared,https://web.archive.org/web/20120412215143/http://www.stateline.org/live/details/speech?contentId=16616,36135
+wv-2009,WV,2009,Joe Manchin III,D,data/raw/sots/speeches_raw/WV2009.txt,sots,as prepared,https://web.archive.org/web/20120412215135/http://www.stateline.org/live/details/speech?contentId=376640,35353
+wv-2012,WV,2012,Earl Ray Tomblin,D,data/raw/sots/speeches_raw/WV2012.txt,sots,as prepared,https://web.archive.org/web/20120412215128/http://www.stateline.org/live/details/speech?contentId=624740,27468
+wv-2013,WV,2013,Earl Ray Tomblin,D,data/raw/sots/speeches_raw/WV2013.txt,sots,as prepared,https://www.governing.com/news/state/west-virginia-earl-ray-tomblin-state-of-the-state-address-2013.html,29618
+wv-2017,WV,2017,Jim Justice,D,data/raw/sots/speeches_raw/WV2017.txt,sots,as prepared,https://governor.wv.gov/News/press-releases/2017/Pages/Full-Transcript-of-2017-State-of-the-State-Address.aspx,30558
+wv-2021,WV,2021,Jim Justice,D,data/raw/sots/speeches_raw/WV2021.txt,sots,as prepared,https://web.archive.org/web/20210430113650/https://governor.wv.gov/News/press-releases/2021/Pages/2021-West-Virginia-State-of-the-State-Address.aspx,40110
+wy-1999,WY,1999,Jim Geringer,R,data/raw/sots/speeches_raw/WY1999.txt,sots,ocr,https://pluto.wyo.gov/awweb/main.jsp?flag=browse&smd=2&awdid=1,31290
+wy-2003,WY,2003,Dave Freudenthal,D,data/raw/sots/speeches_raw/WY2003.txt,sots,as prepared,https://web.archive.org/web/20120412215227/http://www.stateline.org/live/details/speech?contentId=16153,15904
+wy-2011,WY,2011,Matt Mead,R,data/raw/sots/speeches_raw/WY2011.txt,sots,as prepared,https://web.archive.org/web/20120412215215/http://www.stateline.org/live/details/speech?contentId=540512,33489
+wy-2015,WY,2015,Matt Mead,R,data/raw/sots/speeches_raw/WY2015.txt,sots,as prepared,https://pluto.wyo.gov/awweb/main.jsp?flag=browse&smd=2&awdid=1,45746
+wy-2019,WY,2019,Mark Gordon,R,data/raw/sots/speeches_raw/WY2019.txt,sots,as prepared,https://drive.google.com/file/d/0B5QDlu63DmCiY1AwRnBsM3VuQlJtc01YWkVYUDVFdEhNVWI4/view,29491
