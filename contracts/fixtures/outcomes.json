@@ -1,0 +1,290 @@
+[
+  {
+    "term_id": "ak-2007",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.006500000000000001,
+    "prior": -0.005,
+    "baseline": -0.0025,
+    "residual": -0.004
+  },
+  {
+    "term_id": "ak-2007",
+    "metric": "debt_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.0035,
+    "prior": -0.005,
+    "baseline": -0.0025,
+    "residual": -0.001
+  },
+  {
+    "term_id": "al-2007",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.005,
+    "prior": -0.004,
+    "baseline": -0.002,
+    "residual": -0.003
+  },
+  {
+    "term_id": "al-2007",
+    "metric": "debt_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.002,
+    "prior": -0.004,
+    "baseline": -0.002,
+    "residual": 0.0
+  },
+  {
+    "term_id": "az-2007",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.0035,
+    "prior": -0.003,
+    "baseline": -0.0015,
+    "residual": -0.002
+  },
+  {
+    "term_id": "az-2007",
+    "metric": "debt_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.0005,
+    "prior": -0.003,
+    "baseline": -0.0015,
+    "residual": 0.001
+  },
+  {
+    "term_id": "ca-2007",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": -0.002,
+    "prior": -0.002,
+    "baseline": -0.001,
+    "residual": -0.001
+  },
+  {
+    "term_id": "ca-2007",
+    "metric": "debt_pc_rel",
+    "window": [
+      2006,
+      2010
+    ],
+    "actual": 0.001,
+    "prior": -0.002,
+    "baseline": -0.001,
+    "residual": 0.002
+  },
+  {
+    "term_id": "co-2011",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": -0.0005,
+    "prior": -0.001,
+    "baseline": -0.0005,
+    "residual": 0.0
+  },
+  {
+    "term_id": "co-2011",
+    "metric": "debt_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": 0.0025,
+    "prior": -0.001,
+    "baseline": -0.0005,
+    "residual": 0.003
+  },
+  {
+    "term_id": "fl-2011",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": 0.001,
+    "prior": 0.0,
+    "baseline": 0.0,
+    "residual": 0.001
+  },
+  {
+    "term_id": "fl-2011",
+    "metric": "debt_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": 0.004,
+    "prior": 0.0,
+    "baseline": 0.0,
+    "residual": 0.004
+  },
+  {
+    "term_id": "ga-2011",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": 0.0025,
+    "prior": 0.001,
+    "baseline": 0.0005,
+    "residual": 0.002
+  },
+  {
+    "term_id": "ga-2011",
+    "metric": "debt_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": -0.0035,
+    "prior": 0.001,
+    "baseline": 0.0005,
+    "residual": -0.004
+  },
+  {
+    "term_id": "ia-2011",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": 0.004,
+    "prior": 0.002,
+    "baseline": 0.001,
+    "residual": 0.003
+  },
+  {
+    "term_id": "ia-2011",
+    "metric": "debt_pc_rel",
+    "window": [
+      2010,
+      2014
+    ],
+    "actual": -0.002,
+    "prior": 0.002,
+    "baseline": 0.001,
+    "residual": -0.003
+  },
+  {
+    "term_id": "il-2015",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": 0.0055,
+    "prior": 0.003,
+    "baseline": 0.0015,
+    "residual": 0.004
+  },
+  {
+    "term_id": "il-2015",
+    "metric": "debt_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": -0.0005,
+    "prior": 0.003,
+    "baseline": 0.0015,
+    "residual": -0.002
+  },
+  {
+    "term_id": "ks-2015",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": -0.002,
+    "prior": 0.004,
+    "baseline": 0.002,
+    "residual": -0.004
+  },
+  {
+    "term_id": "ks-2015",
+    "metric": "debt_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": 0.001,
+    "prior": 0.004,
+    "baseline": 0.002,
+    "residual": -0.001
+  },
+  {
+    "term_id": "ma-2015",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": -0.0005,
+    "prior": 0.005,
+    "baseline": 0.0025,
+    "residual": -0.003
+  },
+  {
+    "term_id": "ma-2015",
+    "metric": "debt_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": 0.0025,
+    "prior": 0.005,
+    "baseline": 0.0025,
+    "residual": 0.0
+  },
+  {
+    "term_id": "md-2015",
+    "metric": "gdp_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": 0.001,
+    "prior": 0.006,
+    "baseline": 0.003,
+    "residual": -0.002
+  },
+  {
+    "term_id": "md-2015",
+    "metric": "debt_pc_rel",
+    "window": [
+      2014,
+      2018
+    ],
+    "actual": 0.004,
+    "prior": 0.006,
+    "baseline": 0.003,
+    "residual": 0.001
+  }
+]

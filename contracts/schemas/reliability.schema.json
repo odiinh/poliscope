@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/reliability.schema.json",
+  "$ref": "#/definitions/Reliability",
+  "definitions": {
+    "Reliability": {
+      "type": "object",
+      "properties": {
+        "n_profiles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verify_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "test_retest_r": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "party_auc": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "n_profiles",
+        "verify_rate",
+        "test_retest_r",
+        "party_auc"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --font-sans: var(--poliscope-font);
+  --color-background: var(--poliscope-background);
+  --color-foreground: var(--poliscope-foreground);
+  --color-card: var(--poliscope-background);
+  --color-card-foreground: var(--poliscope-foreground);
+  --color-popover: var(--poliscope-background);
+  --color-popover-foreground: var(--poliscope-foreground);
+  --color-primary: var(--poliscope-foreground);
+  --color-primary-foreground: var(--poliscope-background);
+  --color-secondary: var(--poliscope-muted);
+  --color-secondary-foreground: var(--poliscope-foreground);
+  --color-muted: var(--poliscope-muted);
+  --color-muted-foreground: var(--poliscope-muted-foreground);
+  --color-accent: var(--poliscope-muted);
+  --color-accent-foreground: var(--poliscope-foreground);
+  --color-border: var(--poliscope-border);
+  --color-input: var(--poliscope-border);
+  --color-ring: var(--poliscope-muted-foreground);
+  --radius-lg: var(--poliscope-radius);
+}

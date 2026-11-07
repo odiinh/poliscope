@@ -1,0 +1,320 @@
+{
+  "cases": [
+    {
+      "query": {
+        "id": "mi-2027",
+        "kind": "candidate",
+        "name": "Example Candidate MI",
+        "state": "MI",
+        "party": "D",
+        "term_start": 2027,
+        "source": {
+          "type": "fixture",
+          "year": 2027,
+          "url": "https://example.com/mi-2027",
+          "sha1": "a2e2869a4faba5eadfcf358356a19220f8dfc08d"
+        },
+        "dims": {
+          "tax": {
+            "stance": 0.5,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "spending": {
+            "stance": 0.875,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "borrowing": {
+            "stance": -0.875,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "regulation": {
+            "stance": -0.5,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "labour": {
+            "stance": -0.125,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "health": {
+            "stance": 0.25,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "education": {
+            "stance": 0.625,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "justice": {
+            "stance": 1.0,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "energy": {
+            "stance": -0.75,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "infrastructure": {
+            "stance": -0.375,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          }
+        },
+        "extractor": {
+          "model": "fixture",
+          "prompt_version": "v1"
+        }
+      },
+      "metric": "gdp_pc_rel",
+      "baseline": 0,
+      "expected": {
+        "subject_id": "mi-2027",
+        "metric": "gdp_pc_rel",
+        "baseline": 0,
+        "forecast": -0.001204879088067165,
+        "p10": -0.003,
+        "p90": 0.003,
+        "p_above": 0.246138907773997,
+        "neighbours": [
+          {
+            "id": "md-2015",
+            "distance": 0.125,
+            "weight": 0.4688299793177329,
+            "residual": -0.002
+          },
+          {
+            "id": "ma-2015",
+            "distance": 0.63860198872224,
+            "weight": 0.1191475594382834,
+            "residual": -0.003
+          },
+          {
+            "id": "ks-2015",
+            "distance": 0.85146931829632,
+            "weight": 0.09101279956555808,
+            "residual": -0.004
+          },
+          {
+            "id": "il-2015",
+            "distance": 0.8533024082938007,
+            "weight": 0.0908281054354478,
+            "residual": 0.004
+          },
+          {
+            "id": "ia-2011",
+            "distance": 0.9738775590391228,
+            "weight": 0.08013189238916435,
+            "residual": 0.003
+          },
+          {
+            "id": "fl-2011",
+            "distance": 1.0413332799829265,
+            "weight": 0.07517890994938486,
+            "residual": 0.001
+          },
+          {
+            "id": "al-2007",
+            "distance": 1.0458250331675945,
+            "weight": 0.07487075390442859,
+            "residual": -0.003
+          }
+        ],
+        "note": null
+      }
+    },
+    {
+      "query": {
+        "id": "mi-2027",
+        "kind": "candidate",
+        "name": "Example Candidate MI",
+        "state": "MI",
+        "party": "D",
+        "term_start": 2027,
+        "source": {
+          "type": "fixture",
+          "year": 2027,
+          "url": "https://example.com/mi-2027",
+          "sha1": "a2e2869a4faba5eadfcf358356a19220f8dfc08d"
+        },
+        "dims": {
+          "tax": {
+            "stance": 0.5,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "spending": {
+            "stance": 0.875,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "borrowing": {
+            "stance": -0.875,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "regulation": {
+            "stance": -0.5,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "labour": {
+            "stance": -0.125,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "health": {
+            "stance": 0.25,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "education": {
+            "stance": 0.625,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "justice": {
+            "stance": 1.0,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "energy": {
+            "stance": -0.75,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          },
+          "infrastructure": {
+            "stance": -0.375,
+            "salience": 0.8,
+            "confidence": 0.9,
+            "evidence": [
+              "Synthetic example statement for MI."
+            ]
+          }
+        },
+        "extractor": {
+          "model": "fixture",
+          "prompt_version": "v1"
+        }
+      },
+      "metric": "debt_pc_rel",
+      "baseline": 0,
+      "expected": {
+        "subject_id": "mi-2027",
+        "metric": "debt_pc_rel",
+        "baseline": 0,
+        "forecast": 0.0002564809315113256,
+        "p10": -0.002,
+        "p90": 0.001,
+        "p_above": 0.5440088892671178,
+        "neighbours": [
+          {
+            "id": "md-2015",
+            "distance": 0.125,
+            "weight": 0.4688299793177329,
+            "residual": 0.001
+          },
+          {
+            "id": "ma-2015",
+            "distance": 0.63860198872224,
+            "weight": 0.1191475594382834,
+            "residual": 0.0
+          },
+          {
+            "id": "ks-2015",
+            "distance": 0.85146931829632,
+            "weight": 0.09101279956555808,
+            "residual": -0.001
+          },
+          {
+            "id": "il-2015",
+            "distance": 0.8533024082938007,
+            "weight": 0.0908281054354478,
+            "residual": -0.002
+          },
+          {
+            "id": "ia-2011",
+            "distance": 0.9738775590391228,
+            "weight": 0.08013189238916435,
+            "residual": -0.003
+          },
+          {
+            "id": "fl-2011",
+            "distance": 1.0413332799829265,
+            "weight": 0.07517890994938486,
+            "residual": 0.004
+          },
+          {
+            "id": "al-2007",
+            "distance": 1.0458250331675945,
+            "weight": 0.07487075390442859,
+            "residual": 0.0
+          }
+        ],
+        "note": "precedent-only: no recent debt data"
+      }
+    }
+  ]
+}

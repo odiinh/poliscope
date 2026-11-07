@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/outcomes.schema.json",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Outcome"
+  },
+  "definitions": {
+    "Outcome": {
+      "type": "object",
+      "properties": {
+        "term_id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "window": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "actual": {
+          "type": "number"
+        },
+        "prior": {
+          "type": "number"
+        },
+        "baseline": {
+          "type": "number"
+        },
+        "residual": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "term_id",
+        "metric",
+        "window",
+        "actual",
+        "prior",
+        "baseline",
+        "residual"
+      ],
+      "additionalProperties": false
+    },
+    "Metric": {
+      "enum": [
+        "gdp_pc_rel",
+        "debt_pc_rel"
+      ]
+    }
+  }
+}

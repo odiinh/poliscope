@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/baseline.schema.json",
+  "$ref": "#/definitions/Baseline",
+  "definitions": {
+    "Baseline": {
+      "type": "object",
+      "properties": {
+        "coefs": {
+          "type": "object",
+          "properties": {
+            "gdp_pc_rel": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "number"
+                },
+                "b": {
+                  "type": "number"
+                },
+                "n": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "a",
+                "b",
+                "n"
+              ],
+              "additionalProperties": false
+            },
+            "debt_pc_rel": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "number"
+                },
+                "b": {
+                  "type": "number"
+                },
+                "n": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "a",
+                "b",
+                "n"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "gdp_pc_rel",
+            "debt_pc_rel"
+          ],
+          "additionalProperties": false
+        },
+        "latest_prior": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "gdp_pc_rel": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "debt_pc_rel": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "gdp_pc_rel",
+              "debt_pc_rel"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "latest_window": {
+          "type": "object",
+          "properties": {
+            "gdp_pc_rel": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "debt_pc_rel": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "gdp_pc_rel",
+            "debt_pc_rel"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "coefs",
+        "latest_prior",
+        "latest_window"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

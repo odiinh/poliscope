@@ -1,0 +1,54 @@
+[
+  {
+    "metric": "gdp_pc_rel",
+    "n_test": 8,
+    "cohorts": [
+      2011,
+      2015
+    ],
+    "mae": {
+      "baseline": 0.006,
+      "party": 0.005,
+      "knn": 0.004,
+      "ridge": null
+    },
+    "skill": 0.3333333333333333,
+    "skill_ci95": [
+      -0.1,
+      0.5
+    ],
+    "skill_vs_party": 0.2,
+    "permutation_p": 0.15,
+    "brier": {
+      "baseline": 0.3,
+      "knn": 0.25
+    },
+    "calibration": []
+  },
+  {
+    "metric": "debt_pc_rel",
+    "n_test": 8,
+    "cohorts": [
+      2011,
+      2015
+    ],
+    "mae": {
+      "baseline": 0.006,
+      "party": 0.005,
+      "knn": 0.004,
+      "ridge": null
+    },
+    "skill": 0.3333333333333333,
+    "skill_ci95": [
+      -0.1,
+      0.5
+    ],
+    "skill_vs_party": 0.2,
+    "permutation_p": 0.15,
+    "brier": {
+      "baseline": 0.3,
+      "knn": 0.25
+    },
+    "calibration": []
+  }
+]

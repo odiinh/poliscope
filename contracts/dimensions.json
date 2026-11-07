@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tax",
+    "label": "Taxes",
+    "minus": "Raise taxes or make them more progressive",
+    "plus": "Cut rates or narrow the base"
+  },
+  {
+    "id": "spending",
+    "label": "Public spending",
+    "minus": "Expand programmes and budgets",
+    "plus": "Cut or cap spending"
+  },
+  {
+    "id": "borrowing",
+    "label": "Debt and reserves",
+    "minus": "Borrow or issue bonds to invest",
+    "plus": "Pay down debt, build rainy-day funds"
+  },
+  {
+    "id": "regulation",
+    "label": "Business regulation",
+    "minus": "Add rules on business",
+    "plus": "Deregulate, cut red tape"
+  },
+  {
+    "id": "labour",
+    "label": "Work and wages",
+    "minus": "Raise minimum wages, strengthen unions",
+    "plus": "Right-to-work, employer flexibility"
+  },
+  {
+    "id": "health",
+    "label": "Health care",
+    "minus": "Expand public coverage such as Medicaid",
+    "plus": "Market-based, limit public coverage"
+  },
+  {
+    "id": "education",
+    "label": "Schools",
+    "minus": "Invest in public schools",
+    "plus": "Expand school choice and vouchers"
+  },
+  {
+    "id": "justice",
+    "label": "Crime and justice",
+    "minus": "Rehabilitation, sentencing reform",
+    "plus": "Tougher enforcement and sentencing"
+  },
+  {
+    "id": "energy",
+    "label": "Energy and environment",
+    "minus": "Climate rules and renewables",
+    "plus": "Fossil fuel development, fewer rules"
+  },
+  {
+    "id": "infrastructure",
+    "label": "Infrastructure",
+    "minus": "Large public investment programmes",
+    "plus": "Limit public investment, private delivery"
+  }
+]

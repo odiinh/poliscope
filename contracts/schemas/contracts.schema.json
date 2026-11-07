@@ -1,0 +1,787 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/contracts.schema.json",
+  "title": "Contracts",
+  "definitions": {
+    "DimId": {
+      "enum": [
+        "tax",
+        "spending",
+        "borrowing",
+        "regulation",
+        "labour",
+        "health",
+        "education",
+        "justice",
+        "energy",
+        "infrastructure"
+      ]
+    },
+    "Metric": {
+      "enum": [
+        "gdp_pc_rel",
+        "debt_pc_rel"
+      ]
+    },
+    "Party": {
+      "enum": [
+        "D",
+        "R",
+        "I"
+      ]
+    },
+    "DimScore": {
+      "type": "object",
+      "properties": {
+        "stance": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salience": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^\\s*\\S+(?:\\s+\\S+){0,39}\\s*$"
+          },
+          "minItems": 0,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "stance",
+        "salience",
+        "confidence",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "kind": {
+          "enum": [
+            "historical",
+            "candidate"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "party": {
+          "$ref": "#/definitions/Party"
+        },
+        "term_start": {
+          "type": "integer"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer"
+            },
+            "url": {
+              "type": "string"
+            },
+            "sha1": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "year",
+            "url",
+            "sha1"
+          ],
+          "additionalProperties": false
+        },
+        "dims": {
+          "type": "object",
+          "properties": {
+            "tax": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "spending": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "borrowing": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "regulation": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "labour": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "health": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "education": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "justice": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "energy": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "infrastructure": {
+              "$ref": "#/definitions/DimScore"
+            }
+          },
+          "required": [
+            "tax",
+            "spending",
+            "borrowing",
+            "regulation",
+            "labour",
+            "health",
+            "education",
+            "justice",
+            "energy",
+            "infrastructure"
+          ],
+          "additionalProperties": false
+        },
+        "extractor": {
+          "type": "object",
+          "properties": {
+            "model": {
+              "type": "string"
+            },
+            "prompt_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "model",
+            "prompt_version"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "state",
+        "party",
+        "term_start",
+        "source",
+        "dims",
+        "extractor"
+      ],
+      "additionalProperties": false
+    },
+    "Outcome": {
+      "type": "object",
+      "properties": {
+        "term_id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "window": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "actual": {
+          "type": "number"
+        },
+        "prior": {
+          "type": "number"
+        },
+        "baseline": {
+          "type": "number"
+        },
+        "residual": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "term_id",
+        "metric",
+        "window",
+        "actual",
+        "prior",
+        "baseline",
+        "residual"
+      ],
+      "additionalProperties": false
+    },
+    "Baseline": {
+      "type": "object",
+      "properties": {
+        "coefs": {
+          "type": "object",
+          "properties": {
+            "gdp_pc_rel": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "number"
+                },
+                "b": {
+                  "type": "number"
+                },
+                "n": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "a",
+                "b",
+                "n"
+              ],
+              "additionalProperties": false
+            },
+            "debt_pc_rel": {
+              "type": "object",
+              "properties": {
+                "a": {
+                  "type": "number"
+                },
+                "b": {
+                  "type": "number"
+                },
+                "n": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "a",
+                "b",
+                "n"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "gdp_pc_rel",
+            "debt_pc_rel"
+          ],
+          "additionalProperties": false
+        },
+        "latest_prior": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "gdp_pc_rel": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "debt_pc_rel": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "gdp_pc_rel",
+              "debt_pc_rel"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "latest_window": {
+          "type": "object",
+          "properties": {
+            "gdp_pc_rel": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "debt_pc_rel": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "required": [
+            "gdp_pc_rel",
+            "debt_pc_rel"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "coefs",
+        "latest_prior",
+        "latest_window"
+      ],
+      "additionalProperties": false
+    },
+    "Neighbour": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "distance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "residual": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "distance",
+        "weight",
+        "residual"
+      ],
+      "additionalProperties": false
+    },
+    "Forecast": {
+      "type": "object",
+      "properties": {
+        "subject_id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "baseline": {
+          "type": "number"
+        },
+        "forecast": {
+          "type": "number"
+        },
+        "p10": {
+          "type": "number"
+        },
+        "p90": {
+          "type": "number"
+        },
+        "p_above": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "neighbours": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Neighbour"
+          },
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "subject_id",
+        "metric",
+        "baseline",
+        "forecast",
+        "p10",
+        "p90",
+        "p_above",
+        "neighbours",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "Signal": {
+      "type": "object",
+      "properties": {
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "n_test": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cohorts": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "mae": {
+          "type": "object",
+          "properties": {
+            "baseline": {
+              "type": "number"
+            },
+            "party": {
+              "type": "number"
+            },
+            "knn": {
+              "type": "number"
+            },
+            "ridge": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "baseline",
+            "party",
+            "knn",
+            "ridge"
+          ],
+          "additionalProperties": false
+        },
+        "skill": {
+          "type": "number"
+        },
+        "skill_ci95": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "skill_vs_party": {
+          "type": "number"
+        },
+        "permutation_p": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "brier": {
+          "type": "object",
+          "properties": {
+            "baseline": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "knn": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "baseline",
+            "knn"
+          ],
+          "additionalProperties": false
+        },
+        "calibration": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "bin_mid": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "predicted": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "observed": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "n": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "bin_mid",
+              "predicted",
+              "observed",
+              "n"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "metric",
+        "n_test",
+        "cohorts",
+        "mae",
+        "skill",
+        "skill_ci95",
+        "skill_vs_party",
+        "permutation_p",
+        "brier",
+        "calibration"
+      ],
+      "additionalProperties": false
+    },
+    "MapData": {
+      "type": "object",
+      "properties": {
+        "mean": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 10,
+          "maxItems": 10
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 10,
+            "maxItems": 10
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "explained": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z]{2}-[0-9]{4}$"
+              },
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "id",
+              "x",
+              "y"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "mean",
+        "components",
+        "explained",
+        "points"
+      ],
+      "additionalProperties": false
+    },
+    "Reliability": {
+      "type": "object",
+      "properties": {
+        "n_profiles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verify_rate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "test_retest_r": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1
+        },
+        "party_auc": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "n_profiles",
+        "verify_rate",
+        "test_retest_r",
+        "party_auc"
+      ],
+      "additionalProperties": false
+    },
+    "KnnParity": {
+      "type": "object",
+      "properties": {
+        "cases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "$ref": "#/definitions/Profile"
+              },
+              "metric": {
+                "$ref": "#/definitions/Metric"
+              },
+              "baseline": {
+                "type": "number"
+              },
+              "expected": {
+                "$ref": "#/definitions/Forecast"
+              }
+            },
+            "required": [
+              "query",
+              "metric",
+              "baseline",
+              "expected"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "cases"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "properties": {
+    "DimId": {
+      "$ref": "#/definitions/DimId"
+    },
+    "Metric": {
+      "$ref": "#/definitions/Metric"
+    },
+    "Party": {
+      "$ref": "#/definitions/Party"
+    },
+    "DimScore": {
+      "$ref": "#/definitions/DimScore"
+    },
+    "Profile": {
+      "$ref": "#/definitions/Profile"
+    },
+    "Outcome": {
+      "$ref": "#/definitions/Outcome"
+    },
+    "Baseline": {
+      "$ref": "#/definitions/Baseline"
+    },
+    "Neighbour": {
+      "$ref": "#/definitions/Neighbour"
+    },
+    "Forecast": {
+      "$ref": "#/definitions/Forecast"
+    },
+    "Signal": {
+      "$ref": "#/definitions/Signal"
+    },
+    "MapData": {
+      "$ref": "#/definitions/MapData"
+    },
+    "Reliability": {
+      "$ref": "#/definitions/Reliability"
+    },
+    "KnnParity": {
+      "$ref": "#/definitions/KnnParity"
+    }
+  },
+  "required": [
+    "DimId",
+    "Metric",
+    "Party",
+    "DimScore",
+    "Profile",
+    "Outcome",
+    "Baseline",
+    "Neighbour",
+    "Forecast",
+    "Signal",
+    "MapData",
+    "Reliability",
+    "KnnParity"
+  ],
+  "additionalProperties": false
+}

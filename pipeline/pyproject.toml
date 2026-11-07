@@ -1,0 +1,16 @@
+[project]
+name = "poliscope-pipeline"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "requests",
+    "jsonschema",
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+target-version = "py311"

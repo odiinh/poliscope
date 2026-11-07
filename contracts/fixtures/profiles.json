@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "ak-2007",
+    "kind": "historical",
+    "name": "Example Governor AK",
+    "state": "AK",
+    "party": "D",
+    "term_start": 2007,
+    "source": {
+      "type": "fixture",
+      "year": 2007,
+      "url": "https://example.com/ak-2007",
+      "sha1": "11e58bda6af998c391f9d0fe4601c82a12ac21c4"
+    },
+    "dims": {
+      "tax": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "spending": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "borrowing": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "regulation": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "labour": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "health": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "education": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "justice": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "energy": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      },
+      "infrastructure": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AK."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "al-2007",
+    "kind": "historical",
+    "name": "Example Governor AL",
+    "state": "AL",
+    "party": "R",
+    "term_start": 2007,
+    "source": {
+      "type": "fixture",
+      "year": 2007,
+      "url": "https://example.com/al-2007",
+      "sha1": "9972661a2aacbc5152832a29ec3ec1c4bde2948a"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "spending": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "borrowing": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "regulation": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "labour": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "health": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "education": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "justice": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "energy": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      },
+      "infrastructure": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AL."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "az-2007",
+    "kind": "historical",
+    "name": "Example Governor AZ",
+    "state": "AZ",
+    "party": "I",
+    "term_start": 2007,
+    "source": {
+      "type": "fixture",
+      "year": 2007,
+      "url": "https://example.com/az-2007",
+      "sha1": "c4908fb3492cafd1922859d7fe70c9e9128dcc89"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "spending": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "regulation": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "labour": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "health": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "education": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "justice": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "energy": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      },
+      "infrastructure": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for AZ."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "ca-2007",
+    "kind": "historical",
+    "name": "Example Governor CA",
+    "state": "CA",
+    "party": "D",
+    "term_start": 2007,
+    "source": {
+      "type": "fixture",
+      "year": 2007,
+      "url": "https://example.com/ca-2007",
+      "sha1": "10a06367808dc9a65cec00b09485f92b90427382"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "spending": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "regulation": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "labour": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "health": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "education": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "justice": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "energy": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      },
+      "infrastructure": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CA."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "co-2011",
+    "kind": "historical",
+    "name": "Example Governor CO",
+    "state": "CO",
+    "party": "R",
+    "term_start": 2011,
+    "source": {
+      "type": "fixture",
+      "year": 2011,
+      "url": "https://example.com/co-2011",
+      "sha1": "6a5968569f9d73f6df016719d6f38036f8c38e20"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "spending": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "regulation": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "labour": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "health": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "education": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "justice": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "energy": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      },
+      "infrastructure": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for CO."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "fl-2011",
+    "kind": "historical",
+    "name": "Example Governor FL",
+    "state": "FL",
+    "party": "I",
+    "term_start": 2011,
+    "source": {
+      "type": "fixture",
+      "year": 2011,
+      "url": "https://example.com/fl-2011",
+      "sha1": "6f93c0561ff5dc2690c5b83da1549aacd0b9c344"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "spending": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "regulation": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "labour": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "health": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "education": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "justice": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "energy": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      },
+      "infrastructure": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for FL."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "ga-2011",
+    "kind": "historical",
+    "name": "Example Governor GA",
+    "state": "GA",
+    "party": "D",
+    "term_start": 2011,
+    "source": {
+      "type": "fixture",
+      "year": 2011,
+      "url": "https://example.com/ga-2011",
+      "sha1": "f628b81657b8a8ac7d0b77db75746a0536b2e49e"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "spending": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "regulation": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "labour": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "health": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "education": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "justice": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "energy": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      },
+      "infrastructure": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for GA."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "ia-2011",
+    "kind": "historical",
+    "name": "Example Governor IA",
+    "state": "IA",
+    "party": "R",
+    "term_start": 2011,
+    "source": {
+      "type": "fixture",
+      "year": 2011,
+      "url": "https://example.com/ia-2011",
+      "sha1": "18b107b5526e4c14e090c3e77e6d87b68a6c8c39"
+    },
+    "dims": {
+      "tax": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "spending": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "regulation": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "labour": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "health": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "education": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "justice": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "energy": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      },
+      "infrastructure": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IA."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "il-2015",
+    "kind": "historical",
+    "name": "Example Governor IL",
+    "state": "IL",
+    "party": "I",
+    "term_start": 2015,
+    "source": {
+      "type": "fixture",
+      "year": 2015,
+      "url": "https://example.com/il-2015",
+      "sha1": "041fc8dff6928f919f2d4a266922510c3810ceaa"
+    },
+    "dims": {
+      "tax": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "spending": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "regulation": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "labour": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "health": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "education": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "justice": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "energy": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      },
+      "infrastructure": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for IL."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "ks-2015",
+    "kind": "historical",
+    "name": "Example Governor KS",
+    "state": "KS",
+    "party": "D",
+    "term_start": 2015,
+    "source": {
+      "type": "fixture",
+      "year": 2015,
+      "url": "https://example.com/ks-2015",
+      "sha1": "25e3479cd854b712f91eddfe6eed171b30e8542c"
+    },
+    "dims": {
+      "tax": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "spending": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "borrowing": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "regulation": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "labour": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "health": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "education": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "justice": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "energy": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      },
+      "infrastructure": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for KS."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "ma-2015",
+    "kind": "historical",
+    "name": "Example Governor MA",
+    "state": "MA",
+    "party": "R",
+    "term_start": 2015,
+    "source": {
+      "type": "fixture",
+      "year": 2015,
+      "url": "https://example.com/ma-2015",
+      "sha1": "f5a7c5f67d3ee98974301e5a6fb7cbe45a93a6b9"
+    },
+    "dims": {
+      "tax": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "spending": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "borrowing": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "regulation": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "labour": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "health": {
+        "stance": 0.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "education": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "justice": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "energy": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      },
+      "infrastructure": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MA."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "md-2015",
+    "kind": "historical",
+    "name": "Example Governor MD",
+    "state": "MD",
+    "party": "I",
+    "term_start": 2015,
+    "source": {
+      "type": "fixture",
+      "year": 2015,
+      "url": "https://example.com/md-2015",
+      "sha1": "563e20cf8a0ade3632c479d40f6caccd98e608c9"
+    },
+    "dims": {
+      "tax": {
+        "stance": 0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "spending": {
+        "stance": 0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "borrowing": {
+        "stance": -1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "regulation": {
+        "stance": -0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "labour": {
+        "stance": -0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "health": {
+        "stance": 0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "education": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "justice": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "energy": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      },
+      "infrastructure": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MD."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  },
+  {
+    "id": "mi-2027",
+    "kind": "candidate",
+    "name": "Example Candidate MI",
+    "state": "MI",
+    "party": "D",
+    "term_start": 2027,
+    "source": {
+      "type": "fixture",
+      "year": 2027,
+      "url": "https://example.com/mi-2027",
+      "sha1": "a2e2869a4faba5eadfcf358356a19220f8dfc08d"
+    },
+    "dims": {
+      "tax": {
+        "stance": 0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "spending": {
+        "stance": 0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "borrowing": {
+        "stance": -0.875,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "regulation": {
+        "stance": -0.5,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "labour": {
+        "stance": -0.125,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "health": {
+        "stance": 0.25,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "education": {
+        "stance": 0.625,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "justice": {
+        "stance": 1.0,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "energy": {
+        "stance": -0.75,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      },
+      "infrastructure": {
+        "stance": -0.375,
+        "salience": 0.8,
+        "confidence": 0.9,
+        "evidence": [
+          "Synthetic example statement for MI."
+        ]
+      }
+    },
+    "extractor": {
+      "model": "fixture",
+      "prompt_version": "v1"
+    }
+  }
+]

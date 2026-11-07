@@ -1,0 +1,314 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/knn_parity.schema.json",
+  "$ref": "#/definitions/KnnParity",
+  "definitions": {
+    "KnnParity": {
+      "type": "object",
+      "properties": {
+        "cases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "query": {
+                "$ref": "#/definitions/Profile"
+              },
+              "metric": {
+                "$ref": "#/definitions/Metric"
+              },
+              "baseline": {
+                "type": "number"
+              },
+              "expected": {
+                "$ref": "#/definitions/Forecast"
+              }
+            },
+            "required": [
+              "query",
+              "metric",
+              "baseline",
+              "expected"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "cases"
+      ],
+      "additionalProperties": false
+    },
+    "Forecast": {
+      "type": "object",
+      "properties": {
+        "subject_id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "baseline": {
+          "type": "number"
+        },
+        "forecast": {
+          "type": "number"
+        },
+        "p10": {
+          "type": "number"
+        },
+        "p90": {
+          "type": "number"
+        },
+        "p_above": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "neighbours": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Neighbour"
+          },
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "subject_id",
+        "metric",
+        "baseline",
+        "forecast",
+        "p10",
+        "p90",
+        "p_above",
+        "neighbours",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "Neighbour": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "distance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "residual": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "distance",
+        "weight",
+        "residual"
+      ],
+      "additionalProperties": false
+    },
+    "Metric": {
+      "enum": [
+        "gdp_pc_rel",
+        "debt_pc_rel"
+      ]
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "kind": {
+          "enum": [
+            "historical",
+            "candidate"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "party": {
+          "$ref": "#/definitions/Party"
+        },
+        "term_start": {
+          "type": "integer"
+        },
+        "source": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "year": {
+              "type": "integer"
+            },
+            "url": {
+              "type": "string"
+            },
+            "sha1": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "type",
+            "year",
+            "url",
+            "sha1"
+          ],
+          "additionalProperties": false
+        },
+        "dims": {
+          "type": "object",
+          "properties": {
+            "tax": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "spending": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "borrowing": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "regulation": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "labour": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "health": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "education": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "justice": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "energy": {
+              "$ref": "#/definitions/DimScore"
+            },
+            "infrastructure": {
+              "$ref": "#/definitions/DimScore"
+            }
+          },
+          "required": [
+            "tax",
+            "spending",
+            "borrowing",
+            "regulation",
+            "labour",
+            "health",
+            "education",
+            "justice",
+            "energy",
+            "infrastructure"
+          ],
+          "additionalProperties": false
+        },
+        "extractor": {
+          "type": "object",
+          "properties": {
+            "model": {
+              "type": "string"
+            },
+            "prompt_version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "model",
+            "prompt_version"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "name",
+        "state",
+        "party",
+        "term_start",
+        "source",
+        "dims",
+        "extractor"
+      ],
+      "additionalProperties": false
+    },
+    "DimScore": {
+      "type": "object",
+      "properties": {
+        "stance": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "salience": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^\\s*\\S+(?:\\s+\\S+){0,39}\\s*$"
+          },
+          "minItems": 0,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "stance",
+        "salience",
+        "confidence",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "Party": {
+      "enum": [
+        "D",
+        "R",
+        "I"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "coefs": {
+    "gdp_pc_rel": {
+      "a": 0,
+      "b": 0.5,
+      "n": 12
+    },
+    "debt_pc_rel": {
+      "a": 0,
+      "b": 0.5,
+      "n": 12
+    }
+  },
+  "latest_prior": {
+    "MI": {
+      "gdp_pc_rel": 0,
+      "debt_pc_rel": null
+    }
+  },
+  "latest_window": {
+    "gdp_pc_rel": [
+      2021,
+      2025
+    ],
+    "debt_pc_rel": [
+      2014,
+      2018
+    ]
+  }
+}

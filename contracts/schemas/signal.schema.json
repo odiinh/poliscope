@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/signal.schema.json",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Signal"
+  },
+  "definitions": {
+    "Signal": {
+      "type": "object",
+      "properties": {
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "n_test": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cohorts": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "mae": {
+          "type": "object",
+          "properties": {
+            "baseline": {
+              "type": "number"
+            },
+            "party": {
+              "type": "number"
+            },
+            "knn": {
+              "type": "number"
+            },
+            "ridge": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "baseline",
+            "party",
+            "knn",
+            "ridge"
+          ],
+          "additionalProperties": false
+        },
+        "skill": {
+          "type": "number"
+        },
+        "skill_ci95": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "skill_vs_party": {
+          "type": "number"
+        },
+        "permutation_p": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "brier": {
+          "type": "object",
+          "properties": {
+            "baseline": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "knn": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "required": [
+            "baseline",
+            "knn"
+          ],
+          "additionalProperties": false
+        },
+        "calibration": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "bin_mid": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "predicted": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "observed": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "n": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "bin_mid",
+              "predicted",
+              "observed",
+              "n"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "metric",
+        "n_test",
+        "cohorts",
+        "mae",
+        "skill",
+        "skill_ci95",
+        "skill_vs_party",
+        "permutation_p",
+        "brier",
+        "calibration"
+      ],
+      "additionalProperties": false
+    },
+    "Metric": {
+      "enum": [
+        "gdp_pc_rel",
+        "debt_pc_rel"
+      ]
+    }
+  }
+}

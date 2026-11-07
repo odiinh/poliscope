@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://poliscope.invalid/contracts/forecasts.schema.json",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Forecast"
+  },
+  "definitions": {
+    "Forecast": {
+      "type": "object",
+      "properties": {
+        "subject_id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "metric": {
+          "$ref": "#/definitions/Metric"
+        },
+        "baseline": {
+          "type": "number"
+        },
+        "forecast": {
+          "type": "number"
+        },
+        "p10": {
+          "type": "number"
+        },
+        "p90": {
+          "type": "number"
+        },
+        "p_above": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "neighbours": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Neighbour"
+          },
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "note": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "subject_id",
+        "metric",
+        "baseline",
+        "forecast",
+        "p10",
+        "p90",
+        "p_above",
+        "neighbours",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "Neighbour": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[0-9]{4}$"
+        },
+        "distance": {
+          "type": "number",
+          "minimum": 0
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "residual": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "distance",
+        "weight",
+        "residual"
+      ],
+      "additionalProperties": false
+    },
+    "Metric": {
+      "enum": [
+        "gdp_pc_rel",
+        "debt_pc_rel"
+      ]
+    }
+  }
+}

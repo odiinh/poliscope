@@ -1,0 +1,6 @@
+{
+  "n_profiles": 13,
+  "verify_rate": 1,
+  "test_retest_r": 0.85,
+  "party_auc": 0.65
+}
