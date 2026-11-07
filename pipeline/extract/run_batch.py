@@ -116,8 +116,9 @@ def extract(text: str, model: str, use_cache: bool = True, retries: int = 3) -> 
             if attempt == retries - 1:
                 raise
             time.sleep(10 * 2**attempt)
-    CACHE.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(result))
+    if use_cache:  # a retest must not replace the first run that profiles.json used
+        CACHE.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(result))
     return result | {"status": "ok"}
 
 
