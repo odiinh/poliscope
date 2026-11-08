@@ -1,8 +1,8 @@
 """Fetch governor-elect platform pages into data/interim/ingest/platforms/ and platforms.csv.
 
 Each candidate has seed URLs; same-site links under an issues path are followed once.
-A candidate whose site refuses scripts can instead have a hand-saved text file in
-platforms/<candidate_id>.txt and "manual" set; it is then left untouched.
+An existing platforms/<candidate_id>.txt (fetched or saved by hand) is never refetched;
+delete it to fetch again.
 """
 
 import argparse
@@ -99,8 +99,8 @@ def main():
     for c in CANDIDATES:
         path = OUT / "platforms" / f"{c['candidate_id']}.txt"
         retrieved = today
-        if c.get("manual"):
-            assert path.exists(), f"{path} must be saved by hand"
+        # Saved texts are kept: campaign sites change or vanish after the election.
+        if path.exists():
             if old is not None and c["candidate_id"] in set(old.candidate_id):
                 retrieved = old.set_index("candidate_id").retrieved_at[
                     c["candidate_id"]
